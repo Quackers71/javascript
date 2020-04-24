@@ -1,0 +1,6 @@
+# In the VSC Terminal I ran
+
+PS C:\Users\fcukq\Desktop\javascript> node .\index.js
+Yo Bro
+Rob Q 
+
