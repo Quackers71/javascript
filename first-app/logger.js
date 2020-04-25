@@ -5,4 +5,4 @@ function log(message) {
     console.log(message);
 }
 
-module.exports.log = log; // module defined by exporting one or more members
+module.exports = log; // module defined as a single function
