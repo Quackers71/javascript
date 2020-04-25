@@ -29,3 +29,10 @@ Installing Node
 # ran in VSC Terminal Session
 node --version
 v12.16.2
+
+Node Module System: Modules -
+- os
+- fs
+- events
+- http
+
