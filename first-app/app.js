@@ -1,17 +1,23 @@
 
-function sayHello(name) {
-    console.log('Hello '+name);
-}
+console.log(module);  // module here is not a global object
 
-sayHello('Q')
-//console.log(window);
 
-//console.log(); # global object
-
-setTimeout(1); // call a function after a delay
-clearTimeout();
-setInterval(1);  
-clearInterval(1);
-
-//let message = 'Hello World!';
-//console.log(global.message); // Uncaught ReferenceError: global is not defined
+// Output:
+/* PS C:\Users\fcukq\Desktop\javascript\first-app> node .\app.js
+Module {
+  id: '.',
+  path: 'C:\\Users\\fcukq\\Desktop\\javascript\\first-app',
+  exports: {},
+  parent: null,
+  filename: 'C:\\Users\\fcukq\\Desktop\\javascript\\first-app\\app.js',
+  loaded: false,
+  children: [],
+  paths: [
+    'C:\\Users\\fcukq\\Desktop\\javascript\\first-app\\node_modules',
+    'C:\\Users\\fcukq\\Desktop\\javascript\\node_modules',
+    'C:\\Users\\fcukq\\Desktop\\node_modules',
+    'C:\\Users\\fcukq\\node_modules',
+    'C:\\Users\\node_modules',
+    'C:\\node_modules'
+  ]
+} */

@@ -36,3 +36,5 @@ Node Module System: Modules -
 - events
 - http
 
+In Node every file is a Module and variables and functions defined in the file, are scoped to that module and 
+therefore not available outside of that module
