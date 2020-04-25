@@ -52,3 +52,13 @@ console.log("items in this Array: "+selectedColours.length);
 
 // An Array is a Data Structure to represent a list of items
 
+// Functions
+
+function greet(name, lastName) {
+    lastName = 'Qarikau'
+    console.log('Hello '+name+" "+lastName+"!");
+
+    }
+
+greet('Dexter');
+greet('Ella');
