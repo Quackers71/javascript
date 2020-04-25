@@ -38,3 +38,19 @@ Node Module System: Modules -
 
 In Node every file is a Module and variables and functions defined in the file, are scoped to that module and 
 therefore not available outside of that module
+
+https://nodejs.org/en/docs/
+https://nodejs.org/dist/latest-v12.x/docs/api/
+Important Modules
+- File System
+- HTTP
+- OS
+- Path
+- Process
+- Query Strings
+- Stream
+
+https://nodejs.org/dist/latest-v12.x/docs/api/path.html
+
+const path = require('path');
+

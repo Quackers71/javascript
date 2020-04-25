@@ -1,5 +1,18 @@
 
-const log = require('./logger') // to load the module you use the require() function and 
-                                   // store the result in a constant
+const path = require('path');
 
-log('Yo, Hello'); // This is now called as a function
+var pathObj = path.parse(__filename);
+
+console.log(pathObj);
+
+
+
+// Output:
+/* PS C:\Users\fcukq\Desktop\javascript\first-app> node .\app.js
+{
+  root: 'C:\\',
+  dir: 'C:\\Users\\fcukq\\Desktop\\javascript\\first-app',
+  base: 'app.js',
+  ext: '.js',
+  name: 'app'
+} */
