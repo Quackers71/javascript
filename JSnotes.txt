@@ -4,3 +4,13 @@ PS C:\Users\fcukq\Desktop\javascript> node .\index.js
 Yo Bro
 Rob Q 
 
+Node Architect
+
+Browsers use JS Engine
+
+JS Code > JS Engine > Machine Code
+
+IE - Chakra
+FF - SpiderMonkey
+GC - v8
+
