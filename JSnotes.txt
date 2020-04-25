@@ -24,3 +24,8 @@ Node is a runtime environment for executing JavaScript code
 - Ideal for I/O-intensive Apps
 - Do not use Node for CPU-intensive Apps
 
+Installing Node
+
+# ran in VSC Terminal Session
+node --version
+v12.16.2
