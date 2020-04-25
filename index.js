@@ -38,3 +38,17 @@ let selection = 'name';
 person[selection] = 'Judy';
 
 console.log(person.name);
+
+// Array Objects
+let selectedColours = ['red', 'blue'];
+selectedColours[2] = 'green';
+selectedColours[3] = 21;
+
+console.log("Full List: "+selectedColours);
+console.log(selectedColours[0]);
+
+console.log("typeof: "+typeof(selectedColours[0]));
+console.log("items in this Array: "+selectedColours.length);
+
+// An Array is a Data Structure to represent a list of items
+
