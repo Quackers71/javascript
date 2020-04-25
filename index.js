@@ -44,7 +44,7 @@ let selectedColours = ['red', 'blue'];
 selectedColours[2] = 'green';
 selectedColours[3] = 21;
 
-console.log("Full List: "+selectedColours);
+console.log(selectedColours);
 console.log(selectedColours[0]);
 
 console.log("typeof: "+typeof(selectedColours[0]));
