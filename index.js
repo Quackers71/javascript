@@ -54,6 +54,7 @@ console.log("items in this Array: "+selectedColours.length);
 
 // Functions
 
+// Performing a task
 function greet(name, lastName) {
     lastName = 'Qarikau'
     console.log('Hello '+name+" "+lastName+"!");
@@ -62,3 +63,14 @@ function greet(name, lastName) {
 
 greet('Dexter');
 greet('Ella');
+
+// Calculating a value
+function square(num) {
+    return num * num;
+}
+
+let num = square(21);
+console.log(num);
+
+// or just use
+console.log(square(15));
