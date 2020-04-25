@@ -14,3 +14,13 @@ IE - Chakra
 FF - SpiderMonkey
 GC - v8
 
+Chrome - v8 (JS Engine)       Node.exe - (Embedded v8 Engine plus extra modules - built in C++) - Runtime Environment
+
+Node is a runtime environment for executing JavaScript code
+- Asynchronous Architecture
+- Single Thread - to handle multiple requests
+- so Asynchronous by default
+- Node uses an event queue
+- Ideal for I/O-intensive Apps
+- Do not use Node for CPU-intensive Apps
+
