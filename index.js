@@ -25,3 +25,16 @@ let person = {
 };
 
 console.log(person);
+
+// Dot Notation
+person.name = "Ella";
+person.age = 15;
+
+console.log(person.name);
+console.log(person.age);
+
+// Bracket Notation
+let selection = 'name';
+person[selection] = 'Judy';
+
+console.log(person.name);
