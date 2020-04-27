@@ -1,17 +1,22 @@
 
-const EventEmitter = require('events');
+const http = require('http');
 
-const Logger = require('./logger');
-const logger = new Logger(); // this is the custom Class that extends EventEmitter
+const server = http.createServer((req, res) => {
+  if (req.url === '/') {
+    res.write('Hello World');
+    res.end();
+  }
 
-// Register a listener
-logger.on('messageLogged', (arg) => {
-  console.log('Listener called', arg);
+  if (req.url === '/api/courses') {
+    res.write(JSON.stringify([1, 2, 3]));
+    res.end();
+  }
 });
 
-logger.log('message');
+server.on('connection', (socker) => {
+  console.log('New Connection');
+})
 
-// Output
-/* PS C:\Users\fcukq\Desktop\javascript\first-app> node .\app.js
-message
-Listener called { id: 1, url: 'http://' } */
+server.listen(3000);
+
+console.log('Listening on Port 3000...');
