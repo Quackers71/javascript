@@ -1,21 +1,17 @@
 
-console.log(__filename);
-console.log(__dirname);
+const EventEmitter = require('events');
 
 var url = "http://mylogger.io/log";
 
-function log(message) {
-    // Send a HTTP request
-    console.log(message);
+class Logger extends EventEmitter {
+    log(message) { // this is now classed as a Method
+        // Send a HTTP request
+        console.log(message);
+    
+        // Raise an event
+        this.emit('messageLogged', {id: 1, url: 'http://'});
+    }
 }
 
-module.exports = log; // module defined as a single function
-module.exports.log = log; // you can also have this
-exports.log = log; // and this
 
-
-// Output
-/* PS C:\Users\fcukq\Desktop\javascript\first-app> node .\app.js
-C:\Users\fcukq\Desktop\javascript\first-app\logger.js
-C:\Users\fcukq\Desktop\javascript\first-app
-Yo, Hello */
+module.exports = Logger; // module defined as a single function

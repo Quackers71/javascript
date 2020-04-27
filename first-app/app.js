@@ -1,11 +1,17 @@
 
 const EventEmitter = require('events');
-const emitter = new EventEmitter();
+
+const Logger = require('./logger');
+const logger = new Logger(); // this is the custom Class that extends EventEmitter
 
 // Register a listener
-emitter.on('messageLogged', function() {
-  console.log('Listener called');
+logger.on('messageLogged', (arg) => {
+  console.log('Listener called', arg);
 });
 
-// Raise an event
-emitter.emit('messageLogged');  // Making a noise, produce - signalling 
+logger.log('message');
+
+// Output
+/* PS C:\Users\fcukq\Desktop\javascript\first-app> node .\app.js
+message
+Listener called { id: 1, url: 'http://' } */
