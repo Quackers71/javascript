@@ -6,17 +6,29 @@ height="600"></canvas>
 <script>
 var canvas;
 var canvasContext;
+var ballX = 50;
 
 window.onload = function() {
-        console.log("Hello World!");
-        canvas = document.getElementById('gameCanvas');
-        canvasContext = canvas.getContext('2d');
-        canvasContext.fillStyle = 'black';
-        canvasContext.fillRect(0,0,canvas.width, canvas.height);
-        canvasContext.fillStyle = 'red';
-        canvasContext.fillRect(canvas.width/20,canvas.height/20,canvas.width/1.1,canvas.height/1.1);
-        canvasContext.fillStyle = 'white';
-        canvasContext.fillRect(canvas.width/1.5,canvas.height/1.5,canvas.width/4, canvas.height/4);
+    console.log("Hello World!");
+    canvas = document.getElementById('gameCanvas');
+    canvasContext = canvas.getContext('2d');
+
+    setInterval(drawEverything, 500);
+    drawEverything();
+    drawEverything();
+    drawEverything();
+}
+
+function drawEverything() {
+    ballX += 20;
+
+    console.log(ballX);
+    canvasContext.fillStyle = 'black';
+    canvasContext.fillRect(0,0,canvas.width, canvas.height);
+    canvasContext.fillStyle = 'white';
+    canvasContext.fillRect(225,210,200,200);
+    canvasContext.fillStyle = 'red';
+    canvasContext.fillRect(ballX,100,10,10);
 }
 
 </script>
