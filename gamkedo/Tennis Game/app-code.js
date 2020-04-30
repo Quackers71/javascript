@@ -26,9 +26,22 @@ function moveEverything(){
 }
 
 function drawEverything() {
-    colourRect(0,0,canvas.width, canvas.height,'black'); // blanks out the screen black
+
+    // blanks out the screen black
+    colourRect(0,0,canvas.width, canvas.height,'black');
+
+    // left player paddle
     colourRect(0,210,10,100,'white');
-    colourRect(ballX,100,10,10,'red');
+
+    // draws the ball
+    colourCircle(ballX, 150, 10, 'white');
+}
+
+function colourCircle(centreX, centreY, radius, drawColour) {
+    canvasContext.fillStyle = drawColour;
+    canvasContext.beginPath();
+    canvasContext.arc(centreX, centreY, radius, 0, Math.PI*2, true); // (x, y, radius, angles, radians, true)
+    canvasContext.fill();
 }
 
 function colourRect(leftX,topY, width, height, drawColour) {
