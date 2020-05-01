@@ -37,19 +37,31 @@ window.onload = function() {
         });
 }
 
+function ballReset() {
+    ballSpeedX = -ballSpeedX;
+    ballX = canvas.width/2;
+    ballY = canvas.height/2;
+}
+
 function moveEverything(){
     ballX += ballSpeedX;
     ballY += ballSpeedY;
+
     if(ballX < 0) {
-        ballSpeedX = -ballSpeedX;
+        if(ballY > paddle1Y && ballY < paddle1Y+PADDLE_HEIGHT) {
+                ballSpeedX = -ballSpeedX;
+        }
+        else {
+            ballReset();
+        }
     }
-    if(ballX > canvas.width - 5) {
+    if(ballX > canvas.width) {
         ballSpeedX = -ballSpeedX;
     }
     if(ballY < 0) {
         ballSpeedY = -ballSpeedY;
     }
-    if(ballY > canvas.height - 5) {
+    if(ballY > canvas.height) {
         ballSpeedY = -ballSpeedY;
     }
 }
