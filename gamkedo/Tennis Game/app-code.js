@@ -7,6 +7,9 @@ var ballSpeedY = 4;
 
 var player1Score = 0;
 var player2Score = 0;
+const WINNING_SCORE = 3;
+
+var showingWinScreen = false;
 
 var paddle1Y = 250;
 var paddle2Y = 250;
@@ -43,6 +46,12 @@ window.onload = function() {
 }
 
 function ballReset() {
+    if(player1Score >= WINNING_SCORE || player2Score >= WINNING_SCORE) {
+        player1Score = 0;
+        player2Score = 0;
+        showingWinScreen = true;
+    }
+
     ballSpeedX = -ballSpeedX;
     ballX = canvas.width/2;
     ballY = canvas.height/2;
@@ -59,6 +68,10 @@ function computerMovement() {
 }
 
 function moveEverything(){
+    if (showingWinScreen) {
+        return;
+    }
+
     computerMovement();
 
     ballX += ballSpeedX;
@@ -72,8 +85,9 @@ function moveEverything(){
                 ballSpeedY = deltaY * 0.35;
         }
         else {
+            player2Score++; // must be BEFORE ballReset()
             ballReset();
-            player2Score++;
+            
         }
     }
     if(ballX > canvas.width) {
@@ -84,8 +98,9 @@ function moveEverything(){
                 ballSpeedY = deltaY * 0.35;
         }
         else {
+            player1Score++; // must be BEFORE ballReset()
             ballReset();
-            player1Score++;
+            
         }
     
     }
@@ -101,6 +116,12 @@ function drawEverything() {
 
     // blanks out the screen black
     colourRect(0,0,canvas.width, canvas.height,'black');
+
+    if (showingWinScreen) {
+        canvasContext.fillStyle = "white";
+        canvasContext.fillText("click to continue...", 100, 100);
+        return;
+    }
 
     // left player paddle
     colourRect(0,paddle1Y,PADDLE_THICKNESS,PADDLE_HEIGHT,'white');
