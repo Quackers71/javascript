@@ -129,13 +129,15 @@ function drawEverything() {
         canvasContext.fillStyle = "white";
 
         if(player1Score >= WINNING_SCORE) {
-            canvasContext.fillText("Player 1 Won!", 350, 200);
+            canvasContext.fillText("Player 1", 80, 80);
+            canvasContext.fillText("Won! Scoring:  "+player1Score, 65, 100);
         }
         else if(player2Score >= WINNING_SCORE) {
-            canvasContext.fillText("Player 2 Won!", 350, 200);
+            canvasContext.fillText("Player 2", canvas.width-120, 80);
+            canvasContext.fillText("Won! Scoring:  "+player2Score, canvas.width-135, 100);
         }
         
-        canvasContext.fillText("click to continue...", 350, 500);
+        canvasContext.fillText("click to continue...", canvas.width/2-20, canvas.height/2);
         return;
     }
 
