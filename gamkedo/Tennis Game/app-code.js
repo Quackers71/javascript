@@ -120,6 +120,12 @@ function moveEverything(){
     }
 }
 
+function drawNet() {
+    for (var i = 0;i < canvas.height; i += 40) {
+        colourRect(canvas.width/2-1, i, 2, 20, 'white');
+    }
+}
+
 function drawEverything() {
 
     // blanks out the screen black
@@ -140,6 +146,9 @@ function drawEverything() {
         canvasContext.fillText("click to continue...", canvas.width/2-20, canvas.height/2);
         return;
     }
+
+    // draw the Net
+    drawNet();
 
     // left player paddle
     colourRect(0,paddle1Y,PADDLE_THICKNESS,PADDLE_HEIGHT,'white');
