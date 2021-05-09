@@ -3,22 +3,56 @@
         <h1 id="header">Hello</h1>
         <input type="text" id="inp"/>
         <script type="text/javascript">
-            // Primitive data types
-            // string - anything within "" or ''
-            // number - 12.0 5.62 -99 1000 0.000003
-            // boolean - true or false
-            // undefined
-            console.log(helloWorld);
-            // null
+            var x = 10;
+            var y = 3;
 
-            // variable - 
-            var name = "Quackers";
-            console.log(name);
+            var z = x + y;
+            console.log(z);
 
-            var helloWorld = 5;
-            helloWorld = name;
-            console.log(helloWorld);
-            console.log(name);
+            var z = x - y;
+            console.log(z);
+
+            var z = x * y;
+            console.log(z);
+
+            var z = x / y;
+            console.log(z);
+
+            var z = x % y;
+            console.log(z);
+
+            x *= 5;
+            console.log("x *= 5 is " + x);
+
+            y++;
+            console.log("y++ is " + y);
+
+            var str = "Hello";
+
+            // concatenation
+            var z = str + " " + x;
+            console.log("str + z is " + z);
+
+            var str2 = "World!";
+            console.log(str + " " + str2);
+
+            var fullStr = str + " " + str2;
+            console.log(fullStr);
+
+            var result = 4 * (5 / (3 + 9 - 2));
+            console.log(result);
+
+            /* 
+            Order of operations
+
+            B brackets
+            E exponents
+            D division
+            M multiplication
+            A addition
+            S subtraction
+            */            
+
         </script>
     </body>
 </html>
