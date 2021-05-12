@@ -1,0 +1,33 @@
+<html>
+    <body style="background-color:darkgrey;">
+        <h1 id="header">Hello</h1>
+        <input type="text" id="inp"/>
+        <script type="text/javascript">
+            var x = 8;
+            var y = 9;
+            var b = x <= y;
+            console.log("x <= y : " + b);
+            var e = x == y;
+            console.log("x == y : " + e);
+
+            var n = 11;
+            var s = "11";
+            var m = n != s;
+            console.log("n != s : " + m)
+
+            var m = n !== y;
+            console.log("n !== s : " + m)
+
+            var name = "rob";
+            var other_name = "Rob";
+            console.log("is " + name + " is equal to " + other_name + " AND y < x ?");
+            console.log(name == other_name && y < x);
+            console.log("is " + name + " is equal to " + other_name + " OR y > x ?");
+            console.log(name == other_name || y > x)
+
+            console.log(!true);
+            console.log(!(x < y) || !(name == other_name && 9 > 0));
+
+        </script>
+    </body>
+</html>
