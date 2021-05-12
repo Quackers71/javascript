@@ -3,55 +3,30 @@
         <h1 id="header">Hello</h1>
         <input type="text" id="inp"/>
         <script type="text/javascript">
-            var x = 10;
-            var y = 3;
+            var x = 8;
+            var y = 9;
+            var b = x <= y;
+            console.log("x <= y : " + b);
+            var e = x == y;
+            console.log("x == y : " + e);
 
-            var z = x + y;
-            console.log(z);
+            var n = 11;
+            var s = "11";
+            var m = n != s;
+            console.log("n != s : " + m)
 
-            var z = x - y;
-            console.log(z);
+            var m = n !== y;
+            console.log("n !== s : " + m)
 
-            var z = x * y;
-            console.log(z);
+            var name = "rob";
+            var other_name = "Rob";
+            console.log("is " + name + " is equal to " + other_name + " AND y < x ?");
+            console.log(name == other_name && y < x);
+            console.log("is " + name + " is equal to " + other_name + " OR y > x ?");
+            console.log(name == other_name || y > x)
 
-            var z = x / y;
-            console.log(z);
-
-            var z = x % y;
-            console.log(z);
-
-            x *= 5;
-            console.log("x *= 5 is " + x);
-
-            y++;
-            console.log("y++ is " + y);
-
-            var str = "Hello";
-
-            // concatenation
-            var z = str + " " + x;
-            console.log("str + z is " + z);
-
-            var str2 = "World!";
-            console.log(str + " " + str2);
-
-            var fullStr = str + " " + str2;
-            console.log(fullStr);
-
-            var result = 4 * (5 / (3 + 9 - 2));
-            console.log(result);
-
-            /* 
-            Order of operations
-
-            B brackets
-            E exponents
-            D division
-            M multiplication
-            A addition
-            S subtraction
-            */            
+            console.log(!true);
+            console.log(!(x < y) || !(name == other_name && 9 > 0));
 
         </script>
     </body>
