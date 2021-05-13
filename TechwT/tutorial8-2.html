@@ -1,0 +1,26 @@
+<html>
+    <body style="background-color:darkgrey;">
+        <h1 id="header">What is your age?</h1>
+        <input type="text" id="inp"/>
+        <button onclick="pressed()">Click</button>
+        <p id="output"></p>
+                
+        <script>
+            function pressed(){
+                var text = parseInt(document.getElementById("inp").value);
+                var output = document.getElementById("output");
+
+                if (text > 18){
+                    output.innerHTML = "You are older than 18!";
+                }
+                else if(text == 18){
+                    output.innerHTML = "You are 18!";
+                }
+                else{
+                    output.innerHTML = "You are NOT older than 18!";
+                }
+                 
+            }
+        </script>
+    </body>
+</html>
