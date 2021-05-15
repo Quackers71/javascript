@@ -2,7 +2,7 @@
 /* let name = 'Yo Bro';
 console.log(name); */
 
-let firstName = "Rob"; // Dynamically typed - let
+let firstName = "message"; // Dynamically typed - let
 let surName = "Q"; // Statically typed - string
 let fullName = firstName.concat(" "+surName);
 
@@ -20,7 +20,7 @@ let selectedColour = null;
 
 // creating a person Object with key value pairs - also known as an Object Literal
 let person = {
-    name: 'Rob',
+    name: 'message',
     age: 30
 };
 

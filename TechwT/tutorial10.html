@@ -1,0 +1,50 @@
+<html>
+    <body style="background-color:darkgrey;">
+        <script>
+            var message = ["Hello", 5, 4.6, "Q"];
+            console.log(message);
+            message[2] = "replaced element";
+            console.log(message);
+            console.log(message.length);
+            message[4] = 50;
+            console.log(message);
+            message.pop();
+            console.log(message);
+            message.push("#doge2theMoon");
+            console.log(message);
+            message.shift();
+            console.log(message);
+            message.sort();
+            console.log(message);
+            message[6] = 5;
+            message[7] = 8;
+            message.push(5);
+            console.log(message);
+            
+            // Remove empty elements from my Array
+            cleanArray = message.filter(function () { return true});
+            //console.log(cleanArray);
+            message = cleanArray;
+            console.log(message);
+
+            // find and remove an element
+            function removeAllItems(element, value){
+                var i = 0;
+                while (i < message.length){
+                    if (message[i] == value){
+                        message.splice(i, 1);
+                    }
+                    else {
+                        ++i;
+                    }
+                }
+                return message;
+            }
+            
+            removeAllItems(message, 5);
+            console.log(message);
+            
+            //var arr = new Arrary();
+        </script>
+    </body>
+</html>
