@@ -1,0 +1,49 @@
+<html>
+    <body style="background-color:darkgrey;">
+        <script>
+            var _set = new Set();
+            _set.add(3).add(5).add(7).add(3);
+            console.log(_set);
+            console.log(_set.has(3));
+            
+            console.log(_set.size);
+            console.log(_set.delete(3));
+            console.log(_set);
+
+            console.log(_set.delete(3));
+
+            console.log(_set.values());
+            
+            _set.add(3);
+            for (var entry of _set.values()){
+                console.log(entry);
+            }
+
+            var set1 = new Set([1,2,3,3,3,3,4,5,6,7,9,10]);
+            console.log(set1);
+
+            function test(x){
+                console.log(x);
+            }
+
+            function test2(x){
+                if (x == "l"){
+                    console.log("Found it!");
+                }
+                else {
+                    console.log("Nope!");
+                }
+            }
+
+            var set2 = new Set("hello");
+            set2.forEach(test);
+            set2.forEach(test2);
+            
+            //console.log(set2);
+
+            //var arr = [3,5,7];
+
+
+        </script>
+    </body>
+</html>
