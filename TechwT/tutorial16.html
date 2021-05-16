@@ -1,0 +1,45 @@
+<html>
+    <body style="background-color:darkgrey;">
+        <script>
+
+            // Reference or Object Data Types - mutable i.e. Changable
+            function append5(arr){
+                var arr2 = arr;
+                arr2[1] = 100;
+                var arr3 = arr2;
+                arr3[5] = 9;
+                //arr.push(5);
+                console.log(arr2);
+                console.log(arr);
+            }
+            var x = [1,2,3,4];
+            append5(x);
+            console.log(x);
+            
+            // Use this to copy or clone an object
+            var y = x.slice(); // you could use x.slice(0,3) 
+            //var y = [...x]; // this doesn't work the same way - but did show an undefined variable in the list :-o
+            y[1] = 2;
+            console.log(y);
+            console.log(x);
+            
+            /* x[4] = 88;
+            console.log(x); */
+
+            // Primitive Data types - immutable i.e. DOESN'T Change!
+            /* function add5(num){
+                num += 5;
+                console.log(num);
+            }
+
+            var x = 5;
+            add5(x);
+            console.log(x); */
+
+            /* var x = 5; // a primitive type - immutable i.e. DOESN'T Change!
+            var y = []; // an object - mutable
+            var s = z; // s is a reference of the object z and vice versa - mutable (this also turns s into an alias)
+            */
+        </script>
+    </body>
+</html>
