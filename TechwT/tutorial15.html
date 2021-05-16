@@ -1,0 +1,47 @@
+<html>
+    <body style="background-color:darkgrey;">
+        <script>
+            var mp = new Map(
+                [
+                ["t", 5],
+                ["v", 8]
+                ]
+                );
+            console.log(mp.entries());
+
+            mp.set("t", 9);
+            mp.set(3, "hello");
+            console.log(mp.get(3));
+
+            console.log(mp.size);
+            console.log(mp.entries());
+
+            mp.delete("t");
+            console.log(mp.size);
+            console.log(mp.entries());
+
+            console.log(mp.has("t"));
+            
+            for (var entry of mp){
+                console.log(entry[0]);
+                console.log(entry[1]);
+            }
+
+            var mp2 = new Map();
+            str = "this is my new string hello";
+
+            for (var letter of str){
+                if (mp2.has(letter)){
+                    mp2.set(letter, mp2.get(letter)+1);
+                }
+                else{
+                    mp2.set(letter, 1);
+                }
+            }
+            console.log(mp2);
+            console.log(mp2.get("t"));     
+            console.log(mp2.get(" "));
+
+        </script>
+    </body>
+</html>
