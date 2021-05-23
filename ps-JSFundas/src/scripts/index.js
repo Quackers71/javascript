@@ -3,8 +3,10 @@
 
 let promise = new Promise(
     function(resolve, reject){
-        setTimeout(reject, 100, 'someValue'); // previously resolve
+        setTimeout(reject, 100, 'someValue');
     }
 );
-
-console.log(promise);
+promise.then(
+    value => console.log('fullfilled: ' + value),
+    error => console.log('rejected: ' + error)
+);
