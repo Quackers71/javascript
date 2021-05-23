@@ -1,14 +1,15 @@
 
 
+//import $ from 'jQuery';
+import $ from '../../node_modules/jquery';
 
-// XMLHttpRequest (XHR)
+let promise = $.get("https://60aac7ba66f1d0001777334a.mockapi.io/api/v1/:endpoint");
+promise.then(    
+    data => console.log('data: ', data),
+    error => console.log('error: ', error)
+);
 
-let xhttp = new XMLHttpRequest();
-xhttp.onreadystatechange = function(){
-    if (this.readyState == 4 && this.status == 200){
-        console.log(this.responseText);
-    }
-};
 
-xhttp.open("GET", "http://myid.mockapi.io/api/v1/users", true);
-xhttp.send();
+// import specified to run:
+// npm i --save-dev @types/jquery
+// *** Needs Work! ***
