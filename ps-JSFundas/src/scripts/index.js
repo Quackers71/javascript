@@ -1,4 +1,6 @@
-import { Car } from './models/car.js';
 
-let car = new Car(123);
-console.log( car.id ); // 123
+//import { Car } from './models/car.js';
+
+//year = 1956;
+
+console.log(innerWidth);
