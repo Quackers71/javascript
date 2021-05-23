@@ -1,7 +1,7 @@
 
 
 
-class Vehicle {
+class Vehicle { // base or parent class
     constructor(){
         this.type = 'car';
     }
@@ -10,7 +10,7 @@ class Vehicle {
     }
 }
 
-class Car extends Vehicle {
+class Car extends Vehicle { // child class
     constructor(){
         super(); // this is a special Constructor which calls
                  // the Constructor from the Vehicle Class
