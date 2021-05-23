@@ -1,7 +1,7 @@
 
 
 
-try {
+/* try {
     let car = newCar;
 }
 catch(error){
@@ -9,10 +9,10 @@ catch(error){
 }
 finally {
     console.log('this always executes...');
-}
+} */
 
 
-/* try {
+try {
     let car = null;
 }
 catch(error){
@@ -20,4 +20,4 @@ catch(error){
 }
 finally {
     console.log('this always executes...');
-} */
+}
