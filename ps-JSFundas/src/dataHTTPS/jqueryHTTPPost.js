@@ -1,7 +1,7 @@
 
 
 
-import $ from '../../node_modules/jquery';
+import $ from 'jquery';
 let user = {
     name: 'Evil Kinevil',
     avatar: 'yo.jpg'
