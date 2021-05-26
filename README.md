@@ -6,6 +6,7 @@
 
 - JavaScript Fundamentals
 - Rapid JavaScript Training
+- Object-oriented Programming in JavaScript - ES6
 - Advanced JavaScript
 
 
