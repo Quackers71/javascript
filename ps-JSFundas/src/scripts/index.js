@@ -1,26 +1,24 @@
 
 
 
-import $ from './node_modules/jquery/dist/jquery';
+function NewObject(prefix)
+{
+    var count=0;
+    this.SayHello=function(msg)
+    {
+          count++;
+          alert(prefix+msg);
+    }
+    this.GetCount=function()
+    {
+          return count;
+    }
+}
+var obj=new NewObject("Message : ");
+obj.SayHello("You are welcome.");
 
-let form = document.getElementById('user-form');
 
-form.addEventListener('submit', event => {
 
-    let user = form.elements['user'];
-    let avatarFile = form.elements['avater-file'];
+/* console.log("Hello World!");
 
-    let posting = {
-        user: user.value,
-        avatarFile: avatarFile.value
-    };
-    let promise = $.post(
-        "https://60aac7ba66f1d0001777334a.mockapi.io/api/v1/JStest", posting
-    );
-    promise.then(
-        data => console.log('data: ', data),
-        error => console.log('error: ', error)
-    );
-    
-    event.preventDefault();
-});
+window.foo = 'secret code'; */
