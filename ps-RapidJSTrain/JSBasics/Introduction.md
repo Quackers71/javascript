@@ -13,4 +13,5 @@
   - Advance cases
 - while and do...while Statements
 - for and for...in
+  - for, break, continue & for...in
 - JavaScript Usage Features
