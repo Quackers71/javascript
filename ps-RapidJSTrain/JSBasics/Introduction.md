@@ -9,6 +9,8 @@
   - Returning Values
   - Function Expressions
 - If and switch Statements
+  - if, if...else, switch...case
+  - Advance cases
 - while and do...while Statements
 - for and for...in
 - JavaScript Usage Features
