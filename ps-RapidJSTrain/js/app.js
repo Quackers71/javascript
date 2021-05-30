@@ -1,7 +1,7 @@
 
 
 
-var showProduct = function showProduct(){
-    console.log('Showing a Product'); // Showing a Product
-}
-showProduct();
+// Test if NaN
+var n = NaN;
+if (isNaN(n))
+    console.log('NaN!');
