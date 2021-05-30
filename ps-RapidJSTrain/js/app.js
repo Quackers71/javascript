@@ -1,9 +1,16 @@
 
 
 
-var productType = "Hardware";
-console.log(productType.length);
+var value = "no value";
+console.log("!!value = " + !!value); // true
 
-console.log('[' + productType.trim() + ']');
+console.log(Boolean(" "));
 
-console.log(productType.toUpperCase());
+console.log(Boolean(""));
+
+console.log(Boolean("Hello"));
+
+
+var isSpecial = true;
+if (isSpecial)
+    console.log("It's true!");
