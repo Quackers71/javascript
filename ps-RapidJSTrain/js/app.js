@@ -1,7 +1,9 @@
 
 
 
-// Test if NaN
-var n = NaN;
-if (isNaN(n))
-    console.log('NaN!');
+var productType = "Hardware";
+console.log(productType.length);
+
+console.log('[' + productType.trim() + ']');
+
+console.log(productType.toUpperCase());
