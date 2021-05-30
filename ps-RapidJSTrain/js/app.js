@@ -1,16 +1,8 @@
 
 
 
-var value = "no value";
-console.log("!!value = " + !!value); // true
-
-console.log(Boolean(" "));
-
-console.log(Boolean(""));
-
-console.log(Boolean("Hello"));
+console.log(typeof null);
 
 
-var isSpecial = true;
-if (isSpecial)
-    console.log("It's true!");
+var productId = null;
+console.log(typeof productId);
