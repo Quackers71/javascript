@@ -1,5 +1,5 @@
 // https://www.codewars.com/kata/5264d2b162488dc400000001/train/javascript
-
+// 2nd Attempt - don't work! :-( - WIP - Crack on Yo
 
 function spinWords(string){
     var wordArray = string.split(' ');
@@ -11,12 +11,22 @@ function spinWords(string){
     console.log(item);
     //return item;
 
-    var reversedItem = item;
-    //console.log(reversedItem);
+    function reverseWord (sentence){
+        return sentence.split(' ').map(function(word){
+            return word.split('').reverse().join('');
+        }).join(' ');
+    }
+    console.log(reverseWord(item));
 
-    console.log(reversedItem.split("").reverse().join(""));
-    //return reversedItem.split("").reverse().join("");
-    
+    function wordsReverser(items){
+        var items = string.split(' ');
+        var result = [];
+        for (var i = 0; i < items.length; i++){
+            result.push(items[i].split('').reverse().join(''));
+        }
+        return result.join(' ');
+    }
+    console.log(wordsReverser(items));
 }
 
-spinWords('Hey fellow warriors');
+spinWords('Hello to all the Donkeys in the World!');
