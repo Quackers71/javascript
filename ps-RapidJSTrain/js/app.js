@@ -1,14 +1,13 @@
 
 
 
-//var description = 'original product';
-
-function updateProduct(){
-
-    var updateProductId = function(){;
-        console.log(description);  
-    }
-    updateProductId();
+'use strict';
+try {
+    throw 'myArtificialBlockLevelVar'
 }
+catch (blockLeverVar){
+    // blockLevlVar is in block scope
+    // ...
+};
 
-updateProduct(); // ReferenceError: description is not define
+console.log(blockLeverVar); // ReferenceError: blockLeverVar is not defined
