@@ -1,13 +1,6 @@
 
 
 
-'use strict';
-try {
-    throw 'myArtificialBlockLevelVar'
-}
-catch (blockLeverVar){
-    // blockLevlVar is in block scope
-    // ...
-};
-
-console.log(blockLeverVar); // ReferenceError: blockLeverVar is not defined
+var id = 2000 + null;
+console.log(id); // 2000
+console.log(typeof(id)); // number
