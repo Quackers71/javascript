@@ -44,3 +44,8 @@ https://app.pluralsight.com/library/courses/javascript-fundamentals/table-of-con
 ## Advanced JavaScript 
 
 https://app.pluralsight.com/library/courses/advanced-javascript/table-of-contents
+
+
+## ES6 Tutorial: Learn Modern JavaScript in 1 Hour
+
+https://youtu.be/NCwa_xi0Uuc
