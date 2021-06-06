@@ -1,6 +1,19 @@
 
 
 
-var num1 = -parseInt('1000', 2);
-num1 = num1 >>> 1;
-console.log(num1.toString(2)); // 1111111111111111111111111111100
+var defaultSettings = {
+    who: 'default'
+};
+var userSettings;
+var value = userSettings || defaultSettings;
+console.log(value); // Object {who: "default"}
+
+
+var defaultSettings = {
+    who: 'default'
+};
+var userSettings = {
+    who: 'user'
+};
+var value = userSettings || defaultSettings;
+console.log(value); // Object {who: "user"}
