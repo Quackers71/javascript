@@ -1,7 +1,7 @@
 
 
 // Objects in JS are collections of Key: Value pairs
-// a Function within an object is a Method
+// a Function within an object is a classed as a Method
 const person = {
     name: "Rob",
     walk: function() {}, // walk is Method in the person Object

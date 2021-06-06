@@ -1,17 +1,17 @@
 
 
-// Objects in JS are collections of Key: Value pairs
-// a Function within an object is a Method
+
 const person = {
-    name: "Rob",
-    walk: function() {}, // walk is Method in the person Object
-    talk() {} // shorter definition
+  name: "Rob",
+  walk() {
+    console.log(this);
+  }
 };
-// So this is a person Object with three members
-// one Property and two Methods
 
-person.talk(); // accessing one of the members
-person.name = ''; // use dot notation, if you know the Property or Method
+person.walk();
 
-const targetMember = 'name';
-person[targetMember.name] = 'Bob';
+const walk = person.walk;
+console.log(walk);
+
+walk();
+// Window
