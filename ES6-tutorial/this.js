@@ -1,6 +1,7 @@
 
 
 
+"use strict";
 const person = {
     name: "Rob",
     walk() {
@@ -11,7 +12,6 @@ const person = {
   person.walk();
   
   const walk = person.walk;
-  console.log(walk);
+  //console.log(walk);
   
-  walk();
-  // Window
+  walk(); // undefined
