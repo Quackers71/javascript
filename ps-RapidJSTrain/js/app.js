@@ -1,19 +1,13 @@
 
 
 
-var defaultSettings = {
-    who: 'default'
-};
-var userSettings;
-var value = userSettings || defaultSettings;
-console.log(value); // Object {who: "default"}
+if (55 !== 55) // false, as they're identical
+    console.log('true'); 
+else
+    console.log('false');
 
 
-var defaultSettings = {
-    who: 'default'
-};
-var userSettings = {
-    who: 'user'
-};
-var value = userSettings || defaultSettings;
-console.log(value); // Object {who: "user"}
+if (null === undefined) // false, however true with ==
+    console.log('true'); 
+else
+    console.log('false');
