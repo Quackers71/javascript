@@ -1,38 +1,22 @@
 
 
 
-var total = NaN; // output = (nothing)
-if (total < 5)
-    console.log('less than 5');
-if (total <= 5)
-    console.log('greater than or equal to 5');
+var total = (99, 88, 44); // don't use this shite!!!
+console.log(total); // 44
 
 
-if ('42' < '142') // false - compares as strings so 1 comes before 4
-    console.log('true'); 
-else
-    console.log('false');
+var total = 99, tax = 9;
+console.log(total); // 99
+console.log(tax);   // 9
 
 
-if ('42' < 55) // true - JS will convert string to number
-    console.log('true');
-else
-    console.log('false');
+var total = 6;
+total *= 4 + 1; // 4 + 1 = 5 * 6 = 30
+console.log(total); // 30
+// See Operator Precedence for JavaScript
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence#table
 
 
-if ("Beta".toLowerCase() < "alpha".toLowerCase()) // false
-    console.log('true'); 
-else
-    console.log('false');
-
-
-if ("Beta" < "alpha") // true
-    console.log('true'); 
-else
-    console.log('false');
-
-
-if ("beta" < "Alpha") // false - ascii or unicode values
-    console.log('true'); //      Capitals come before Lowercase
-else
-    console.log('false');
+var total = 6;
+total %= 4; // modulus = remainder
+console.log(total); // 2
