@@ -21,3 +21,15 @@ if (o2 === o)  // true
     console.log(true);
 else
     console.log(false);
+
+
+// Primitive Type Storage
+
+var n = 42; // n: 42
+var s = "forty-two"; // s: forty-two
+var b = true; // b: true
+
+
+var n = 42; // n: 42
+var a = n; // n is now copied to a: 42
+a = 9; // a: 9
