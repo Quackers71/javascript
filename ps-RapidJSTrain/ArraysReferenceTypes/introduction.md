@@ -6,6 +6,7 @@
   - Dates
   - RegExp's
   - Functions
+    - Primitive (via Wrappers)
     - Primitive Type Storage
 - Reference Type Examples
 - Array Fundamentals
