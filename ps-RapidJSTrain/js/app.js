@@ -1,7 +1,6 @@
 
 
 
-var a1 = [1, 2, 3];
-var a2 = a1;
-a1[0] = 99;
-console.log(a2[0]); // 99
+var ratings = [5, 2, 4];
+
+console.log(ratings.join('|')); // 5|2|4
