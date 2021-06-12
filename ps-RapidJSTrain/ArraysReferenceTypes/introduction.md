@@ -12,4 +12,5 @@
 - Array Fundamentals
 - Array Features
 - Date Fundamentals
+  - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
 - Regular Expressions
