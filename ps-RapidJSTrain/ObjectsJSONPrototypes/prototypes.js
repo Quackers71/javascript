@@ -1,21 +1,43 @@
 
 
 
-var project = anyObject;
-project.someFunction();
+var project = {
+    name: 'project Phoenix'
+};
+console.log(project.__proto__ === Object.prototype); // true
 
-// How does JS locate / resolve someFunction()?
 
-// - project.somFunction()
-// - project.prototype.someFunction()
-// - project.prototype.prototype.someFunction()
-// - project.prototype.prototype.prototype.someFunction()
-// - etc...
+var project = {
+    name: 'project Phoenix'
+};
+console.log(project.__proto__ === Object); // false
 
-/* In most browsers, we can access the prototype
-    property by using the symbol __proto__.
-    (Not Safe!) */
 
-/* The prototype property is most easily accessed
-    on the constructor functions.
-    (Covered in the Functions module of this course) */
+var project = {
+    name: 'project Phoenix'
+};
+console.log(typeof project.__proto__); // object
+
+
+var project = {
+    name: 'project Phoenix'
+};
+console.log(project.prototype); // undefined
+
+
+console.log(typeof Object.prototype.toString); // function
+
+
+console.log(typeof Object.prototype); // object
+
+
+var project = {
+    name: 'project Phoenix'
+};
+console.log(project.toString()); // [object Object]
+
+
+var project = {
+    name: 'project Phoenix'
+};
+console.log(project.foo()); // TypeError: project.foo is not a function

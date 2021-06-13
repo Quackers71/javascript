@@ -2,14 +2,6 @@
 
 
 var project = {
-    tasks: [
-        {
-            taskName: 'first'
-        },
-        {
-            taskName: 'second'
-        }
-    ]
+    name: 'project Phoenix'
 };
-
-console.log(project.tasks[1].taskName); // second
+console.log(project.__proto__ === Object.prototype); // true
