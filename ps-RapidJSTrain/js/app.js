@@ -1,7 +1,15 @@
 
 
 
-var blogText = "Sam I Am";
-var pattern = /.m/g;
-var result = blogText.match(pattern);
-console.log(result); // (2) ["am", "Am"]
+var project = {
+    tasks: [
+        {
+            taskName: 'first'
+        },
+        {
+            taskName: 'second'
+        }
+    ]
+};
+
+console.log(project.tasks[1].taskName); // second
