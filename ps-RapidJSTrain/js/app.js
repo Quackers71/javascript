@@ -1,9 +1,8 @@
 
 
 
-'use strict';
-var project = {
-    securityLevel: 2
+var hireEmployee = function myHireEmployeeFn(name) {
+    throw ('Error');
 };
-var secretProject = Object.create(project);
-console.log("securityLevel" in Object.prototype); // false
+var action = hireEmployee;
+action('JJ'); // Uncaught Error - myHireEmployeeFn
