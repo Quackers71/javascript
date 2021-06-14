@@ -1,15 +1,12 @@
 
 
 
-var Employee = function(name) {
-    this.name = name;
-    this.salary = 50000;
+var Address = function(line1) {
+    this.line1 = line1;
 };
-Employee.prototype.giveRaise = function(raise) {
-    this.salary += raise;
+Address.prototype.updateZipCode = function() {
+    console.log(this);
 };
-var e1 = new Employee('JJ');
-var e2 = new Employee('JV');
-e1.giveRaise(100000);
-console.log(e1.salary); // 150000
-console.log(e2.salary); // 50000
+var addr = new Address('123 State St.');
+addr.updateZipCode();
+// Address {line1: "123 State St."}
