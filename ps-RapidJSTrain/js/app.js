@@ -1,9 +1,13 @@
 
 
 
-var project = {
-    securityLevel: 2
-};
-var secretProject = Object.create(project);
-console.log(secretProject.__proto__.__proto__ === Object.prototype); 
-// true
+'use strict';
+var task = { };
+Object.defineProperties(task, {
+    'text': {
+        value: 'New Task'
+    }
+});
+var descriptor = Object.getOwnPropertyDescriptor(task, 'text');
+console.log(descriptor); 
+// Object {value: "New Task", writable: false, enumerable: false, configurable: false}
