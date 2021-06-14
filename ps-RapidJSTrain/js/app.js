@@ -2,6 +2,8 @@
 
 
 var project = {
-    name: 'project Phoenix'
+    securityLevel: 2
 };
-console.log(project.__proto__ === Object.prototype); // true
+var secretProject = Object.create(project);
+console.log(secretProject.__proto__.__proto__ === Object.prototype); 
+// true
