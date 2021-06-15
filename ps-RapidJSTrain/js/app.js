@@ -1,15 +1,9 @@
 
 
 
-var salaryUpdater = function(salary) {
-    var currentSalary = salary;
-    var generator = function() {
-        currentSalary += 10000;
-        return currentSalary;
-    };
-    return generator;
-};
-
-var updateFn = salaryUpdater(50000);
-updateFn();
-console.log(updateFn()); // 70000
++function() {
+    var employeeName = 'Jill';
+    console.log('Executed!');
+}();
+console.log(employeeName); // Executed!
+// Uncaught ReferenceError: employeeName is not defined
