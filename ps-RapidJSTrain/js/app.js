@@ -1,12 +1,14 @@
 
 
 
-var Address = function(line1) {
-    this.line1 = line1;
+var updateZipCode = function(newZip, country) {
+    console.log(newZip + ' ' + country);
 };
-Address.prototype.updateZipCode = function() {
-    console.log(this);
+var zipCode = { 
+    zip: '11787'
 };
-var addr = new Address('123 State St.');
-addr.updateZipCode();
-// Address {line1: "123 State St."}
+updateZipCode.apply(zipCode, '11888', 'us'); 
+// Uncaught TypeError: CreateListFromArrayLike called on non-object
+
+// Mark stated the Error was :
+// Uncaught TypeError: Function.prototype.apply: Arguments list has wrong type
