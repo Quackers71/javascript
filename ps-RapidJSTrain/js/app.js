@@ -1,6 +1,4 @@
 
 
 
-var result = prompt('Your name?');
-console.log(result);
-// null, or whatever was entered in the prompt
+// location.assign('http://127.0.0.1:5501/ps-RapidJSTrain/index.html');
