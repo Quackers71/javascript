@@ -15,6 +15,11 @@
   - Touch Events
     - touchstart, touchmove, touchend & touchcancel
 - The Event Object
+  - Event Object Properties
+    - bubbles, cancelable, currentTarget, defaultPrevented,
+    - detail, eventPhase, 
+    - preventDefault(), stopImmediatePropagation(),
+    - stopPropagation(), target, trusted & type
 - Handling Events
 - Event Listeners
 - Event Bubbling
