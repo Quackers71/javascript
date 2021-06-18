@@ -1,10 +1,13 @@
 
 
 
-var button = document.getElementById('submit1');
-var submitHandler = function formSubmitHandler() {
-    console.log('in formSubmitHandler()');
+var div1 = document.getElementById('div1');
+var div2 = document.getElementById('div2');
+var clickHandler = function divClickHandler(event) {
+    console.log(this.id);
+    event.stopPropagation();
+    event.preventDefault();
 };
-button.addEventListener('click', submitHandler); 
-button.removeEventListener('click', submitHandler); 
-// nothing shows!
+div1.addEventListener('click', clickHandler, true); 
+div2.addEventListener('click', clickHandler, true); 
+// div1
