@@ -1,6 +1,5 @@
 
 
 
-var globalVar = 'foo';
-var code = console.log(globalVar);
-eval(code); // foo
+var value = Math.sqrt(-81);
+console.log(value); // NaN
