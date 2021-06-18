@@ -1,6 +1,8 @@
 
 
 
-var element = document.querySelectorAll('.special');
-console.log(element);
-// NodeList(2) [h3.special, p.special]
+var button = document.getElementById('submit5');
+button.onclick =  function() {
+    console.log('Button Clicked');
+}
+button.onclick = null; // nothing shows!
