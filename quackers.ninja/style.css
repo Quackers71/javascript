@@ -1,0 +1,38 @@
+ 
+*{
+    margin: 10;
+    padding: 10;
+    box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(rgba(62, 20, 20, 0.4), rgba(62, 20, 20, 0.4)), url(back.jpg);
+  background-size: cover;
+  background-position: center;
+  font-family: Lato;
+  font-weight: 300;
+  position: relative;
+  height: 100vh;
+  color: darkblue;
+}
+
+.wrapper {
+  width: 1000px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: darkblue;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+#section1 {
+min-height: 90%;
+text-align: center
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+      background-color: lightblue;
+  }
+}
