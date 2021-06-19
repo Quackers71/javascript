@@ -17,6 +17,7 @@
 - Rapid JavaScript Training
 - Object-oriented Programming in JavaScript - ES6
 - Advanced JavaScript
+- JavaScript Design Patterns
 
 
 ### Using JavaScript on the Web
@@ -44,6 +45,10 @@ https://app.pluralsight.com/library/courses/javascript-fundamentals/table-of-con
 ## Advanced JavaScript 
 
 https://app.pluralsight.com/library/courses/advanced-javascript/table-of-contents
+
+## JavaScript Design Patterns
+
+https://app.pluralsight.com/library/courses/javascript-design-patterns/table-of-contents
 
 
 ## ES6 Tutorial: Learn Modern JavaScript in 1 Hour
