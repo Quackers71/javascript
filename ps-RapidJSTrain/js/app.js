@@ -1,5 +1,5 @@
 
 
 
-var value = Math.sqrt(-81);
-console.log(value); // NaN
+var value = 'Some String';
+console.log(value.substr(5, 6)); // String
