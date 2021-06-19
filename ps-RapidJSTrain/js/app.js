@@ -1,8 +1,11 @@
 
 
 
-var validateValues = function() {
-    arguments[0] = 9;
-    console.log(arguments[0]);
-};
-validateValues(1, true, 'Settings'); // 9
+try {
+    throw new RangeError('Range Error');
+}
+catch(e) {
+    if (e instanceof RangeError)
+    console.log(e.name);
+}
+// Range Error
