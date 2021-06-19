@@ -19,3 +19,9 @@
   - https://jshint.com/about/
 
 - Modular JavaScript
+  - JavaScript Module Optio
+    - AMD Asynchronous Module definition (Frontend Browser)
+    - CommonJS (more common on Server Side)
+    - ES6 EcmaScript 2015
+    - SystemJS
+      - https://github.com/systemjs/systemjs
