@@ -1,11 +1,8 @@
 
 
+'use strict';
+var obj = {};
+with (obj) {
 
-try {
-    throw new RangeError('Range Error');
-}
-catch(e) {
-    if (e instanceof RangeError)
-    console.log(e.name);
-}
-// Range Error
+} 
+// Uncaught SyntaxError: Strict mode code may not include a with statement
