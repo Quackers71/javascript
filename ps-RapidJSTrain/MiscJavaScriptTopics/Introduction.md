@@ -13,4 +13,9 @@
   - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode
 
 - JSLint & JSHint
+  - https://www.jslint.com/
+  - https://www.jslint.com/help.html
+  - https://jshint.com/
+  - https://jshint.com/about/
+
 - Modular JavaScript
