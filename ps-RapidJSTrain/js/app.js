@@ -1,5 +1,8 @@
 
 
 
-var value = 'Some String';
-console.log(value.substr(5, 6)); // String
+var validateValues = function() {
+    arguments[0] = 9;
+    console.log(arguments[0]);
+};
+validateValues(1, true, 'Settings'); // 9
