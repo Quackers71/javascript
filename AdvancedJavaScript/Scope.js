@@ -1,16 +1,16 @@
 
 
 
-//  LHS   RHS
+//  LHS    RHS
 var foo = "bar";
 
 function bar() {
-//      LHS   RHS
+//      LHS    RHS
     var foo = "baz";
 };
 
 function baz(foo) {
-//  LHS   RHS
+//  LHS    RHS
     foo = "bam";
     bam = "yay";
 };
