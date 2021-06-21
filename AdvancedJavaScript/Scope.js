@@ -2,10 +2,17 @@
 
 
 //  LHS    RHS
+//target  source
 var foo = "bar";
+
+//     LHS        |            |       RHS
+// Left Hand Side | Assignment | Right Hand Side
+//   target       |            |      source
+//  variable foo  |      =     |   String "bar"
 
 function bar() {
 //      LHS    RHS
+//    target  source
     var foo = "baz";
 };
 

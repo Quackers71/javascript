@@ -1,16 +1,18 @@
 
 
 
-//  LHS   RHS
+//  LHS    RHS
+//target  source
 var foo = "bar";
 
 function bar() {
-//      LHS   RHS
+//      LHS    RHS
+//    target  source
     var foo = "baz";
 };
 
 function baz(foo) {
-//  LHS   RHS
+//  LHS    RHS
     foo = "bam";
     bam = "yay";
 };
