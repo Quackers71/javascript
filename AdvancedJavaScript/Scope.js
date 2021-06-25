@@ -31,11 +31,10 @@ foo; // "bar"
 bam; // "yay"
 baz(); // Error!
 
-console.log("This is " + bar() + " but is a type of :" + typeof(bar)); // undefined
+console.log("This is bar() it is " + bar() + " but is a type of :" + typeof(bar)); // undefined
 console.log('The variable FOO is a ' + typeof(foo) + " which is equal to " + '"%s"', foo);
 console.log('The variable BAM is a ' + typeof(bam) + " which is equal to " + '"%s"', bam);
-console.log("This is " + baz() + " but is a type of :" + typeof(baz)); // undefined
-
+console.log("This is baz() it is " + baz() + " but is a type of :" + typeof(baz)); // undefined
 
 const style = 'font-weight: bold'
 console.log('\n%cbam', style);
