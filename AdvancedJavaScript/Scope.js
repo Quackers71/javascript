@@ -15,7 +15,7 @@ function bar() {
         foo = "bam";
         bam = "yay";
     }
-    baz(42);
+    baz();
 };
 
 console.log(foo);  // bar
@@ -46,7 +46,7 @@ console.log("This is baz() it is " + baz() + " but is a type of :" + typeof(baz)
 // Uncaught ReferenceError: baz is not defined
 
 /* In Non-strict mode, reference errors result in unfulfilled
-or undeclared RHS references.  Automatic Globals esult in unfulfilled
+or undeclared RHS references.  Automatic Globals result in unfulfilled
 or undeclared LHS references.
 In strict mode, they both result in reference errors...
 */
