@@ -1,4 +1,4 @@
-
+// Don't use with Keyword either!???
 
 
 var obj = {
@@ -16,5 +16,5 @@ with (obj) {
     d = 3; // ??
 };
 
-console.log(obj.d); // undefined
-console.log(d); // 3 -- oops!
+obj.d; // undefined
+d; // 3 -- oops!
