@@ -1,21 +1,15 @@
 
 
 
-var foo = "foo";
+function foo(bar) {
+    if (bar) {
+        let baz = bar;
+        if (baz) {
+            let bam = baz;
+        }
+        console.log(bam); // Uncaught ReferenceError: bam is not defined
+    }
+    console.log(baz); // ReferenceError
+};
 
-(function(bar) {
-    var foo = bar;
-    console.log(foo);
-})(foo); // })(foo); - Immediately executing the value of the expression stack.
-
-console.log(foo);
-
-
-var foo = "foo";
-
-(function(bar) {
-    var foo = bar;
-    console.log(foo);
-}(foo)); // }(foo)); - an alternative Stylistic choice
-
-console.log(foo);
+foo("bar");
