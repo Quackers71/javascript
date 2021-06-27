@@ -2,14 +2,14 @@
 
 
 function foo(bar) {
-    if (bar) {
-        let baz = bar;
-        if (baz) {
-            let bam = baz;
-        }
-        console.log(bam); // Uncaught ReferenceError: bam is not defined
+    /*let*/ { let baz = bar;
+        console.log(baz); // "bar"
     }
     console.log(baz); // ReferenceError
 };
 
 foo("bar");
+// "bar"
+// Uncaught ReferenceError: baz is not defined
+
+// https://gist.github.com/getify/5285514

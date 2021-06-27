@@ -1,5 +1,22 @@
 
 
+
+function foo(bar) {
+    /*let*/ { let baz = bar;
+        console.log(baz); // "bar"
+    }
+    console.log(baz); // ReferenceError
+};
+
+foo("bar");
+// "bar"
+// Uncaught ReferenceError: baz is not defined
+
+// https://gist.github.com/getify/5285514
+
+
+
+
 // So the 'let' keyword will hijack implicitly the scope
 // of whatever block it appears in.
 function foo(bar) {
