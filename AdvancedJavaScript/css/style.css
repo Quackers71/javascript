@@ -1,0 +1,48 @@
+h1 {
+    color: green;
+    text-align: center;
+}
+h2 {
+    color: green;
+    text-align: center;
+}
+body {
+    background-color: black;
+}
+
+.parent {
+    text-align: center;
+    color: black;
+    background-color: red;
+    padding-inline: 50px;
+    padding-bottom: 15px;
+    border: 20px solid purple;
+    margin: 20px;
+}
+
+.child-one {
+    text-align: center;
+    color: purple;
+    background-color: yellow;
+}
+
+.child-two {
+    text-align: center;
+    color: red;
+    background-color: green;
+}
+
+.child-three {
+    text-align: center;
+    color: white;
+    background-color: blue;
+}
+
+.parent2 {
+    text-align: center;
+    color: black;
+    background-color: hotpink;
+    border: 30px solid pink;
+    padding: 10px;
+    margin: 100px;
+}
