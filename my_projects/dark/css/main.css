@@ -1,8 +1,9 @@
 html {
     background: url(../images/cakesyo.jpg) no-repeat center center fixed;
-    background-size: 35%;
+    background-size: 100%;
     height: 100%;
     overflow: hidden;
+    background-color: lightgrey;
     
     height: 100%;
     font-family: 'Montserrat';
@@ -18,7 +19,7 @@ html {
 }
 
 body {
-    --accent-color: blue;
+    --accent-color: orangered;
     --background-color: white;
     --text-color: black;
     --button-text-color: var(--background-color);
@@ -29,7 +30,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 30vh;
+    height: 25vh;
     margin: 0;
 
     transition: var(--transition-delay);
@@ -61,7 +62,7 @@ body.dark {
 
 .theme-toggle-button:hover,
 .theme-toggle-button:focus {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .container {
@@ -76,4 +77,10 @@ body.dark {
     grid-template-areas:
         "title switch"
         "content content";
+    transition: var(--transition-delay);
+}
+
+.container:hover,
+.container:focus {
+    transform: scale(1.02);
 }
