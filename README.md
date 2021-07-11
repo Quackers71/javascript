@@ -56,11 +56,13 @@ https://app.pluralsight.com/library/courses/javascript-design-patterns/table-of-
 https://youtu.be/NCwa_xi0Uuc
 
 
-## Link to Images and Icons
+## Link to Images, Fonts and Icons
 
 https://unsplash.com/
 https://unsplash.com/t/food-drink
 https://materialdesignicons.com/
+https://cdnjs.com/
+
 
 ## Alternatives to Adobe XD
 
