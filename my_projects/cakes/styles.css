@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: palevioletred;
+    background-color:rgb(73, 81, 90);
 }
 
 .wrapper {
@@ -14,6 +14,7 @@ body {
 }
 
 body h1 {
+    color: sandybrown;
     position: relative;
     margin-top: 25px;
     margin-left:45%;
