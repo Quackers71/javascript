@@ -30,7 +30,14 @@ body h1 {
     color: sandybrown;
     position: relative;
     margin-top: 25px;
-    margin-left:45%;
+    margin-left:40%;
+    font-size: 64px;
+}
+
+.positioned {
+    position: -webkit-sticky;
+    top: 10px;
+    left: 30px;
 }
 
 .cakes1 {
@@ -88,7 +95,7 @@ body h1 {
 
 .cakes2:hover {
     transition: var(--transition-delay);
-    transform: rotate(45deg) translate(54px, 75px) scale(3);
+    transform: rotate(60deg) translate(54px, 75px) scale(3);
     z-index: 2;
 }
 
