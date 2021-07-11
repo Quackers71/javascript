@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    --transition-delay: 1s;
+}
+
+body {
+    background-color: palevioletred;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+body h1 {
+    position: relative;
+    margin-top: 25px;
+    margin-left:45%;
+}
+
+.cakes1 {
+    position: sticky;
+    width: 200px;
+    height: 350px;
+    background-image: url(images/cakes1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 2em;
+    margin-left: 20px;
+    margin-top: 10px;
+
+    transition: var(--transition-delay);
+    transform: scale(1);
+}
+
+.cakes1:hover {
+    transition: var(--transition-delay);
+    transform: scale(1.05);
+}
+
+.cakes2 {
+    position: relative;
+    width: 200px;
+    height: 350px;
+    background-image: url(images/cakes2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 2em;
+    margin-left: 20px;
+    margin-top: 10px;
+
+    transition: var(--transition-delay);
+    transform: scale(1);
+}
+
+.cakes2:hover {
+    transition: var(--transition-delay);
+    transform: scale(1.05);
+}
+
+.cakes3 {
+    position: relative;
+    width: 200px;
+    height: 350px;
+    background-image: url(images/cakes3.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 2em;
+    margin-left: 20px;
+    margin-top: 10px;
+
+    transition: var(--transition-delay);
+    transform: scale(1);
+}
+
+.cakes3:hover {
+    transition: var(--transition-delay);
+    transform: scale(1.05);
+}
