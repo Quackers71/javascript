@@ -54,3 +54,16 @@ https://app.pluralsight.com/library/courses/javascript-design-patterns/table-of-
 ## ES6 Tutorial: Learn Modern JavaScript in 1 Hour
 
 https://youtu.be/NCwa_xi0Uuc
+
+
+## Link to Images, Fonts and Icons
+
+https://unsplash.com/
+https://unsplash.com/t/food-drink
+https://materialdesignicons.com/
+https://cdnjs.com/
+
+
+## Alternatives to Adobe XD
+
+https://mockitt.wondershare.com/adobe-xd/adobe-xd-alternative-for-linux.html

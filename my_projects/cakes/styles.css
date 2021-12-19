@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    --transition-delay: 1.5s;
+}
+
+body {
+    background-color: #333;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.container > div {
+    height: 450px;
+    background-size: cover;
+}
+
+body h1 {
+    color: sandybrown;
+    position: relative;
+    margin-top: 25px;
+    margin-left:40%;
+    font-size: 64px;
+}
+
+.positioned {
+    position: -webkit-sticky;
+    top: 10px;
+    left: 30px;
+}
+
+.cakes1 {
+    position: relative;
+    width: 200px;
+    height: 350px;
+    background-image: url(images/cakes1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 2em;
+    margin-left: 20px;
+    margin-top: 10px;
+
+    transition: var(--transition-delay);
+    transform: scale(1);
+}
+
+.cakes1:hover {
+    transition: var(--transition-delay);
+    transform: scale(4) translate(120px, 5%);
+    z-index: 1;
+
+  /*animation-duration: 3s;
+    animation-name: slidein;
+    animation-direction: alternate;*/
+}
+
+/* @keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;      
+    }
+} */
+
+.cakes2 {
+    position: relative;
+    width: 200px;
+    height: 350px;
+    background-image: url(images/cakes2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 2em;
+    margin-left: 20px;
+    margin-top: 10px;
+
+    transition: var(--transition-delay);
+    transform: scale(1);
+}
+
+.cakes2:hover {
+    transition: var(--transition-delay);
+    transform: rotate(60deg) translate(54px, 75px) scale(3);
+    z-index: 2;
+}
+
+.cakes3 {
+    position: relative;
+    width: 200px;
+    height: 350px;
+    background-image: url(images/cakes3.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 2em;
+    margin-left: 20px;
+    margin-top: 10px;
+
+    transition: var(--transition-delay);
+    transform: scale(1);
+}
+
+.cakes3:hover {
+    transition: var(--transition-delay);
+    transform: rotate(-25deg) scale(5);
+    z-index: 3;
+}
+
+.cakes4 {
+    position: relative;
+    width: 200px;
+    height: 350px;
+    background-image: url(images/cakes4.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 2em;
+    margin-left: 20px;
+    margin-top: 10px;
+
+    transition: var(--transition-delay);
+    transform: all .2s ease-in-out;
+}
+
+.cakes4:hover {
+    transition: var(--transition-delay);
+    transform: scale(1.1);
+}
+
+.cakes5 {
+    position: relative;
+    width: 200px;
+    height: 350px;
+    background-image: url(images/cakes5.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 2em;
+    margin-left: 20px;
+    margin-top: 10px;
+
+    transition: var(--transition-delay);
+    transform: scale(1);
+}
+
+.cakes5:hover {
+    transition: var(--transition-delay);
+    transform: skew(15deg) scale(1.2);
+}
+
+.cakes6 {
+    position: relative;
+    width: 200px;
+    height: 350px;
+    background-image: url(images/cakes6.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 2em;
+    margin-left: 20px;
+    margin-top: 10px;
+
+    transition: var(--transition-delay);
+    transform: scale(1);
+}
+
+.cakes6:hover {
+    transition: var(--transition-delay);
+    transform: rotate(190deg);
+}
