@@ -5,18 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css"/>
-    <title>Q's Testsite</title>
+    <title>Q's Test Site</title>
     <script>
         var scoops = 5;
         while (scoops > 0) {
-            document.write("Another scoop!<br>");
+            document.write("Another scoop! "+ scoops + "<br>");
             scoops = scoops - 1;
+            if (scoops >= 4) {
+                alert("There are " + scoops + " left - Eat faster, the ice cream is going to melt!");
+            } else if (scoops == 1) {
+                alert(scoops + " Scoop left, Ice cream is running low!");
+              }
         }
         document.write("Life without ice cream isn't the same");
+
+
     </script>
 </head>
 <body>
-    <h1>Quackers Testsite2</h1>
+    <h1>Quackers Test Site 2</h1>
     <p>Don't worry, more information will follow!</p>
 </body>
 </html>
