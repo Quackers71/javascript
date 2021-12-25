@@ -7,3 +7,6 @@ while (i < 2) {
 var name = "Joe";
 document.write("Happy Birthday dear " + name + ",<br>");
 document.write("Happy Birthday to you.<br>");
+
+var message = "Yo Yo" + " " +"Sicko!";
+console.log(message);
