@@ -12,10 +12,16 @@
             document.write("Another scoop! "+ scoops + "<br>");
             scoops = scoops - 1;
             if (scoops >= 4) {
-                alert("There are " + scoops + " left - Eat faster, the ice cream is going to melt!");
+                alert("There are " + scoops + " Scoops left - Eat faster, the ice cream is going to melt!");
+            } else if (scoops == 3) {
+                alert(scoops + " Scoops left, get it while you can!");
+            } else if (scoops == 2) {
+                alert(scoops + " Scoops left, hurry now!");
             } else if (scoops == 1) {
-                alert(scoops + " Scoop left, Ice cream is running low!");
-              }
+                alert(scoops + " Scoops left, Ice cream is running low!");
+            } else {
+                alert(scoops + " Scoops left, Nooooooo!");
+            }
         }
         document.write("Life without ice cream isn't the same");
 
