@@ -50,9 +50,4 @@ undefined
 console.log(circleArea);
 1256.6370614359173
 
-// you're on page 50 / 704 on 19th Dec 2021 :-o
-// you're on page 57 / 704 on 20th Dec 2021
-// you're on page 62 / 704 on 21st Dec 2021
-// you're on page 63 / 704 on 22nd Dec 2021
-// you're on page 69 / 704 on 25th Dec 2021
-// you're on page 71 / 704 on 27th Dec 2021
+// you're on page 77 / 704 on 27th Dec 2021
