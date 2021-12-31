@@ -1,19 +1,13 @@
-function bark(name, weight) {
-    if (weight > 20) {
-        console.log(name + " says WOOF WOOF!");
+function whatShallIWear(temp) {
+    if (temp < 60) {
+        console.log("The temperature is " + temp + ", so wear a jacket");
+    } else if (temp < 70) {
+        console.log("The temperature is " + temp + ", so wear a sweater");
     } else {
-        console.log(name + " says woof woof");
+        console.log("The temperature is " + temp + ", so wear a t-shirt");
     }
 }
 
-bark("Rover", 23);
-bark("Spot", 13);
-bark("Spike", 53);
-bark("Lady", 17);
-
-bark("Juno", 20);
-bark("Scottie", -1);
-bark("Dino", 0, 0);
-bark("Fido", "20");
-bark("Lady", 10);
-bark("Bruno", 21);
+whatShallIWear(50);
+whatShallIWear(80);
+whatShallIWear(60);
