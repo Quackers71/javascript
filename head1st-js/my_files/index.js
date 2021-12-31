@@ -1,28 +1,19 @@
-var dogName = "Rover";
-var dogWeight = 23;
-if (dogWeight > 20) {
-    console.log(dogName + " says WOOF WOOF!");
-} else {
-    console.log(dogName + " says woof woof");
+function bark(name, weight) {
+    if (weight > 20) {
+        console.log(name + " says WOOF WOOF!");
+    } else {
+        console.log(name + " says woof woof");
+    }
 }
-var dogName = "Spot";
-var dogWeight = 13;
-if (dogWeight > 20) {
-    console.log(dogName + " says WOOF WOOF!");
-} else {
-    console.log(dogName + " says woof woof");
-}
-var dogName = "Spike";
-var dogWeight = 53;
-if (dogWeight > 20) {
-    console.log(dogName + " says WOOF WOOF!");
-} else {
-    console.log(dogName + " says woof woof");
-}
-var dogName = "Lady";
-var dogWeight = 17;
-if (dogWeight > 20) {
-    console.log(dogName + " says WOOF WOOF!");
-} else {
-    console.log(dogName + " says woof woof");
-}
+
+bark("Rover", 23);
+bark("Spot", 13);
+bark("Spike", 53);
+bark("Lady", 17);
+
+bark("Juno", 20);
+bark("Scottie", -1);
+bark("Dino", 0, 0);
+bark("Fido", "20");
+bark("Lady", 10);
+bark("Bruno", 21);
