@@ -8,4 +8,5 @@
 
 - functions / parameters & arguments from pages 89/90
 - When you call a function you pass it arguments and those arguments then get matched up with the parameters in the function definition.
-- You can also pass variables as arguments, and that's often the more common case.  See my_files/archive/index_copy6.js for examples.
+- You can also pass variables as arguments, and that's often the more common case.  See my_files/archive/index_copy6.js for examples.<br/><br/>
+![](./AnatomyofaFunction.png)
