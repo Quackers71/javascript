@@ -4,40 +4,13 @@ function doIt(param) {
 
 var test = 1;
 doIt(test);
-console.log(test);
-// alert(test);
+console.log("test = " + test);
 
-function dogYears(dogName, age) {
-    var years = age * 7;
-    console.log(dogName + " is " + years + " years old");
+var age = 7;
+function addOne(x) {
+    x = x + 1;
+    console.log("The parameter x = " + x);
 }
 
-var myDog = "Fido";
-dogYears(myDog, 4);
-
-function makeTea(cups, tea) {
-    console.log("Brewing " + cups + " cups of " + tea);
-}
-
-var guests = 3;
-makeTea(guests, "Earl Grey");
-
-function secret() {
-    console.log("The secret of life is 42...");
-}
-
-secret();
-
-function speak(kind) {
-    var defaultSound = "";
-    if (kind == "dog") {
-        alert("Woof");
-    } else if (kind == "cat") {
-        alert("Meow");
-    } else {
-        alert(defaultSound);
-    }
-}
-
-var pet = prompt("Enter a type of pet: ");
-speak(pet);
+addOne(age);
+console.log("The variable age = " + age);
