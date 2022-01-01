@@ -1,16 +1,13 @@
-function doIt(param) {
-    param = 2;
+function makeTea(cups, tea) {
+    console.log("Brewing " + cups + " cups of " + tea);
 }
 
-var test = 1;
-doIt(test);
-console.log("test = " + test);
+makeTea(3); // Brewing 3 cups of undefined
 
-var age = 7;
-function addOne(x) {
-    x = x + 1;
-    console.log("The parameter x = " + x);
+makeTea(3, "Earl Grey", "Hey Ma!", 42);
+
+function barkAtTheMoon() {
+    console.log("Woooooooooooooooooo!");
 }
 
-addOne(age);
-console.log("The variable age = " + age);
+barkAtTheMoon();
