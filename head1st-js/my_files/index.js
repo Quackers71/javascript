@@ -1,20 +1,36 @@
-function calculateArea(r) {
-    var area;
+var avatar = "generic";
+var skill = 1.0;
+var pointsPerLevel = 1000;
+var userPoints = 2008;
 
-    if (r <= 0) {
-        return 0;
-    } else {
-        area = Math.PI * r * r;
-        console.log("This is inside the function");
-        console.log("The value of r is : " + r);
-        console.log("area = Math.PI * r * r is : " + area);
-        return area;
-        
+function getAvatar(points) {
+    var level = points / pointsPerLevel;
+    if (level == 0) {
+        return "Teddy bear";
+    } else if (level == 1) {
+        return "Cat";
+    } else if (level >= 2) {
+        return "Gorilla";
     }
 }
 
-var radius = 5.2;
-var theArea = calculateArea(radius);
-console.log("\nThis is the var x = function(radius) invoked");
-console.log("The radius is : " + radius);
-console.log("The area is : " + parseFloat(theArea).toFixed(2));
+function updatePoints(bonus, newPoints) {
+    var i = 0;
+    console.log("Bonus Arg : " + bonus);
+    console.log("New Points Arg : " + newPoints);
+    while (i < bonus) {
+        console.log("\nloop number : " + (i+1));
+        newPoints = newPoints + skill * bonus;
+        console.log("newPoints : " + newPoints);
+        console.log("skill : " + skill);
+        console.log("bonus : " + bonus);
+        i = i + 1;
+    }
+    return newPoints + userPoints;
+}
+
+console.log("Original Points : " + userPoints);
+userPoints = updatePoints(2, 100);
+console.log("\nUser Points : " + userPoints);
+avatar = getAvatar(2112);
+console.log("Avatar : " + avatar);
