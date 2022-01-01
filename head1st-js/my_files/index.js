@@ -1,23 +1,43 @@
-function saveMyProfile(name, birthday, GPA, newuser) {
-    if (birthday >= 1990) {
-        console.log("Name: "+name, "\nBirth Year: "+birthday, "\nGPA: "+GPA, "\nIs a new user: "+newuser);
+function doIt(param) {
+    param = 2;
+}
+
+var test = 1;
+doIt(test);
+console.log(test);
+// alert(test);
+
+function dogYears(dogName, age) {
+    var years = age * 7;
+    console.log(dogName + " is " + years + " years old");
+}
+
+var myDog = "Fido";
+dogYears(myDog, 4);
+
+function makeTea(cups, tea) {
+    console.log("Brewing " + cups + " cups of " + tea);
+}
+
+var guests = 3;
+makeTea(guests, "Earl Grey");
+
+function secret() {
+    console.log("The secret of life is 42...");
+}
+
+secret();
+
+function speak(kind) {
+    var defaultSound = "";
+    if (kind == "dog") {
+        alert("Woof");
+    } else if (kind == "cat") {
+        alert("Meow");
     } else {
-        console.log("Student not eligible!");
+        alert(defaultSound);
     }
 }
 
-saveMyProfile("Krissy", 2000, 3.81, false);
-
-var student = "Ella";
-var year = 2005;
-var GPA = 381/100;
-var status = "newuser";
-var isNewUser = (status == "newuser");
-
-saveMyProfile(student, year, GPA, isNewUser);
-
-var student = "Stacey";
-var status = "existinguser";
-var year = 1991;
-
-saveMyProfile(student, year, 381/100, status == "newuser");
+var pet = prompt("Enter a type of pet: ");
+speak(pet);
