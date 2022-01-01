@@ -1,13 +1,17 @@
-function makeTea(cups, tea) {
-    console.log("Brewing " + cups + " cups of " + tea);
+function bake(degrees) {
+    var message;
+
+    if (degrees > 500) {
+        message = "I'm not a nuclear reactor!";
+    } else if (degrees < 100) {
+        message = "I'm not a refrigerator!";
+    } else {
+        message = "That's a very comfortable temperature for me.";
+        // setMode("bake");
+        // setTemp(degrees);
+    }
+    return message;
 }
 
-makeTea(3); // Brewing 3 cups of undefined
-
-makeTea(3, "Earl Grey", "Hey Ma!", 42);
-
-function barkAtTheMoon() {
-    console.log("Woooooooooooooooooo!");
-}
-
-barkAtTheMoon();
+var status = bake(350);
+console.log(status);
