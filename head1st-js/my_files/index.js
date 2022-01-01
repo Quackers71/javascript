@@ -1,17 +1,20 @@
-function bake(degrees) {
-    var message;
+function calculateArea(r) {
+    var area;
 
-    if (degrees > 500) {
-        message = "I'm not a nuclear reactor!";
-    } else if (degrees < 100) {
-        message = "I'm not a refrigerator!";
+    if (r <= 0) {
+        return 0;
     } else {
-        message = "That's a very comfortable temperature for me.";
-        // setMode("bake");
-        // setTemp(degrees);
+        area = Math.PI * r * r;
+        console.log("This is inside the function");
+        console.log("The value of r is : " + r);
+        console.log("area = Math.PI * r * r is : " + area);
+        return area;
+        
     }
-    return message;
 }
 
-var status = bake(350);
-console.log(status);
+var radius = 5.2;
+var theArea = calculateArea(radius);
+console.log("\nThis is the var x = function(radius) invoked");
+console.log("The radius is : " + radius);
+console.log("The area is : " + parseFloat(theArea).toFixed(2));
