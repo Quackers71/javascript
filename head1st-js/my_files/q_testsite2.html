@@ -1,0 +1,33 @@
+|<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css"/>
+    <title>Q's Test Site</title>
+    <script>
+        var scoops = 5;
+        while (scoops > 0) {
+            document.write("Another scoop! "+ scoops + "<br>");
+            scoops = scoops - 1;
+            if (scoops >= 4) {
+                alert("There are " + scoops + " Scoops left - Eat faster, the ice cream is going to melt!");
+            } else if (scoops == 3) {
+                alert(scoops + " Scoops left, get it while you can!");
+            } else if (scoops == 2) {
+                alert(scoops + " Scoops left, hurry now!");
+            } else if (scoops == 1) {
+                alert(scoops + " Scoops left, Ice cream is running low!");
+            } else {
+                alert(scoops + " Scoops left, Nooooooo!");
+            }
+        }
+        document.write("Life without ice cream isn't the same");
+    </script>
+</head>
+<body>
+    <h1>Quackers Test Site 2</h1>
+    <p>Don't worry, more information will follow!</p>
+</body>
+</html>

@@ -1,0 +1,53 @@
+var price = 28.99;
+undefined
+console.log(price);
+28.99
+undefined
+var discount = 10;
+undefined
+var total = price - (price * (discount / 100));
+undefined
+console.log(total);
+26.090999999999998
+undefined
+if (total > 25) {
+    console.log("freeShipping()");
+}
+freeShipping()
+undefined
+
+var count = 10;
+undefined
+while (count > 0) {
+    console.log(count);
+    count = count - 1;
+}
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+0
+
+var dog = {name: "Rover", weight: 35};
+undefined
+if (dog.weight > 30) {
+    alert("WOOF WOOF");
+} else {
+    alert("woof woof");
+}
+undefined
+
+var circleRadius = 20;
+undefined
+var circleArea = Math.PI * (circleRadius * circleRadius);
+undefined
+console.log(circleArea);
+1256.6370614359173
+
+// you're on page 77 / 704 on 27th Dec 2021

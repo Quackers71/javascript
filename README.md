@@ -2,6 +2,12 @@
 
 ## Learning JavaScript
 
+### Head First JavaScript Programming: A Brain-Friendly Guide
+
+- Paperback - 10 April 2014
+- Recommended by AndySterkowitz - https://www.youtube.com/channel/UCZ9qFEC82qM6Pk-54Q4TVWA
+- Started reading on Saturday 18th Dec 2021
+
 ### Wes Bos YT JS Playlist
 
 - https://www.youtube.com/playlist?list=PLu8EoSxDXHP5H-e74dRVbl2Tj76RagB74
