@@ -1,36 +1,15 @@
-var avatar = "generic";
-var skill = 1.0;
-var pointsPerLevel = 1000;
-var userPoints = 2008;
-
-function getAvatar(points) {
-    var level = points / pointsPerLevel;
-    if (level == 0) {
-        return "Teddy bear";
-    } else if (level == 1) {
-        return "Cat";
-    } else if (level >= 2) {
-        return "Gorilla";
+var points = 0;
+function playTurn(player, location) {
+    points = 0; // < No declaration
+    if (location == 1) {
+        points = points + 100;
     }
+    return points;
 }
 
-function updatePoints(bonus, newPoints) {
-    var i = 0;
-    console.log("Bonus Arg : " + bonus);
-    console.log("New Points Arg : " + newPoints);
-    while (i < bonus) {
-        console.log("\nloop number : " + (i+1));
-        newPoints = newPoints + skill * bonus;
-        console.log("newPoints : " + newPoints);
-        console.log("skill : " + skill);
-        console.log("bonus : " + bonus);
-        i = i + 1;
-    }
-    return newPoints + userPoints;
-}
+var total = playTurn("Jai", 1);
+console.log("points : " + points);
+console.log("total  : " + total);
 
-console.log("Original Points : " + userPoints);
-userPoints = updatePoints(2, 100);
-console.log("\nUser Points : " + userPoints);
-avatar = getAvatar(2112);
-console.log("Avatar : " + avatar);
+// By NOT declaring 'points' within the function, this makes it global.
+// If you use the same name as in this example you might overwrite a value.
