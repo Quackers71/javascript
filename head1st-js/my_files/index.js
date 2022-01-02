@@ -1,15 +1,16 @@
-var points = 0;
-function playTurn(player, location) {
-    points = 0; // < No declaration
-    if (location == 1) {
-        points = points + 100;
+var beanCounter = 10;
+
+function getNumberOfItems(ordertype) {
+    var beanCounter = 5;
+    console.log("local variable : " + beanCounter);
+    if (ordertype == "order") {
+        console.log("You have an Order!")
+    } else {
+        console.log("Argument passed : " + ordertype)
     }
-    return points;
+    return beanCounter;
 }
 
-var total = playTurn("Jai", 1);
-console.log("points : " + points);
-console.log("total  : " + total);
-
-// By NOT declaring 'points' within the function, this makes it global.
-// If you use the same name as in this example you might overwrite a value.
+console.log("global variable : " + beanCounter);
+var total = getNumberOfItems(20);
+console.log("variable parameter call : " + total);
