@@ -18,6 +18,7 @@ console.log(wholeFlavoursArray);
 var numberOfFlavours = flavours.length;
 numOfFlavs(numberOfFlavours);
 lastItem(wholeFlavoursArray);
+secondTolastItem(wholeFlavoursArray);
 
 flavours[3] = "vanilla chocolate chip";
 flavours[5] = "mint chocolate";
@@ -28,6 +29,8 @@ numberOfFlavours = flavours.length;
 numOfFlavs(numberOfFlavours);
 lastItem(wholeFlavoursArray);
 
+secondTolastItem(wholeFlavoursArray);
+
 function numOfFlavs(num) {
     console.log("There are " + numberOfFlavours + " Flavours");
 }
@@ -37,6 +40,8 @@ function lastItem(last) {
     console.log("The last flavour is : " + recent);
 }
 
-var last = flavours.length - 1;
-var recent = flavours[last];
-console.log(recent);
+function secondTolastItem(last) {
+    var last = flavours.length - 2;
+    var recent = flavours[last];
+    console.log("The 2nd to last flavour is : " + recent);
+}
