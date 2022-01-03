@@ -11,6 +11,7 @@ bark("Spot", 13);
 bark("Spike", 53);
 bark("Lady", 17);
 
+console.log("\n");
 bark("Juno", 20);
 bark("Scottie", -1);
 bark("Dino", 0, 0);
