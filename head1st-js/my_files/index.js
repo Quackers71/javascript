@@ -33,16 +33,16 @@ function display(output) {
     clunkCounter = clunkCounter + 1;
 }
 
-var n = 4;
+var testNum = 4;
 var clunkCounter = 0;
-thingamajig(n);
-console.log("thingamajig(" + n + ") result = " + clunkCounter);
+thingamajig(testNum);
+console.log("thingamajig(testNum) = " + testNum + ", so the result = " + clunkCounter + " loops");
 
-/* var n = 0;
-while (n <= 5){
+/* var testNum = 0;
+while (testNum <= 5){
     var clunkCounter = 0;
-    thingamajig(n);
-    console.log("thingamajig(" + n + ") result = " + clunkCounter);
+    thingamajig(testNum);
+    console.log("thingamajig(" + testNum + ") result = " + clunkCounter);
     console.log("\n");
     n = n + 1;
 } */
