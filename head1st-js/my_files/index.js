@@ -1,17 +1,48 @@
-
-var radius = 5;
-
-console.log("circleArea() function called before declaration.");
-console.log("i.e. JavaScript doesn't care!");
-
-var area = circleArea(radius);
-console.log("\nvar area = circleArea(radius)");
-console.log("returned area : " + parseFloat(area).toFixed(2));
-
-function circleArea(r) {
-    console.log("\nlocal variable declared within the circleArea() function");
-    console.log("taken from 'var a = Math.PI * r * r;'");
-    var a = Math.PI * r * r;
-    console.log("a : " + a + "\n");
-    return a;
+function clunk(times) {
+    var num = times;
+    console.log("clunk(" + times + ")");
+    while (num > 0) {
+        display("clunk(" + num + ")");
+        num = num -1;
+    }
 }
+
+function thingamajig(size) {
+    var facky = 1;
+    console.log("inside function thingamajig(size)    : " + size);
+    clunkCounter = 0; // global shadow variable
+    if (size == 0) {
+        display("clank");
+    } else if (size == 1) {
+        display("thunk");
+    } else {
+        while (size > 1) {
+            console.log("facky = " + facky);
+            facky = facky * size;
+            console.log("facky = facky * size(" + size + ") | now equals : " + facky);
+            size = size - 1;
+            console.log("size = size -1 | size now equals     : " + size);
+        }
+        console.log("while loop finished");
+        clunk(facky);
+    }
+}
+
+function display(output) {
+    console.log(output);
+    clunkCounter = clunkCounter + 1;
+}
+
+var n = 4;
+var clunkCounter = 0;
+thingamajig(n);
+console.log("thingamajig(" + n + ") result = " + clunkCounter);
+
+/* var n = 0;
+while (n <= 5){
+    var clunkCounter = 0;
+    thingamajig(n);
+    console.log("thingamajig(" + n + ") result = " + clunkCounter);
+    console.log("\n");
+    n = n + 1;
+} */
