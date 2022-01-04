@@ -1,47 +1,13 @@
-var scores = [60, 50, 60, 58, 54, 54, 58, 50, 52, 54];
+var words1 = ["24/7", "multi-tier", "30,000 foot", "B-to-B", "win-win"];
+var words2 = ["empowered", "value-added", "oriented", "focused", "aligned"];
+var words3 = ["process", "solution", "tipping-point", "strategy", "vision"];
 
+var rand1 = Math.floor(Math.random() * words1.length);
+var rand2 = Math.floor(Math.random() * words2.length);
+var rand3 = Math.floor(Math.random() * words3.length);
 
-var solution2 = scores[2];
-console.log("Solution 2 produced " + solution2 + " bubbles.");
+var phrase = words1[rand1] + "    " + words2[rand2] + "   " + words3[rand3];
 
-var wholeScoresArray = scores;
-console.log(wholeScoresArray);
+console.log("    " + rand1 + "          " + rand2 + "         " + rand3);
 
-var flavours = ["vanilla", "butterscotch", "lavender", "chocolate", "cookie dough"];
-
-
-var flavourOfTheDay = flavours[1];
-console.log("Flavour of the day is : " + flavourOfTheDay);
-
-var wholeFlavoursArray = flavours;
-console.log(wholeFlavoursArray);
-var numberOfFlavours = flavours.length;
-numOfFlavs(numberOfFlavours);
-lastItem(wholeFlavoursArray);
-secondTolastItem(wholeFlavoursArray);
-
-flavours[3] = "vanilla chocolate chip";
-flavours[5] = "mint chocolate";
-flavours[6] = "strawberry peach";
-flavours[7] = "raspberry";
-console.log(wholeFlavoursArray);
-numberOfFlavours = flavours.length;
-numOfFlavs(numberOfFlavours);
-lastItem(wholeFlavoursArray);
-
-secondTolastItem(wholeFlavoursArray);
-
-function numOfFlavs(num) {
-    console.log("There are " + numberOfFlavours + " Flavours");
-}
-
-function lastItem(last) {
-    var recent = flavours.slice(-1)[0];
-    console.log("The last flavour is : " + recent);
-}
-
-function secondTolastItem(last) {
-    var last = flavours.length - 2;
-    var recent = flavours[last];
-    console.log("The 2nd to last flavour is : " + recent);
-}
+console.log(phrase);
