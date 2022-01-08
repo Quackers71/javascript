@@ -47,3 +47,9 @@ function secondTolastItem(last) {
     var recent = flavours[last];
     console.log("The 2nd to last flavour is : " + recent);
 }
+
+// added exercise for Jenn and Berry's ice cream
+var products = ["Choo Choo Chocolate", "Icy Mint", "Cake Batter", "Bubblegum"];
+var last = products.length - 1;
+var recent = products[last];
+console.log(recent);
