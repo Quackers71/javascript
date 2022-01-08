@@ -14,11 +14,10 @@ var scores = [60, 50, 60, 58, 54, 54, 58, 50, 52, 54,
 } */
 
 function outputScores(list) {
-    // var index = scores.length;
     for (var i = 0; i < scores.length; i++) {
         console.log("Bubble solution #" + i + "   score: " + scores[i]);
     }
- }
+}
 
 outputScores(scores);
 
