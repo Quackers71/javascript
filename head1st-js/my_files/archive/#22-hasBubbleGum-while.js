@@ -18,5 +18,5 @@ while (i < products.length) {
     if (products[i] == "Bubblegum") {
     console.log(products[i] + " contains bubble gum");
     }
-    i = i + 1;
+    i++;
 }
