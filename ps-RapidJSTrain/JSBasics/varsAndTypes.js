@@ -11,7 +11,7 @@ console.log(orderId); // undefined
 
 /* 'use strict';
 orderId = 9001;
-console.log(orderId); // ReferenceError: orderId3 is not defined 
+console.log(orderId); // ReferenceError: orderId is not defined 
 */
 
 /* var orderId = 9001.01;
