@@ -18,3 +18,6 @@ https://www.codegrepper.com/search.php?answer_removed=1&q=-=%20javascript
 - use cases (in this case they do the same thing)
   - while (answer != "forty-two");
   - for (;answer != "forty-two");
+
+- See Operator Precedence for JavaScript (taken from ps-RapidJSTrain)
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence#table

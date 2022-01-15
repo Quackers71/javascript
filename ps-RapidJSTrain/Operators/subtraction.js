@@ -21,11 +21,9 @@ console.log(total); // 200
 console.log(total); // 300 
 */
 
-
 /* var total = 300 - undefined;
 console.log(total); // NaN 
 */
-
 
 /* var total = "PRD300" - "ITEM200";
 console.log(total); // NaN 

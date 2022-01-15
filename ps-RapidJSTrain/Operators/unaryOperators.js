@@ -1,6 +1,11 @@
 
 
 
+var value = 'calc';
+value = -value;
+console.log(value); // NaN
+
+
 var value = -42;
 value = -value;
 console.log(value); // 42

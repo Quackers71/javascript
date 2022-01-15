@@ -2,7 +2,7 @@
 
 
 var id = 2000 + NaN;
-console.log(id); // Nan
+console.log(id); // NaN
 console.log(typeof(id)); // number
 
 
@@ -19,7 +19,7 @@ console.log(typeof(id)); // string
 
 
 /* var id = 2000 + undefined;
-console.log(id); // Nan
+console.log(id); // NaN
 console.log(typeof(id)); // number
 */
 

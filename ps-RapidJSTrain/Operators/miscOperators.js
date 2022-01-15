@@ -43,7 +43,7 @@ console.log(total); // 24
 
 
 var total = 6;
-total -= 4;
+total -= 4; // total = total - 4
 console.log(total); // 2
 
 

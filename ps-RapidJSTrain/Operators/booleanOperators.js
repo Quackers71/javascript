@@ -9,6 +9,7 @@ var value = userSettings || defaultSettings;
 console.log(value); // Object {who: "default"}
 
 
+
 var defaultSettings = {
     who: 'default'
 };
@@ -17,6 +18,7 @@ var userSettings = {
 };
 var value = userSettings || defaultSettings;
 console.log(value); // Object {who: "user"}
+
 
 
 var obj = {
@@ -60,7 +62,7 @@ console.log(value); // false
 
 
 var value = "Z" && NaN;
-console.log(value); // NaN 
+console.log(value); // NaN
 
 
 var value = "Z" && undefined;
@@ -79,7 +81,7 @@ var obj = {
     calc: 'Logical AND'
 };
 var value = true && obj;
-console.log(value); // Object {calc: "Logical AN
+console.log(value); // Object {calc: "Logical AND"}
 
 
 var obj = {

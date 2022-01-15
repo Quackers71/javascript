@@ -65,7 +65,7 @@ var obj = {
 name: 'Trigger'
 };
 var obj2 = obj;
-if (obj == obj) // true
+if (obj == obj) // true - object pointer is copied
 console.log('true');
 else
 console.log('false');

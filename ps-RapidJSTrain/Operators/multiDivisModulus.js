@@ -47,14 +47,13 @@ console.log(total); // 400
 console.log(total); // 0 
 */
 
-
 /* var total = 20 * undefined;
 console.log(total); // NaN 
 */
 
-
 /* var total = 20 * NaN;
-console.log(total); // NaN */
+console.log(total); // NaN 
+*/
 
 
 // another way!
