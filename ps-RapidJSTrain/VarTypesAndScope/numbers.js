@@ -21,6 +21,8 @@ console.log(Number.POSITIVE_INFINITY + ' ' + Number.NEGATIVE_INFINITY); // Infin
 var n = Number.MAX_VALUE * 2;
 console.log(n); // Infinity
 
+console.log(Number.MAX_VALUE); // 1.7976931348623157e+308
+
 
 var value = 3.2e-4;
 console.log(value); // 0.00032
@@ -33,6 +35,8 @@ console.log(hex); // 16
 var oct = 070;
 console.log(oct); // SyntaxError: Octal literals are not allowed in strict mode.
 
+var oct = 070;
+console.log(oct); // 56
 
 /* var price = "0.99";
 console.log(typeof price); // string  

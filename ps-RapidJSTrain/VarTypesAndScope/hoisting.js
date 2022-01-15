@@ -7,6 +7,15 @@ var showProduct = function showProduct(){
 showProduct(); // Showing a Product
 
 
+/* showProduct(); 
+
+var showProduct = function showProduct(){ // This is a function expression
+    console.log('Showing a Product'); 
+}
+// TypeError: showProduct is not a function 
+*/
+
+
 /* showProduct();
 
 function showProduct(){

@@ -22,7 +22,7 @@ try {
 catch (e) {
     var insideCatch = 'insideCatch';
     console.log(e); // undefined
-}                   // 123 
+}
 */
 
 

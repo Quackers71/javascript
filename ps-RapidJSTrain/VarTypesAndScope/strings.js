@@ -1,8 +1,11 @@
 
 
+var productType = '   Hardware   ';
+var trimmed = productType.trim();
+console.log('[' + trimmed + ']');
 
-var productType = "Hardware";
-console.log(productType.length); // 8
+/* var productType = "Hardware";
+console.log(productType.length); // 8 */
 
 productType.trim(); // This won't work in JS as strings are immutable
 
