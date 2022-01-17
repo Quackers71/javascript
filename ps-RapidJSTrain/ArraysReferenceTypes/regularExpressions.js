@@ -34,6 +34,16 @@ console.log(result); // (2) ["m", "m"]
 var blogText = "Sam I Am";
 var pattern = /m/g;
 var result = pattern.exec(blogText);
+while (result) {
+    console.log(result.index);
+    result = pattern.exec(blogText);
+} // 2
+  // 7
+
+
+var blogText = "Sam I Am";
+var pattern = /m/g;
+var result = pattern.exec(blogText);
 console.log(result.index); // 2
 result = pattern.exec(blogText); 
 console.log(result.index); // 7

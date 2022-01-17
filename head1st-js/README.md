@@ -21,3 +21,6 @@ https://www.codegrepper.com/search.php?answer_removed=1&q=-=%20javascript
 
 - See Operator Precedence for JavaScript (taken from ps-RapidJSTrain)
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence#table
+
+- MDN Web Docs - Resources for developers, by developers.
+  - https://developer.mozilla.org/en-US/docs/Web/JavaScript
