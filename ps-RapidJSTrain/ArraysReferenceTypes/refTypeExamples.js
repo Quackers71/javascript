@@ -22,7 +22,7 @@ var blog = {
 };
 
 var updatedBlog = blog;
-blog.name = 'Rocky Mountain Skiing'
+updatedBlog.name = 'Rocky Mountain Skiing'
 console.log(blog.name); // Rocky Mountain Skiing
 
 
