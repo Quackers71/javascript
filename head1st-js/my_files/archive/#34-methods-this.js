@@ -27,7 +27,7 @@ var fiat = {
 };
 
 fiat.drive();
-fiat.start()
+fiat.start();
 fiat.drive();
 fiat.stop();
 fiat.drive();
