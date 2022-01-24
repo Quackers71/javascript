@@ -28,4 +28,4 @@ var project = {
     securityLevel: 2
 };
 var secretProject = Object.create(project);
-console.log(secretProject.securityLevel);
+console.log(secretProject.securityLevel); // 2
