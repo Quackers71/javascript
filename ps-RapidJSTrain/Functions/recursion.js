@@ -26,10 +26,12 @@ var fn2 = fn;
 fn = null;
 fn2(orgChart);
 
-/* Michael
+/* 
+Michael
 Andy
 Dwight
-Kevin */
+Kevin 
+*/
 
 
 var orgChart = {
@@ -85,7 +87,9 @@ var fn = function(topEmployee) {
 
 fn(orgChart);
 
-/* Michael
+/* 
+Michael
 Andy
 Dwight
-Kevin */
+Kevin 
+*/
