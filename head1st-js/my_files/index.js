@@ -7,21 +7,7 @@ alert(code);
 var insertText = document.createTextNode(text);
 access.appendChild(insertText);
 console.log(text);
-
-access.style.color = 'pink';
-
-var access = document.getElementById("code2");
-text = "M";
-var insertText = document.createTextNode(text);
-access.appendChild(insertText);
-access.style.color = 'purple';
-
-var access = document.getElementById("code1");
-text = "Gutter";
-var insertText = document.createTextNode(text);
-access.appendChild(insertText);
-access.style.color = 'beige'; */
-
+ */
 
 function addText(id, text) {
     var text;
@@ -29,12 +15,13 @@ function addText(id, text) {
     
     var code = access.innerHTML;
     code = code + text;
-    alert(code);
+    console.log(code);
 
     var insertText = document.createTextNode(text);
     access.appendChild(insertText);
+    access.style.color = "white";
 }
 
-addText("code1", "Gutter");
-addText("code2", "M");
-addText("code3", "Midnight");
+addText("code2", " Gutter");
+addText("code6", " M");
+addText("code9", " Midnight");
