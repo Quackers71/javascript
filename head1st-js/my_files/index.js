@@ -1,11 +1,6 @@
-function addSongs() {
-    var song1 = document.getElementById("song1");
-    var song2 = document.getElementById("song2");
-    var song3 = document.getElementById("song3");
+var planet = document.getElementById("greenplanet");
+console.log(planet.innerHTML);
+planet.innerHTML = "Red Alert: hit by phaser fire!";
+console.log(planet.innerHTML);
 
-    song1.innerHTML = "Blue Suede String, by Elvis Pagely";
-    song2.innerHTML = "Great Objects on Fire, by Jerry JSON Lewis";
-    song3.innerHTML = "I Code the Line, by Johnny JavaScript";
-}
-
-window.onload = addSongs;
+planet.setAttribute("class", "redtext");

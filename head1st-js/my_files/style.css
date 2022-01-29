@@ -11,4 +11,8 @@ li {
     color: white;
 }
 
+.redtext {
+    color: red;
+}
+
 body {background-color: black;}
