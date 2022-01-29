@@ -1,0 +1,19 @@
+h1 {
+    color: white;
+    text-align: center;
+}
+p {
+    color: white;
+    text-align: center;
+}
+body {background-color: black;}
+
+div#menu {
+    background-color: rgb(22, 3, 197);
+    background-size: cover;
+    width: 300;
+    height: 90;
+    text-shadow: white 0px 0px 2px;
+    /* font-size: 50px; */
+    /* overflow: auto; */
+}
