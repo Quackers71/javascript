@@ -6,4 +6,9 @@ p {
     color: white;
     text-align: center;
 }
+
+li {
+    color: white;
+}
+
 body {background-color: black;}
