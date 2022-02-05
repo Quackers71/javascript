@@ -55,7 +55,6 @@ console.log("Phone Number validated : "+testNo2);
 console.log("Brad's 2nd validation  : "+bradTest2);
 
 console.log("\n*** Found the bug by accident! ***");
-
 var testNo3 = "765-321"
 var bradTest3 = validation(testNo3);
 console.log("Phone Number validated : "+testNo3);
