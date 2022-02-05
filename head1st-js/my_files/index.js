@@ -1,48 +1,38 @@
-// The length property & the charAt method
-var input = "jenny@wickedlysmart.com";
-for(var i = 0; i < input.length; i++) {
-    if (input.charAt(i) === "@") {
-        console.log("There's an @ sign at index " + i); // 5
+// Larry's Code
+function validate(phoneNumber) {
+    if (phoneNumber.length !== 8) {
+        return false;
     }
+    for (var i = 0; i < phoneNumber.length; i++) {
+        if (i === 3) {
+            if (phoneNumber.charAt(i) !== '-') {
+                return false;
+            }
+        } else if (isNaN(phoneNumber.charAt(i))) {
+            return false;
+        }
+    }
+    return true;
 }
 
-// The indexOf method
-var phrase = "the cat in the hat";
-
-var index = phrase.indexOf("cat");
-console.log("there's a cat sitting at index " + index); // 4
-
-index = phrase.indexOf("the", 5);
-console.log("there's a the sitting at index " + index); // 11
-
-index = phrase.indexOf("dog");
-console.log("there's a dog sitting at index " + index); // -1 i.e. no "dog"
-
-// The substring method
-var data = "name|phone|address";
-
-var val = data.substring(5, 10);
-console.log("Substring is " + val); // Substring is phone
-
-val = data.substring(5);
-console.log("Substring is now " + val); // Substring is now phone|address
+var test = validate("123-4567");
+console.log("Larry's validation : "+test);
 
 
-// The split method
-var data = "name|phone|address";
 
-var vals = data.split("|");
-console.log("Split array is ", vals); // Split array is  (3) ['name', 'phone', 'address']
 
-// Other Methods
-/* 
-toLowerCase()
-replace()
-slice()
-lastIndexOf()
-concat()
-substring() * example above
-trim()
-match()
-toUpperCase()
-*/
+// Brad's Code
+function validation(phoneNo) {
+    if (phoneNo.length !== 8) {
+        return false;
+    }
+    var first = phoneNo.substring(0,3);
+    var second = phoneNo.substring(4);
+    if (phoneNo.charAt(3) !== "-" || isNaN(first) || isNaN(second)) {
+        return false;
+    }
+    return true;
+}
+
+var test2 = validation("765-4320");
+console.log("Brad's validation  : "+test2);
