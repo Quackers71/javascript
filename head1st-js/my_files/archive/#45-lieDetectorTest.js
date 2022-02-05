@@ -37,3 +37,12 @@ function lieDetectorTest() {
    if (numberOfLies >= 3) {
     console.log("Guilty as charged");
 }
+
+// Output
+/* 
+You stole the diamond
+A sure sign of guilt
+Guess you lied about your name
+You told 3 lies!
+Guilty as charged
+*/

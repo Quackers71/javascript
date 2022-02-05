@@ -5,6 +5,7 @@ function Duck(sound) {
 
 var toy = new Duck("quack quack");
 
+// The toy acts like an Object... So we can call it's Method
 toy.quack(); // quack quack
 
 console.log(typeof toy); // object

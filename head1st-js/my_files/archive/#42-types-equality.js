@@ -126,7 +126,7 @@ console.log(c); // 200
 d = "1" - "1";
 console.log(d); // 0
 
-console.log("Result: "+ 10/2); // 5
+console.log("Result: "+ 10/2); // Result: 5
 
 e = 3 + " bananas & " + 2 + " apples";
 console.log(e); // 3 bananas & 2 apples
