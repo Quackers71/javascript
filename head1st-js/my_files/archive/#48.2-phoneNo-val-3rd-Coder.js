@@ -72,4 +72,8 @@ var amyTest = validating(testNum);
 console.log("Phone Number validated : "+testNum);
 console.log("Amy's 1st validation   : "+isNaN(amyTest));
 
+var testNum2 = "1234567";
+var amyTest2 = validating(testNum2);
+console.log("Phone Number validated : "+testNum2);
+console.log("Amy's 2nd validation   : "+isNaN(amyTest2));
 // Unfortunately only validates with 333-4444 but not with 1234567
