@@ -1,32 +1,48 @@
-var emot = "XOxxOO";
-var hugs = 0;
-var kisses = 0;
-
-emot = emot.trim();
-emot = emot.toUpperCase();
-for(var i = 0; i < emot.length ; i++) {
-if (emot.charAt(i) === "X") {
-    hugs++;
-    } else if (emot.charAt(i) == "O") {
-        kisses++;
+// The length property & the charAt method
+var input = "jenny@wickedlysmart.com";
+for(var i = 0; i < input.length; i++) {
+    if (input.charAt(i) === "@") {
+        console.log("There's an @ sign at index " + i); // 5
     }
 }
 
-console.log(emot); // XOXXOO
-console.log("hugs: "+hugs); // 3
-console.log("kisses: "+kisses) // 3
+// The indexOf method
+var phrase = "the cat in the hat";
 
-var name = "Jenny";
-var phone = "867-5309";
-var fact = "This is a prime number";
+var index = phrase.indexOf("cat");
+console.log("there's a cat sitting at index " + index); // 4
 
-var songName = phone + "/" + name;
+index = phrase.indexOf("the", 5);
+console.log("there's a the sitting at index " + index); // 11
 
-var index = phone.indexOf("-");
-console.log(index); // 3
+index = phrase.indexOf("dog");
+console.log("there's a dog sitting at index " + index); // -1 i.e. no "dog"
 
-if (fact.substring(10, 15) === "prime") {
-    console.log(fact); // This is a prime number
-}
+// The substring method
+var data = "name|phone|address";
 
-console.log(fact.substring(10, 15)); // prime
+var val = data.substring(5, 10);
+console.log("Substring is " + val); // Substring is phone
+
+val = data.substring(5);
+console.log("Substring is now " + val); // Substring is now phone|address
+
+
+// The split method
+var data = "name|phone|address";
+
+var vals = data.split("|");
+console.log("Split array is ", vals); // Split array is  (3) ['name', 'phone', 'address']
+
+// Other Methods
+/* 
+toLowerCase()
+replace()
+slice()
+lastIndexOf()
+concat()
+substring() * example above
+trim()
+match()
+toUpperCase()
+*/
