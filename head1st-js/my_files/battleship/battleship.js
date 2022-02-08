@@ -13,11 +13,24 @@ var view = {
     }
 };
 
-view.displayMiss("00");
-view.displayHit("34");
-view.displayMiss("55");
-view.displayHit("12");
-view.displayMiss("25");
-view.displayHit("26");
+var ship1 = { locations: ["10", "20", "30"], hits: ["", "", ""] };
+var ship2 = { locations: ["32", "33", "34"], hits: ["", "", ""] };
+var ship3 = { locations: ["63", "64", "65"], hits: ["", "", "hit"] };
 
-view.displayMessage("Tap tap, is this thing on?");
+var ships = [{ locations: ["10", "20", "30"], hits: ["", "", ""] },
+             { locations: ["32", "33", "34"], hits: ["", "", ""] },
+             { locations: ["63", "64", "65"], hits: ["", "", "hit"] }];
+
+var ship2 = ships[1];
+var locations = ship2.locations;
+console.log("Location is "+locations[1]);
+
+var ship3 = ships[2];
+var hits = ship3.hits;
+if (hits[0] === "hit") {
+    console.log("Ouch, hit on third ship at location one");
+}
+
+var ship1 = ships[0];
+var hits = ship1.hits;
+hits[2] = "hit";
