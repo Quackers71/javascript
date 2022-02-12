@@ -60,8 +60,8 @@ var controller = {
             this.guesses++;
             var hit = model.fire(location);
             if (hit && model.shipsSunk === model.numShips) {
-                var totalGuesses = this.guesses;
-                view.displayMessage("You sank all my battleships, in "+totalGuesses+" guesses");
+                // var totalGuesses = this.guesses; bloody works now!???
+                view.displayMessage("You sank all my battleships, in "+this.guesses+" guesses");
             }
         }
     }
@@ -88,26 +88,29 @@ function parseGuess(guess) {
     return null;
 }
 
-controller.processGuess("A0");
-controller.processGuess("F1");
-controller.processGuess("G5");
+function init() {
+    var fireButton = document.getElementById("fireButton");
+    fireButton.onclick = handleFireButton;
+    // Handles a Return key press
+    var guessInput = document.getElementById("guessInput");
+    guessInput.onkeypress = handleKeyPress;
+}
 
-controller.processGuess("A6");
-controller.processGuess("B6");
-controller.processGuess("C6");
+function handleFireButton() {
+    var guessInput = document.getElementById("guessInput");
+    var guess = guessInput.value;
+    controller.processGuess(guess);
 
-controller.processGuess("C4");
-controller.processGuess("D4");
-controller.processGuess("E4");
+    guessInput.value = "";
+}
 
-controller.processGuess("B0");
-controller.processGuess("B1");
-controller.processGuess("B2");
+// called within init() function
+function handleKeyPress(e) {
+    var fireButton = document.getElementById("fireButton");
+    if (e.keyCode === 13) {
+        fireButton.click();
+        return false;
+    }
+}
 
-/* console.log(parseGuess("A4"));
-console.log(parseGuess("G2"));
-console.log(parseGuess("E6"));
-console.log(parseGuess("H0"));
-console.log(parseGuess("21")); */
-
-// console.log(controller.guesses);
+window.onload = init;
