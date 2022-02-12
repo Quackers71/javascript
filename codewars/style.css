@@ -1,0 +1,18 @@
+h1 {
+    color: white;
+    text-align: center;
+}
+p {
+    color: white;
+    text-align: center;
+}
+
+li {
+    color: white;
+}
+
+.redtext {
+    color: red;
+}
+
+body {background-color: black;}
