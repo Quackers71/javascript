@@ -4,15 +4,18 @@ String.prototype.toJadenCase = function (str) {
     console.log(newString);
     
     for (i = 0; i < newString.length; i++) {
-        console.log(newString[i].charAt(0).toUpperCase("").split(" "));
-        newString = newString[i].charAt(0).toUpperCase("").split(" ");
-        
+        if (newString.length[i] < newString.length) {
+            newString[i] = newString[i].charAt(0).toUpperCase()+newString[i].substring(0);
+        }
+        str = newString.join(" ");
     }
     console.log(newString);
-    return newString;
+    console.log(str);
+    return newString.join(" ");
 }
-
-console.log("".toJadenCase("JADEN"));
+    
+// var string = "How can mirrors be real if our eyes aren't real";
+console.log("".toJadenCase("How can mirrors be real if our eyes aren't real"));
 
 /* "How can mirrors be real if our eyes aren't real"
    "How Can Mirrors Be Real If Our Eyes Aren't Real" */
