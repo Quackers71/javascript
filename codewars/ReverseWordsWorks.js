@@ -18,6 +18,7 @@ function FirstReverse(str) {
     /* (9) ['ehT', 'kciuq', 'nworb', 'xof', 'spmuj', 'revo', 'eht', 'yzal', '.god'] */
 
     newString = str.split("").reverse().join("").split(" ").reverse().join(" ");
+    /* ehT kciuq nworb xof spmuj revo eht yzal .god */
 
     return newString; // .split("").reverse().join("").split(" ").reverse().join(" ");
     /* ehT kciuq nworb xof spmuj revo eht yzal .god */
