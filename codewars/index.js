@@ -1,4 +1,4 @@
-String.prototype.toJadenCase = function (str) { 
+toJadenCase = function (str) { 
     console.log(str);
     /* How can mirrors be real if our eyes aren't real */
 
@@ -25,7 +25,7 @@ String.prototype.toJadenCase = function (str) {
     return newString;
 }
 
-console.log("".toJadenCase("How can mirrors be real if our eyes aren't real"));
+console.log(toJadenCase("How can mirrors be real if our eyes aren't real"));
 
 /* "How can mirrors be real if our eyes aren't real"
    "How Can Mirrors Be Real If Our Eyes Aren't Real" */
