@@ -1,24 +1,38 @@
 h1 {
-    color: green;
-    text-align: center;
-    font-weight: bold;
-    font-size: 75px;
+  color: green;
+  text-align: center;
+  font-weight: bold;
+  font-size: 50px;
 }
 
 li {
-    color: green;
-
+  color: green;
 }
 
 form {
-    position: relative;
-    left: 200px;
+  position: relative;
+  left: 20px;
 }
 
 form input {
-    font-size: 3em;
+  font-size: 2em;
+}
+
+.myID {
+  color: rgb(122, 27, 67);
+  font-weight: bold;
+  text-align: initial;
+  margin-top: 50px;
+}
+
+#goober {
+  width: 200px;
+  border-radius: 20px;
+  float: left;
+  margin-right: 10px;
 }
 
 body {
-    background-color: #191913;
+  background-color: #191913;
+  margin: 20px;
 }
