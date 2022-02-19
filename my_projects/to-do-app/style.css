@@ -6,7 +6,7 @@ h1 {
 }
 
 li {
-  color: green;
+  color: white;
   padding: 5px;
   text-align: center;
 }
@@ -21,7 +21,7 @@ form input {
 }
 
 body {
-  background-color: #191913;
+  background-color: #333;
   padding: 50px;
   margin: 100px;
 }

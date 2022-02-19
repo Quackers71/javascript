@@ -8,12 +8,12 @@ var listItems = document.querySelectorAll("#itemList li");
 var removeLastItem = document.querySelectorAll("#itemList li");
 
 newHeader.innerHTML = "The List Items";
-newHeader.style.color = "purple";
+newHeader.style.color = "sandybrown";
 theList.style.color = "white";
 
-// for (var i = 0; i < listItems.length; i++) {
-//     listItems[i].addEventListener("click", activateItem);
-// }
+for (var i = 0; i < listItems.length; i++) {
+    listItems[i].addEventListener("click", activateItem);
+}
 
 function activateItem() {
     newHeader.innerHTML = this.innerHTML;
@@ -29,6 +29,7 @@ function createNewItem() {
 }
 
 function deleteLastItem() {
+    console.log(newItemCounter);
     // removeLastItem.parentNode.removeChild(removeLastItem);
     console.log(removeLastItem[newItemCounter]);
     console.log(newItemCounter);
