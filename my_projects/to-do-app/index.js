@@ -1,18 +1,36 @@
-var newHeader = document.getElementById("todo");
+var newItemCounter = 1;
+var theList = document.getElementById("itemList");
+var addItem = document.getElementById("addItemButton");
+var deleteItem = document.getElementById("removeItemButton");
+var newHeader = document.getElementById("mainTitle");
 // var listItems = document.getElementById("mainList").getElementsByTagName("li");
-var listItems = document.querySelectorAll("#mainList li");
+var listItems = document.querySelectorAll("#itemList li");
+var removeLastItem = document.querySelectorAll("#itemList li");
 
-newHeader.innerHTML = "To Do List";
+newHeader.innerHTML = "The List Items";
 newHeader.style.color = "purple";
+theList.style.color = "white";
 
-listItems[0].innerHTML = "Yes 1";
+// for (var i = 0; i < listItems.length; i++) {
+//     listItems[i].addEventListener("click", activateItem);
+// }
 
-for (var i = 0; i < listItems.length; i++) {
-    listItems[i].innerHTML = "Ammendment "+(i+1);
+function activateItem() {
+    newHeader.innerHTML = this.innerHTML;
 }
 
-var element = document.getElementById("button");
-var listener = element.addEventListener("click", function(e) {
-    console.log("clicked");
-});
+addItem.addEventListener("click", createNewItem);
+deleteItem.addEventListener("click", deleteLastItem);
 
+function createNewItem() {
+    theList.innerHTML += "<li>New Item "+newItemCounter+"</li>";
+    console.log(newItemCounter);
+    newItemCounter++;
+}
+
+function deleteLastItem() {
+    // removeLastItem.parentNode.removeChild(removeLastItem);
+    console.log(removeLastItem[newItemCounter]);
+    console.log(newItemCounter);
+    --newItemCounter;
+}
