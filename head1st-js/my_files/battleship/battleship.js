@@ -21,26 +21,35 @@ var model = {
     ships: [{ locations: [0, 0, 0], hits: ["", "", ""] },
             { locations: [0, 0, 0], hits: ["", "", ""] },
             { locations: [0, 0, 0], hits: ["", "", ""] }],
+    
     fire: function(guess) {
 
         for (var i = 0; i < this.numShips; i++) {
             var ship = this.ships[i];
             var index = ship.locations.indexOf(guess);
-            if (index >= 0) {
-                ship.hits[index] = "hit";
-                view.displayHit(guess);
-                view.displayMessage("HIT!");
-                if (this.isSunk(ship)) {
-                    view.displayMessage("You sank my battleship!");
-                    this.shipsSunk++;
-                }
+
+            // has already been hit improvement
+            if (ship.hits[index] === "hit") {
+                view.displayMessage("Oops, you already hit that location!");
                 return true;
-            }
+            } else if (index >= 0) {
+                    ship.hits[index] = "hit";
+                    view.displayHit(guess);
+                    view.displayMessage("HIT!");
+
+                    if (this.isSunk(ship)) {
+                        view.displayMessage("You sank my battleship!");
+                        this.shipsSunk++;
+                    }
+                    return true;
+                }
+                
         }
         view.displayMiss(guess);
         view.displayMessage("You missed.");
         return false;
     },
+
     isSunk: function(ship) {
         for (var i = 0; i < this.shipLength; i++) {
             if (ship.hits[i] !== "hit") {
@@ -57,6 +66,8 @@ var model = {
             } while (this.collision(locations));
             this.ships[i].locations = locations;
         }
+        console.log("Ships array: ");
+        console.log(this.ships);
     },
     generateShip: function() {
         var direction = Math.floor(Math.random() * 2);
@@ -64,9 +75,9 @@ var model = {
 
         if (direction === 1) {
             row = Math.floor(Math.random() * this.boardSize);
-            col = Math.floor(Math.random() * (this.boardSize - this.shipLength));
+            col = Math.floor(Math.random() * (this.boardSize - this.shipLength + 1));
         } else {
-            row = Math.floor(Math.random() * (this.boardSize - this.shipLength));
+            row = Math.floor(Math.random() * (this.boardSize - this.shipLength + 1));
             col = Math.floor(Math.random() * this.boardSize);
         }
 
@@ -102,12 +113,14 @@ var controller = {
             this.guesses++;
             var hit = model.fire(location);
             if (hit && model.shipsSunk === model.numShips) {
-                // var totalGuesses = this.guesses; bloody works now!???
                 view.displayMessage("You sank all my battleships, in "+this.guesses+" guesses");
             }
         }
     }
-};
+}
+
+
+// helper function to parse a guess from the user
 
 function parseGuess(guess) {
     var alphabet = ["A", "B", "C", "D", "E", "F", "G"];
@@ -121,7 +134,8 @@ function parseGuess(guess) {
 
         if (isNaN(row) || isNaN(column)) {
             alert("Oops, that isn't on the board.");
-        } else if (row < 0 || row >= model.boardSize || column.boardSize) {
+        } else if (row < 0 || row >= model.boardSize || 
+                   column < 0 || column >= model.boardSize) {
             alert("Oops, that isn't on the board.");
         } else {
             return row+column;
@@ -130,19 +144,12 @@ function parseGuess(guess) {
     return null;
 }
 
-function init() {
-    var fireButton = document.getElementById("fireButton");
-    fireButton.onclick = handleFireButton;
-    // Handles a Return key press
-    var guessInput = document.getElementById("guessInput");
-    guessInput.onkeypress = handleKeyPress;
 
-    model.generateShipLocations();
-}
+// event handlers
 
 function handleFireButton() {
     var guessInput = document.getElementById("guessInput");
-    var guess = guessInput.value;
+    var guess = guessInput.value.toUpperCase();
     controller.processGuess(guess);
 
     guessInput.value = "";
@@ -151,10 +158,28 @@ function handleFireButton() {
 // called within init() function
 function handleKeyPress(e) {
     var fireButton = document.getElementById("fireButton");
+
+    // for IE9 and earlier
+    e = e || window.event;
+
     if (e.keyCode === 13) {
         fireButton.click();
         return false;
     }
 }
 
+
+// init - called when the page has completed loading
+
 window.onload = init;
+
+function init() {
+    var fireButton = document.getElementById("fireButton");
+    fireButton.onclick = handleFireButton;
+    
+    // Handles a Return key press
+    var guessInput = document.getElementById("guessInput");
+    guessInput.onkeypress = handleKeyPress;
+
+    model.generateShipLocations();
+}
