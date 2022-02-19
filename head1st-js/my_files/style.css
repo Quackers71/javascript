@@ -1,18 +1,37 @@
 h1 {
-    color: white;
-    text-align: center;
+  color: green;
+  text-align: center;
+  font-weight: bold;
+  font-size: 50px;
 }
 p {
-    color: white;
-    text-align: center;
+  color: darkgoldenrod;
+  text-align: center;
 }
 
 li {
-    color: white;
+  color: white;
 }
 
 .redtext {
-    color: red;
+  color: red;
 }
 
-body {background-color: black;}
+.myID {
+  color: rgb(122, 27, 67);
+  font-weight: bold;
+  text-align: initial;
+  margin-top: 50px;
+}
+
+#goober {
+  width: 200px;
+  border-radius: 20px;
+  float: left;
+  margin-right: 10px;
+}
+
+body {
+  background-color: #191913;
+  margin: 20px;
+}

@@ -7,32 +7,21 @@ h1 {
 
 li {
   color: green;
+  padding: 5px;
+  text-align: center;
 }
 
 form {
   position: relative;
-  left: 20px;
+  left: 150px;
 }
 
 form input {
-  font-size: 2em;
-}
-
-.myID {
-  color: rgb(122, 27, 67);
-  font-weight: bold;
-  text-align: initial;
-  margin-top: 50px;
-}
-
-#goober {
-  width: 200px;
-  border-radius: 20px;
-  float: left;
-  margin-right: 10px;
+  font-size: 1em;
 }
 
 body {
   background-color: #191913;
-  margin: 20px;
+  padding: 50px;
+  margin: 100px;
 }
