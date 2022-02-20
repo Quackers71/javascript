@@ -1,15 +1,12 @@
-function SoundEffect(sound) {
-    this.sound = sound;
-    this.effect = function() {console.log(this.sound);}
-   }
+window.onload = init;
 
-var duck = new SoundEffect("quack quack");
-var dog = new SoundEffect("woof woof");
-var cat = new SoundEffect("Meeoow");
+function init() {
+    var image = document.getElementById("zero");
+    image.onclick = showAnswer;
+}
 
-duck.effect(); // quack quack
-dog.effect(); // woof woof
-cat.effect(); // Meeoow
-
-console.log(typeof duck); // object
-console.log(dog instanceof SoundEffect); // true
+function showAnswer() {
+    var image = document.getElementById("zero").src="./images/zero.jpg";
+    // image.src = "./images/zero.jpg"; < original 
+    // image.setAttribute("src", "./images/zero.jpg"); < or you could use this
+}
