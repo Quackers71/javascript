@@ -9,20 +9,20 @@
 </head>
 <body>
     <div id="mainDIV" class="header">
-        
-        <h1 id="mainTitle">To Do List</h1>
-        <form>
-            <input type="text" id="inputNewItem" placeholder="Title...">
-            <input type="button" id="addItemButton" value="Add new item">
-            <input type="button" id="removeItemButton" value="Remove new item">
-        </form>
-        
+    <h1 id="mainTitle">To Do List</h1>
+        <div class = "main-form">
+            <form>
+                <input type="text" id="inputNewItem" placeholder="Add new item label here">
+                <input type="button" value="Add new item" id="addItemButton" class="btn btn-primary btn-block">
+            </form>
+        </div>
+        <div class = "main-list">
         <ul id = "itemList">
             <li>Item 1</li>
             <li>Item 2</li>
             <li>Item 3</li>
         </ul>
-
+        </div>
     </div>
     <script type="text/javascript" src="./index.js"></script>
 </body>

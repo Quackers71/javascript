@@ -1,3 +1,11 @@
+#mainDIV {
+  max-width: 600px;
+  background-color: #333;
+  margin: 40px auto 0 auto;
+  line-height: 1.65;
+  padding: 20px;
+}
+
 h1 {
   color: green;
   text-align: center;
@@ -21,7 +29,7 @@ form input {
 }
 
 body {
-  background-color: #333;
+  background-color: #111;
   padding: 50px;
   margin: 100px;
 }
