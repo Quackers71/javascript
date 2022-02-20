@@ -8,5 +8,5 @@ function init() {
 function showAnswer() {
     var image = document.getElementById("zero").src="./images/zero.jpg";
     // image.src = "./images/zero.jpg"; < original 
-    // image.setAttribute("src", "./images/zero.jpg"); < or you could use this
+    // image.setAttribute("src", "./images/zero.jpg"); < you could use this
 }
