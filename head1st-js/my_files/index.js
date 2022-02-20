@@ -1,11 +1,15 @@
-function Duck(sound) {
+function SoundEffect(sound) {
     this.sound = sound;
-    this.quack = function() {console.log(this.sound);}
+    this.effect = function() {console.log(this.sound);}
    }
 
-var toy = new Duck("quack quack");
+var duck = new SoundEffect("quack quack");
+var dog = new SoundEffect("woof woof");
+var cat = new SoundEffect("Meeoow");
 
-toy.quack(); // quack quack
+duck.effect(); // quack quack
+dog.effect(); // woof woof
+cat.effect(); // Meeoow
 
-console.log(typeof toy); // object
-console.log(toy instanceof Duck); // true
+console.log(typeof duck); // object
+console.log(dog instanceof SoundEffect); // true

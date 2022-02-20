@@ -1,11 +1,12 @@
 h1 {
-  color: green;
+  color: lightcoral;
   text-align: center;
   font-weight: bold;
   font-size: 50px;
 }
 p {
   color: darkgoldenrod;
+  font-size: 25px;
   text-align: center;
 }
 
@@ -32,6 +33,6 @@ li {
 }
 
 body {
-  background-color: #191913;
+  background-color: #333;
   margin: 20px;
 }
