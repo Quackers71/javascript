@@ -9,5 +9,3 @@ function showAnswer() {
     var image = document.getElementById("goober");
     image.src = "./images/myGoober.jpg";
 }
-
-console.log("Test");
