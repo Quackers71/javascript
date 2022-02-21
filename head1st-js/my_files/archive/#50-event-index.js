@@ -3,11 +3,11 @@ window.onload = init;
 function init() {
   var images = document.getElementsByTagName("img");
   for (var i = 0; i < images.length; i++) {
-    images[i].onclick = showAnswer;
+    images[i].onpointerover = showAnswer;
   }
 
   for (var j = 0; j < images.length; j++) {
-    images[j].ondblclick = revertAnswer;
+    images[j].onpointerleave = revertAnswer;
   }
 }
 

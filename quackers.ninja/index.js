@@ -2,8 +2,8 @@ window.onload = init;
 
 function init() {
   var image = document.getElementById("goober");
-  image.onclick = showAnswer;
-  image.ondblclick = revertAnswer;
+  image.onpointerover = showAnswer;
+  image.onpointerleave = revertAnswer;
 }
 
 function showAnswer() {
