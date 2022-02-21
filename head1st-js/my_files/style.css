@@ -44,8 +44,8 @@ img {
 }
 
 #goober:hover {
-  transition: var(--transition-delay);
-  transform: scale(3) translate(70px, 10%) rotate(180deg);
+  transform: rotate(25deg) scale(4) translate(150px, -75px);
+  z-index: 3;
 }
 
 body {
