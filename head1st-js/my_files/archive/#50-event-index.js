@@ -1,17 +1,28 @@
 window.onload = init;
 
 function init() {
-    var images = document.getElementsByTagName("img");;
-    for (var i = 0; i < images.length; i++) {
+  var images = document.getElementsByTagName("img");
+  for (var i = 0; i < images.length; i++) {
     images[i].onclick = showAnswer;
-    console.log(images[i]);
-    }
+  }
+
+  for (var j = 0; j < images.length; j++) {
+    images[j].ondblclick = revertAnswer;
+  }
 }
 
 function showAnswer(eventObj) {
-    var image = eventObj.target;
+  var image = eventObj.target;
 
-    var name = image.id;
-    name += ".jpg";
-    image.src = "./images/" + name;
+  var name = image.id;
+  name += ".jpg";
+  image.src = "images/" + name;
+}
+
+function revertAnswer(eventObj) {
+  var image = eventObj.target;
+
+  var name = image.id;
+  name += "blur.jpg";
+  image.src = "images/" + name;
 }
