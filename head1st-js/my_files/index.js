@@ -30,7 +30,7 @@ function revertAnswer(eventObj) {
   image.src = "images/" + name;
 }
 
-function resize() {
+/* function resize() {
   var element = document.getElementById("display");
   element.innerHTML = element.innerHTML + " that tickles!";
-}
+} */
