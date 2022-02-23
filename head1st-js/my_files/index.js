@@ -1,38 +1,36 @@
 window.onload = init;
+// window.onresize = resize;
 
 function init() {
-  var image = document.getElementById("goober");
-  image.onpointerover = showAnswer;
+  var images = document.getElementsByTagName("img");
+  for (var i = 0; i < images.length; i++) {
+    images[i].onpointerover = showAnswer;
+  }
 
-  var map = document.getElementById("map");
-  map.onmousemove = showCoords;
-
-  setTimeout(timerHandler, 5000);
-  setInterval(ticker, 1000);
+  for (var j = 0; j < images.length; j++) {
+    images[j].onpointerleave = revertAnswer;
+  }
 }
 
 function showAnswer(eventObj) {
-  var image = (document.getElementById("goober").src = "./images/goober.jpg");
+  var image = eventObj.target;
+
+  var name = image.id;
+  name += ".jpg";
+  image.src = "images/" + name;
+
+  setTimeout(revertAnswer, 2000, eventObj);
 }
 
-function showCoords(eventObj) {
-  var map = document.getElementById("coords");
-  var x = eventObj.clientX;
-  var y = eventObj.clientY;
-  map.innerHTML = "Map coordinates: " + x + ", " + y;
+function revertAnswer(eventObj) {
+  var image = eventObj.target;
+
+  var name = image.id;
+  name += "blur.jpg";
+  image.src = "images/" + name;
 }
 
-function timerHandler() {
-  alert("Yo, what are you doing just sitting there staring at a blank screen?");
-}
-
-var tick = true;
-function ticker() {
-  if (tick) {
-    console.log("Tick");
-    tick = false;
-  } else {
-    console.log("Tock");
-    tick = true;
-  }
+function resize() {
+  var element = document.getElementById("display");
+  element.innerHTML = element.innerHTML + " that tickles!";
 }

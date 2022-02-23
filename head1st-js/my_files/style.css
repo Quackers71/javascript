@@ -52,3 +52,8 @@ body {
   background-color: #222;
   margin: 20px;
 }
+
+#display {
+  margin: 20px;
+  float: right;
+}
