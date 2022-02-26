@@ -44,7 +44,7 @@ img {
 }
 
 #goober:hover {
-  transform: rotate(25deg) scale(4) translate(150px, -75px);
+  transform: rotate(25deg) scale(4) translate(110px, 35px);
   z-index: 3;
 }
 
@@ -52,8 +52,3 @@ body {
   background-color: #222;
   margin: 20px;
 }
-
-/* #display {
-  margin: 20px;
-  float: right;
-} */
