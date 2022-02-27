@@ -32,12 +32,12 @@ var products = [
 
 // running through some JS Array Methods taken from https://www.youtube.com/watch?v=R8rmfD9Y5-c
 
-var soldPrice = 15000;
-const filteredProducts = products.filter((product) => {
-  return product.sold <= soldPrice;
+// The map() method creates a new array
+const productNames = products.map((product) => {
+  return product.name;
 });
 
 console.log("The products array");
 console.table(products);
-console.log("Products sold for <= " + soldPrice);
-console.table(filteredProducts);
+console.log("New Array - ProductNames");
+console.table(productNames);
