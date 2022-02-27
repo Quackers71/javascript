@@ -3,9 +3,6 @@ window.onload = init;
 function init() {
   var image = document.getElementById("goober");
   image.onpointerover = showAnswer;
-
-  // calling the servePassengers function
-  servePassengers(passengers);
 }
 
 function showAnswer() {
@@ -20,85 +17,27 @@ function revertAnswer() {
   image.src = "images/gooberblur.jpg";
 }
 
-// Main stuff for Pg. 450 Updating the Passengers
+// Main stuff for Pg. 457 Webville Cola
 
-var passengers = [
-  { name: "Jane Doloop", paid: true, ticket: "coach" },
-  { name: "John Funcall", paid: true, ticket: "coach" },
-  { name: "The Pebble", paid: false, ticket: "first" },
-  { name: "Donkey", paid: false, ticket: "premium economy" },
-  { name: "Mapimpy", paid: true, ticket: "premium economy" },
-  { name: "Scarls", paid: true, ticket: "first" },
+var products = [
+  { name: "Grapefruit", calories: 170, color: "red", sold: 8200 },
+  { name: "Orange", calories: 160, color: "orange", sold: 12101 },
+  { name: "Cola", calories: 210, color: "caramel", sold: 25412 },
+  { name: "Diet Cola", calories: 0, color: "caramel", sold: 43922 },
+  { name: "Lemon", calories: 200, color: "clear", sold: 14983 },
+  { name: "Raspberry", calories: 180, color: "pink", sold: 9427 },
+  { name: "Root Beer", calories: 200, color: "caramel", sold: 9909 },
+  { name: "Water", calories: 0, color: "clear", sold: 62123 },
 ];
 
-// iterating through the passengers calling the serveCustomer function
-// and outputs the name, ticket class and available orders available depending on class.
-function servePassengers(passengers) {
-  for (var i = 0; i < passengers.length; i++) {
-    console.log(
-      passengers[i].name + " is in " + passengers[i].ticket + " class"
-    );
-    serveCustomer(passengers[i]);
-  }
-}
+// running through some JS Array Methods taken from https://www.youtube.com/watch?v=R8rmfD9Y5-c
 
-// returns a function from the createDrinkOrder function and stores it in getDrinkOrderFunction
-function serveCustomer(passenger) {
-  var getDrinkOrderFunction = createDrinkOrder(passenger);
-  var getDinnerOrderFunction = createDinnerOrder(passenger);
-  var movieOfTheWeek = presentedMovie(passenger);
-  getDrinkOrderFunction();
-  getDinnerOrderFunction();
-  movieOfTheWeek();
-  // show movie
-  // pick up trash
-}
+var soldPrice = 15000;
+const filteredProducts = products.filter((product) => {
+  return product.sold <= soldPrice;
+});
 
-// returns a function on a conditional check and stores it in orderFunction
-function createDrinkOrder(passenger) {
-  var orderFunction;
-
-  if (passenger.ticket === "first") {
-    orderFunction = function () {
-      console.log("Would you like a Cocktail or Wine?");
-    };
-  } else if (passenger.ticket === "premium economy") {
-    orderFunction = function () {
-      console.log("Would you like Wine, Cola or Water?");
-    };
-  } else if (passenger.ticket === "coach") {
-    orderFunction = function () {
-      console.log("Would you like Cola or Water?");
-    };
-  }
-  return orderFunction;
-}
-
-// again returns a function on a conditional check and stores it in orderFunction
-function createDinnerOrder(passenger) {
-  var orderFunction;
-
-  if (passenger.ticket === "first") {
-    orderFunction = function () {
-      console.log("Would you like Chicken or Pasta?");
-    };
-  } else if (passenger.ticket === "premium economy") {
-    orderFunction = function () {
-      console.log("Would you like Snack Box or Cheese plate?");
-    };
-  } else if (passenger.ticket === "coach") {
-    orderFunction = function () {
-      console.log("Would you like Peanutes or Pretzels?");
-    };
-  }
-  return orderFunction;
-}
-
-function presentedMovie(passenger) {
-  var movieFunction;
-
-  movieFunction = function () {
-    console.log("Todays Movie is 'No Time to Die 007'");
-  };
-  return movieFunction;
-}
+console.log("The products array");
+console.table(products);
+console.log("Products sold for <= " + soldPrice);
+console.table(filteredProducts);
