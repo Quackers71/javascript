@@ -32,14 +32,11 @@ var products = [
 
 // running through some JS Array Methods taken from https://www.youtube.com/watch?v=R8rmfD9Y5-c
 
-// The find() method returns the first element in the provided array
-var productToSearch = "Raspberry";
-
-const foundProduct = products.find((product) => {
-  return product.name === productToSearch;
-});
+// The forEach() method executes a provided function once for each array element.
 
 console.log("The products array");
 console.table(products);
-console.log("Product to Search : '" + productToSearch + "'");
-console.table(foundProduct);
+
+products.forEach((product) => {
+  console.log(product.name);
+});
