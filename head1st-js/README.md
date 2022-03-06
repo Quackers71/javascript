@@ -3,6 +3,7 @@
 - Paperback - 10 April 2014
 - Recommended by AndySterkowitz - https://www.youtube.com/channel/UCZ9qFEC82qM6Pk-54Q4TVWA
 - Started reading on Saturday 18th Dec 2021
+- https://github.com/bethrobson/Head-First-JavaScript-Programming
 
 ## Notes throughout the Book / Course
 
