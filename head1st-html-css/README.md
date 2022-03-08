@@ -12,3 +12,5 @@
 - http://www.unicode.org/charts/
 
 - Markup Validation Service - https://validator.w3.org/
+
+- Chapter 7 CSS pg.255 - 295/764
