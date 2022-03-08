@@ -10,3 +10,5 @@
 - https://www.w3schools.com/html/html_entities.asp
 - https://www.w3schools.com/charsets/ref_html_symbols.asp
 - http://www.unicode.org/charts/
+
+- Markup Validation Service - https://validator.w3.org/
