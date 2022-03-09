@@ -12,5 +12,6 @@
 - http://www.unicode.org/charts/
 
 - Markup Validation Service - https://validator.w3.org/
+- CSS Validation Service - https://jigsaw.w3.org/css-validator/
 
-- Chapter 7 CSS pg.255 - 295/764
+- Chapter 8 fonts & colors pg.311 - 351/764
