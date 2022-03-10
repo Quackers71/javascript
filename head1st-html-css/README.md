@@ -14,4 +14,4 @@
 - Markup Validation Service - https://validator.w3.org/
 - CSS Validation Service - https://jigsaw.w3.org/css-validator/
 
-- Chapter 8 fonts & colors pg.311 - 351/764
+- Chapter 9 the box model pg.361 - 401/764
