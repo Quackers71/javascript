@@ -1,0 +1,79 @@
+body {
+  background-color: #222;
+  color: white;
+  margin: 0;
+  min-height: 50vh;
+}
+
+* {
+  font-size: 25px;
+}
+
+/* div {
+  background-color: red;
+} */
+
+div.red:hover {
+  background-color: darkred;
+}
+
+div.red.blue-text {
+  background-color: darkgreen;
+}
+
+.red.blue-text {
+  background-color: darkred;
+  color: darkblue;
+}
+
+/* .red:hover {
+  background-color: red;
+} */
+
+span:hover,
+li {
+  background-color: chocolate;
+}
+
+ul li:hover {
+  background-color: orangered;
+}
+
+/* > means direct child of */
+span > b {
+  background-color: purple;
+}
+
+li.red.blue-text ~ li {
+  background-color: crimson;
+  color: darkgoldenrod;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input:focus {
+  background: blue;
+  color: white;
+}
+
+[data-donkey*="34"] {
+  background-color: #333;
+}
+
+/* li:not(.blue-text) {
+  background-color: #333;
+} */
+
+/* li:nth-child(1) {
+  background-color: black;
+}
+ */
+
+/* div b {
+  background-color: purple;
+} */
+
+/* #blue {
+  background-color: blue;
+  color: black;
+} */

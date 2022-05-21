@@ -6,6 +6,10 @@
 - https://github.com/bethrobson/Head-First-JavaScript-Programming
 - Currently on Pg.381 ~ 421/704 - Chapter 9 - Asynchronous coding (Handling events)
 
+## External Sources
+
+- https://github.com/CodeExplainedRepo
+
 ## Notes throughout the Book / Course
 
 - functions / parameters & arguments from pages 89/90
