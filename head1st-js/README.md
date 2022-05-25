@@ -8,7 +8,7 @@
 
 ## External Sources
 
-- https://github.com/CodeExplainedRepo
+- https://github.com/CodeExplainedRepo/To-Do-List via https://youtu.be/b8sUhU_eq3g
 
 ## Notes throughout the Book / Course
 
