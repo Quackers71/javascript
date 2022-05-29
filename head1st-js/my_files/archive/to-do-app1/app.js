@@ -1,4 +1,4 @@
-// Vanilla Javascript Project Tutorial taken from https://youtu.be/Ttf3CEsEwMQ @ 0:15:18 of 1:15:18
+// Vanilla Javascript Project Tutorial taken from https://youtu.be/Ttf3CEsEwMQ @ 0:32:24 of 1:15:18
 
 // Selectors
 const todoInput = document.querySelector(".todo-input");
@@ -7,6 +7,7 @@ const todoList = document.querySelector(".todo-list");
 
 // Event Listeners
 todoButton.addEventListener('click', addTodo);
+todoList.addEventListener('click', deleteCheck);
 
 // Functions
 function addTodo(event) {
@@ -36,4 +37,23 @@ function addTodo(event) {
     todoList.appendChild(todoDiv);
     // Clear Todo Input Value
     todoInput.value = "";
+}
+
+function deleteCheck(e) {
+    const item = e.target;
+    // Delete ToDo
+    if(item.classList[0] === 'trash-btn') {
+        const todo = item.parentElement;
+        //Animation
+        todo.classList.add("fall");
+        todo.addEventListener('transitionend', function() {
+            todo.remove();
+        });
+    }
+
+    // Check Mark
+    if (item.classList[0] === "completed-btn") {
+        const todo = item.parentElement;
+        todo.classList.toggle('completed');
+    }
 }
