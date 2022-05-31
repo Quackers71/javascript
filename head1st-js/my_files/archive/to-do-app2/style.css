@@ -148,6 +148,10 @@ main {
     opacity: 0.6;
 }
 
+.task .actions .complete {
+    color: var(--pink);
+}
+
 .task .actions .edit {
     background-image: linear-gradient(to right, var(--pink),
             var(--purple));

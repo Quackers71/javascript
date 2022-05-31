@@ -1,6 +1,5 @@
 // Build a Todo List App Tutorial 
-// taken from https://youtu.be/MkESyVB4oUw 
-// currently @ 28:12 of 37:13
+// taken from https://youtu.be/MkESyVB4oUw
 // https://github.com/TylerPottsDev/yt-js-task-list-2021
 
 // Selectors
@@ -40,6 +39,10 @@ window.addEventListener('load', () => {
         const task_actions_el = document.createElement("div");
         task_actions_el.classList.add("actions");
 
+        const task_complete_el = document.createElement("button");
+        task_complete_el.classList.add("complete");
+        task_complete_el.innerHTML = "Complete";
+
         const task_edit_el = document.createElement("button");
         task_edit_el.classList.add("edit");
         task_edit_el.innerHTML = "Edit";
@@ -48,6 +51,7 @@ window.addEventListener('load', () => {
         task_delete_el.classList.add("delete");
         task_delete_el.innerHTML = "Delete";
 
+        task_actions_el.appendChild(task_complete_el);
         task_actions_el.appendChild(task_edit_el);
         task_actions_el.appendChild(task_delete_el);
 
@@ -58,18 +62,44 @@ window.addEventListener('load', () => {
         input.value = "";
 
         task_edit_el.addEventListener('click', () => {
-            if (task_edit_el.innerText.toLowerCase() == "edit") {
-                task_input_el.removeAttribute("readonly");
-            task_input_el.focus();
-            task_edit_el.innerText = "Save";
+            if (task_complete_el.innerText.toLowerCase() == "completed") {
+                alert("You are unable to amend a task, once it has been marked as completed!");
             } else {
-                task_input_el.setAttribute("readonly", "readonly");
-                task_edit_el.innerText = "Edit";
+                if (task_edit_el.innerText.toLowerCase() == "edit") {
+                    task_input_el.removeAttribute("readonly");
+                    task_input_el.focus();
+                    task_edit_el.innerText = "Save";
+                } else {
+                    task_input_el.setAttribute("readonly", "readonly");
+                    task_edit_el.innerText = "Edit";
+                }
             }
         });
 
         task_delete_el.addEventListener('click', () => {
             list_el.removeChild(task_el);
+        });
+
+        task_complete_el.addEventListener('click', () => {
+                if (task_complete_el.innerText.toLowerCase() == "complete") {
+                    task_input_el.focus();
+                    task_complete_el.innerText = "Completed";
+                    task_input_el.style.setProperty("text-decoration", "line-through");
+                    task_input_el.style.setProperty("opacity", "0.4");
+
+                    task_input_el.setAttribute("type", "completed");
+                    task_input_el.setAttribute("readonly", "readonly");
+                    task_edit_el.innerText = "Edit";
+                } else {
+                    task_input_el.focus();
+                    task_complete_el.innerText = "Complete";
+                    task_input_el.style.setProperty("text-decoration", "none");
+                    task_input_el.style.setProperty("opacity", "none");
+
+                    task_input_el.setAttribute("type", "complete");
+                    task_input_el.setAttribute("readonly", "readonly");
+                    task_edit_el.innerText = "Edit";
+                }
         });
     });
 });
