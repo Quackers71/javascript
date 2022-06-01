@@ -3,17 +3,21 @@
 // https://github.com/TylerPottsDev/yt-js-task-list-2021
 
 // Selectors
+const form = document.querySelector("#new-task-form");
+const input = document.querySelector("#new-task-input");
+const list_el = document.querySelector("#tasks");
 
 // Event Listeners
-window.addEventListener('load', () => {
-    const form = document.querySelector("#new-task-form");
-    const input = document.querySelector("#new-task-input");
-    const list_el = document.querySelector("#tasks");
+window.addEventListener('DOMContentLoaded', getTasks);
+input.addEventListener('click', addTask);
+list_el.addEventListener('click', editTask);
 
-    form.addEventListener('submit', (e) => {
-        e.preventDefault();
+// Functions
 
-        const task = input.value;
+function addTask(e) {
+    e.preventDefault();
+
+    const task = input.value;
 
         if (!task) {
             alert("Please fill out the task!");
@@ -60,48 +64,51 @@ window.addEventListener('load', () => {
         list_el.appendChild(task_el);
 
         input.value = "";
+}
 
-        task_edit_el.addEventListener('click', () => {
-            if (task_complete_el.innerText.toLowerCase() == "completed") {
-                alert("You are unable to amend a task, once it has been marked as completed!");
+function getTasks() {
+
+}
+
+function editTask() {
+    task_edit_el.addEventListener('click', () => {
+        if (task_complete_el.innerText.toLowerCase() == "completed") {
+            alert("You are unable to amend a task, once it has been marked as completed!");
+        } else {
+            if (task_edit_el.innerText.toLowerCase() == "edit") {
+                task_input_el.removeAttribute("readonly");
+                task_input_el.focus();
+                task_edit_el.innerText = "Save";
             } else {
-                if (task_edit_el.innerText.toLowerCase() == "edit") {
-                    task_input_el.removeAttribute("readonly");
-                    task_input_el.focus();
-                    task_edit_el.innerText = "Save";
-                } else {
-                    task_input_el.setAttribute("readonly", "readonly");
-                    task_edit_el.innerText = "Edit";
-                }
+                task_input_el.setAttribute("readonly", "readonly");
+                task_edit_el.innerText = "Edit";
             }
-        });
-
-        task_delete_el.addEventListener('click', () => {
-            list_el.removeChild(task_el);
-        });
-
-        task_complete_el.addEventListener('click', () => {
-                if (task_complete_el.innerText.toLowerCase() == "complete") {
-                    task_input_el.focus();
-                    task_complete_el.innerText = "Completed";
-                    task_input_el.style.setProperty("text-decoration", "line-through");
-                    task_input_el.style.setProperty("opacity", "0.4");
-
-                    task_input_el.setAttribute("type", "completed");
-                    task_input_el.setAttribute("readonly", "readonly");
-                    task_edit_el.innerText = "Edit";
-                } else {
-                    task_input_el.focus();
-                    task_complete_el.innerText = "Complete";
-                    task_input_el.style.setProperty("text-decoration", "none");
-                    task_input_el.style.setProperty("opacity", "none");
-
-                    task_input_el.setAttribute("type", "complete");
-                    task_input_el.setAttribute("readonly", "readonly");
-                    task_edit_el.innerText = "Edit";
-                }
-        });
+        }
     });
-});
 
-// Functions
+    task_delete_el.addEventListener('click', () => {
+        list_el.removeChild(task_el);
+    });
+
+    task_complete_el.addEventListener('click', () => {
+            if (task_complete_el.innerText.toLowerCase() == "complete") {
+                task_input_el.focus();
+                task_complete_el.innerText = "Completed";
+                task_input_el.style.setProperty("text-decoration", "line-through");
+                task_input_el.style.setProperty("opacity", "0.4");
+
+                task_input_el.setAttribute("type", "completed");
+                task_input_el.setAttribute("readonly", "readonly");
+                task_edit_el.innerText = "Edit";
+            } else {
+                task_input_el.focus();
+                task_complete_el.innerText = "Complete";
+                task_input_el.style.setProperty("text-decoration", "none");
+                task_input_el.style.setProperty("opacity", "none");
+
+                task_input_el.setAttribute("type", "complete");
+                task_input_el.setAttribute("readonly", "readonly");
+                task_edit_el.innerText = "Edit";
+            }
+    });
+}
