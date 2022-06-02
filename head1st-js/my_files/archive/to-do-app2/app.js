@@ -3,14 +3,15 @@
 // https://github.com/TylerPottsDev/yt-js-task-list-2021
 
 // Selectors
-const form = document.querySelector("#new-task-form");
+// const form = document.querySelector("#new-task-form");
 const input = document.querySelector("#new-task-input");
-const addButton = document.querySelector("#task-submit-button");
+const addButton = document.querySelector("#new-task-submit");
 const list_el = document.querySelector("#tasks");
 
 // Event Listeners
+document.addEventListener('DOMContentLoaded', getTasks);
 addButton.addEventListener('click', addTask);
-list_el.addEventListener('click', editTask);
+list_el.addEventListener('click', deleteTask);
 
 // Functions
 function addTask(e) {
@@ -72,6 +73,7 @@ function addTask(e) {
 }
 
 function saveLocalTasks(task) {
+    // Check - Do you already have tasks in local storage
     let tasks;
     if (localStorage.getItem('tasks') === null) {
         tasks = [];
@@ -85,6 +87,12 @@ function saveLocalTasks(task) {
 
 function editTask(task) {
 
+    const task_el = document.createElement("div");
+    const task_input_el = document.createElement("input");
+    const task_complete_el = document.createElement("button");
+    const task_edit_el = document.createElement("button");
+    const task_delete_el = document.createElement("button");
+
     if (task_complete_el.innerText.toLowerCase() == "completed") {
         alert("You are unable to amend a task, once it has been marked as completed!");
     } else {
@@ -97,28 +105,71 @@ function editTask(task) {
             task_edit_el.innerText = "Edit";
         }
     }
-    list_el.removeChild(task_el);
+
 }
 
-function deleteTask(task) {
+function deleteTask(e) {
 
-    if (task_complete_el.innerText.toLowerCase() == "complete") {
-        task_input_el.focus();
-        task_complete_el.innerText = "Completed";
-        task_input_el.style.setProperty("text-decoration", "line-through");
-        task_input_el.style.setProperty("opacity", "0.4");
+    console.log(e.target);
+    const task = e.target;
 
-        task_input_el.setAttribute("type", "completed");
-        task_input_el.setAttribute("readonly", "readonly");
-        task_edit_el.innerText = "Edit";
-    } else {
-        task_input_el.focus();
-        task_complete_el.innerText = "Complete";
-        task_input_el.style.setProperty("text-decoration", "none");
-        task_input_el.style.setProperty("opacity", "none");
-
-        task_input_el.setAttribute("type", "complete");
-        task_input_el.setAttribute("readonly", "readonly");
-        task_edit_el.innerText = "Edit";
+    if (task.classList[0] === "delete") {
+        const removeTask = task.parentElement;
+        task.remove();
     }
+
+    console.log("deleteTask")
+}
+
+function getTasks() {
+    // Check - Do you already have tasks in local storage
+    let tasks;
+    if (localStorage.getItem('tasks') === null) {
+        tasks = [];
+    } else {
+        tasks = JSON.parse(localStorage.getItem('tasks'));
+    }
+
+    tasks.forEach(function(task) {
+        // new task div
+        const task_el = document.createElement("div");
+        task_el.classList.add("task");
+
+        // new content div
+        const task_content_el = document.createElement("div");
+        task_content_el.classList.add("content");
+        task_el.appendChild(task_content_el);
+
+        // new text input
+        const task_input_el = document.createElement("input");
+        task_input_el.classList.add("text");
+        task_input_el.type = "text";
+        task_input_el.value = task;
+        task_input_el.setAttribute("readonly", "readonly");
+        task_content_el.appendChild(task_input_el);
+
+        const task_actions_el = document.createElement("div");
+        task_actions_el.classList.add("actions");
+
+        const task_complete_el = document.createElement("button");
+        task_complete_el.classList.add("complete");
+        task_complete_el.innerHTML = "Complete";
+
+        const task_edit_el = document.createElement("button");
+        task_edit_el.classList.add("edit");
+        task_edit_el.innerHTML = "Edit";
+
+        const task_delete_el = document.createElement("button");
+        task_delete_el.classList.add("delete");
+        task_delete_el.innerHTML = "Delete";
+
+        task_actions_el.appendChild(task_complete_el);
+        task_actions_el.appendChild(task_edit_el);
+        task_actions_el.appendChild(task_delete_el);
+
+        task_el.appendChild(task_actions_el);
+        list_el.appendChild(task_el);
+
+        console.log("checked getTasks()")
+    })
 }
