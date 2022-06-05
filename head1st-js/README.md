@@ -6,10 +6,6 @@
 - https://github.com/bethrobson/Head-First-JavaScript-Programming
 - Currently on Pg.381 ~ 421/704 - Chapter 9 - Asynchronous coding (Handling events)
 
-## External Sources
-
-- https://github.com/CodeExplainedRepo/To-Do-List via https://youtu.be/b8sUhU_eq3g
-
 ## Notes throughout the Book / Course
 
 - functions / parameters & arguments from pages 89/90
@@ -37,3 +33,16 @@ https://www.codegrepper.com/search.php?answer_removed=1&q=-=%20javascript
 
 - MDN Web Docs - Resources for developers, by developers.
   - https://developer.mozilla.org/en-US/docs/Web/JavaScript
+
+## External Sources
+
+- https://github.com/CodeExplainedRepo/To-Do-List via https://youtu.be/b8sUhU_eq3g -> archive/to-do-app0
+- https://youtu.be/Ttf3CEsEwMQ -> archive/to-do-app1
+- https://github.com/TylerPottsDev/yt-js-task-list-2021 via https://youtu.be/MkESyVB4oUw -> archive/to-do-app2
+- Step up your front-end skills with these 5 resources via https://youtu.be/QqDH5sYzDS8
+  - https://www.frontendmentor.io/
+  - https://stylestage.dev/
+  - https://cssbattle.dev/
+  - https://www.codewars.com/dashboard
+  - https://www.frontendpractice.com/
+  - https://www.firsttimersonly.com/
