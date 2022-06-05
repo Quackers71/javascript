@@ -9,9 +9,9 @@ function init() {
     for (var i = 0; i < images.length; i++ ) {
         images[i].onpointerover = showImage;
     }
-    for (var j = 0; j < images.length; j++) {
+    /* for (var j = 0; j < images.length; j++) {
         images[j].onpointerleave = unShowImage;
-    }
+    } */
 }
 
 function showImage(eventObj) {
@@ -21,10 +21,12 @@ function showImage(eventObj) {
     name += ".jpg";
     image.src = "./../../../images/" + name;
 
+    setTimeout(unShowImage, 2000, image);
+
   }
 
-function unShowImage(eventObj) {
-    var image = eventObj.target;
+function unShowImage(image) {
+    // var image = eventObj.target;
 
     var name = image.id;
     name += "blur.jpg";
