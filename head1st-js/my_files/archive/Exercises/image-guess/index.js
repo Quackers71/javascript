@@ -8,6 +8,7 @@ function init() {
 
     for (var i = 0; i < images.length; i++ ) {
         images[i].onpointerover = showImage;
+        images[i].onpointerleave = unShowImage;
     }
     /* for (var j = 0; j < images.length; j++) {
         images[j].onpointerleave = unShowImage;
@@ -15,19 +16,19 @@ function init() {
 }
 
 function showImage(eventObj) {
-    var image = eventObj.target;
 
+    var image = eventObj.target;
     var name = image.id;
     name += ".jpg";
     image.src = "./../../../images/" + name;
 
-    setTimeout(unShowImage, 2000, image);
+    // setTimeout(unShowImage, 2000, image);
 
   }
 
-function unShowImage(image) {
-    // var image = eventObj.target;
+function unShowImage(eventObj) {
 
+    var image = eventObj.target;
     var name = image.id;
     name += "blur.jpg";
     image.src = "./../../../images/" + name;
