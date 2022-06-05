@@ -19,7 +19,7 @@ function showImage(eventObj) {
 
     var name = image.id;
     name += ".jpg";
-    image.src = "../images/" + name;
+    image.src = "./../../../images/" + name;
 
   }
 
@@ -28,38 +28,38 @@ function unShowImage(eventObj) {
 
     var name = image.id;
     name += "blur.jpg";
-    image.src = "../images/" + name;
+    image.src = "./../../../images/" + name;
 }
 
 function addMainImages() {
 
     var img = document.createElement("img");
-    img.src = "./../images/zeroblur.jpg";
+    img.src = "./../../../images/zeroblur.jpg";
     img.id = "zero"
     document.body.appendChild(img);
 
     var img = document.createElement("img");
     img.id = "one"
-    img.src = "./images/oneblur.jpg";
+    img.src = "./../../../images/oneblur.jpg";
     document.body.appendChild(img);
 
     var img = document.createElement("img");
-    img.src = "./images/twoblur.jpg";
+    img.src = "./../../../images/twoblur.jpg";
     img.id = "two"
     document.body.appendChild(img);
 
     var img = document.createElement("img");
     img.id = "three"
-    img.src = "./images/threeblur.jpg";
+    img.src = "./../../../images/threeblur.jpg";
     document.body.appendChild(img);
 
     var img = document.createElement("img");
     img.id = "four"
-    img.src = "./images/fourblur.jpg";
+    img.src = "./../../../images/fourblur.jpg";
     document.body.appendChild(img);
 
     var img = document.createElement("img");
     img.id = "five"
-    img.src = "./images/fiveblur.jpg";
+    img.src = "./../../../images/fiveblur.jpg";
     document.body.appendChild(img);
 }
