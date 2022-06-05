@@ -2,7 +2,7 @@
 // taken from https://youtu.be/MkESyVB4oUw
 // https://github.com/TylerPottsDev/yt-js-task-list-2021
 
-// Selectors
+// Main Selectors
 // const form = document.querySelector("#new-task-form");
 const input = document.querySelector("#new-task-input");
 const addButton = document.querySelector("#new-task-submit");
@@ -21,7 +21,7 @@ const task_delete_el = document.createElement("button");
 // Event Listeners
 document.addEventListener('DOMContentLoaded', getTasks);
 addButton.addEventListener('click', addTask);
-list_el.addEventListener('click', deleteTask);
+list_el.addEventListener('click', actionOnTask);
 
 // Functions
 function addTask(e) {
@@ -38,13 +38,16 @@ function addTask(e) {
     }
 
     // new task div
+    const task_el = document.createElement("div");
     task_el.classList.add("task");
 
     // new content div
+    const task_content_el = document.createElement("div");
     task_content_el.classList.add("content");
     task_el.appendChild(task_content_el);
 
     // new text input
+    const task_input_el = document.createElement("input");
     task_input_el.classList.add("text");
     task_input_el.type = "text";
     task_input_el.value = task;
@@ -54,14 +57,18 @@ function addTask(e) {
     // add task to localStorage function call
     saveLocalTasks(input.value);
 
+    const task_actions_el = document.createElement("div");
     task_actions_el.classList.add("actions");
 
+    const task_complete_el = document.createElement("button");
     task_complete_el.classList.add("complete");
     task_complete_el.innerHTML = "Complete";
 
+    const task_edit_el = document.createElement("button");
     task_edit_el.classList.add("edit");
     task_edit_el.innerHTML = "Edit";
 
+    const task_delete_el = document.createElement("button");
     task_delete_el.classList.add("delete");
     task_delete_el.innerHTML = "Delete";
 
@@ -72,6 +79,7 @@ function addTask(e) {
     task_el.appendChild(task_actions_el);
     list_el.appendChild(task_el);
 
+    // clear Task Input Field
     input.value = "";
 }
 
@@ -104,18 +112,18 @@ function editTask(task) {
     }
 }
 
-function deleteTask(e) {
+function actionOnTask(e) {
 
     console.log(e.target);
     const task = e.target;
 
     if (task.classList[0] === "delete") {
         const removeTask = task.parentElement;
-        // removeLocalTasks(task);
         task.addEventListener('transitionend', function() {
-            task.remove();
+            removeTask.remove();
+            console.log("deleteTask")
         });
-        console.log("deleteTask")
+
     }
 
     if (task_complete_el.innerText.toLowerCase() == "completed") {
