@@ -4,7 +4,7 @@
 - Recommended by AndySterkowitz - https://www.youtube.com/channel/UCZ9qFEC82qM6Pk-54Q4TVWA
 - Started reading on Saturday 18th Dec 2021
 - https://github.com/bethrobson/Head-First-JavaScript-Programming
-- Currently on Pg.381 ~ 421/704 - Chapter 9 - Asynchronous coding (Handling events)
+- Currently on Pg.429 ~ 469/704 - Chapter 10 - Liberated Functions
 
 ## Notes throughout the Book / Course
 
