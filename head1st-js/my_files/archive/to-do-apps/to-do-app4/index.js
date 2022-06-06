@@ -1,4 +1,5 @@
-//  To Do List taken from https://youtu.be/dHtyDron5ik
+// To Do List taken from https://youtu.be/dHtyDron5ik 
+// currently @ 10:03 of 25:46
 
 (function(){
     var input = document.getElementById("input");
