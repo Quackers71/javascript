@@ -1,12 +1,24 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
 body {
   background-color: #222;
-  color: white;
+  color: green;
   margin: 20px;
 }
 
 h1 {
-  font-size: 50px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 40px;
+}
+
+input,
+button {
+  padding: 10px;
+  margin: 10px;
+  color: whitesmoke;
+  background-color: #444;
+  border: 1px solid green;
 }
 
 ul {
@@ -15,9 +27,9 @@ ul {
   margin: 10px;
   width: 40%;
   float: left;
-  color: black;
-  border: 1px solid #333;
-  background: #eee;
-  font-size: 20px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: palegreen;
+  font-weight: 500;
+  border: 1px solid green;
+  background: #555;
+  font-size: 18px;
 }
