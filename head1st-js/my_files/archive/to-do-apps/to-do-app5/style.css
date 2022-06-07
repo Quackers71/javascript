@@ -1,0 +1,13 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #222;
+  color: whitesmoke;
+  margin: 20px;
+}
+
+h1 {
+  font-size: 40px;
+}
