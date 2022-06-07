@@ -13,19 +13,54 @@
 
     /* *
      * @param {string} str
+     * @param {function} onCheck
      * @returns {HTMLElement}
      */
-    var makeTaskHtml = function(str) {
+    var makeTaskHtml = function(str, onCheck) {
         var el = document.createElement("li");
-        el.textContent = str;
+        var checkbox = document.createElement("input");
+        var label = document.createElement("span");
+
+        checkbox.type = "checkbox";
+        checkbox.addEventListener("click", onCheck);
+        label.textContent = str;
+
+        el.appendChild(checkbox);
+        el.appendChild(label);
 
         return el;
     };
 
-    var addTask = function(list, task) {
-        list.appendChild(task);
+    var addTask = function(task) {
+        lists.todo.appendChild(task);
     }
 
-    addTask(lists.todo, makeTaskHtml("Test Todo Task"));
-    addTask(lists.done, makeTaskHtml("Test Done Task"));
+    var onCheck = function(event) {
+        var task = event.target.parentElement;
+        var list = task.parentElement.id;
+
+        lists[list === 'done' ? 'todo' : 'done'].appendChild(task);
+        this.checked = false;
+        input.focus();
+    };
+
+    var onInput = function() {
+        var str = input.value.trim();
+
+        if (str.length > 0) {
+            addTask(makeTaskHtml(str, onCheck));
+            input.value = "";
+            input.focus();
+        }
+    }
+
+    btn.addEventListener("click", onInput);
+    input.addEventListener("keyup", function(event) {
+        var code = event.keyCode;
+
+        if (code === 13) {
+            onInput();
+        }
+    });
+    input.focus();
 }());
