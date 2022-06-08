@@ -2,10 +2,11 @@ body {
     background-color: #333;
 }
 
-h1 {
+h1,
+h2 {
     color: white;
     text-align: center;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 p {
@@ -13,17 +14,10 @@ p {
     text-align: center;
 }
 
-#image0 {
+#image {
     position: relative;
-    left: 12%;
-    width: 200;
-    padding-right: 10px;
-}
-
-#image1 {
-    position: relative;
-    left: 42%;
-    width: 200;
+    left: 43%;
+    box-shadow: 1px 1px 1px 1px #333;
 }
 
 #ClickMe-btn {

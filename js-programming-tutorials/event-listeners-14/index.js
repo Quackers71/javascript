@@ -1,12 +1,18 @@
 // Event Listeners - Javascript - Tutorial 14 taken from https://youtu.be/jrI0WFCCLWY
-// @ 9:17 of 13:54
+
+document.write("<h2>using JavaScript</h2>");
 
 function handleClick(element) {
-    element.style = "background-color: blue";
+    element.style = "background-color: blue;";
 }
 
-var image = document.getElementById("image");
+const image = document.getElementById("image");
 image.addEventListener("mouseover", function() {
-    this.style = "box-shadow: 2px 2px 2px white";
-    this.width = "300";
+    this.style = "box-shadow: 15px 15px 15px 15px #111";
+    this.width = "450";
+});
+
+image.addEventListener("mouseout", function() {
+    this.style = "";
+    this.width = "250";
 });
