@@ -1,0 +1,25 @@
+body {
+    background-color: #333;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p {
+    color: green;
+    text-align: center;
+}
+
+#image {
+    position: relative;
+    left: 42%;
+    width: 200;
+}
+
+#CM-btn {
+    position: relative;
+    left: 50%
+}
