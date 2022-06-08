@@ -13,13 +13,21 @@ p {
     text-align: center;
 }
 
-#image {
+#image0 {
+    position: relative;
+    left: 12%;
+    width: 200;
+    padding-right: 10px;
+}
+
+#image1 {
     position: relative;
     left: 42%;
     width: 200;
 }
 
-#CM-btn {
+#ClickMe-btn {
     position: relative;
+    background-color: salmon;
     left: 50%
 }
