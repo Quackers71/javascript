@@ -10,8 +10,9 @@ h2 {
 }
 
 p {
-    color: green;
+    color: white;
     text-align: center;
+    font-style: bold;
 }
 
 #image {

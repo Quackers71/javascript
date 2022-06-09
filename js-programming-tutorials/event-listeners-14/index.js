@@ -22,7 +22,7 @@ document.body.appendChild(div);
 
 // Create a button element
 const button = document.createElement('button');
-button.innerText = 'Calculator'
+button.innerText = 'Very Basic Calculator'
 button.addEventListener('click', () => {
     let x;
     let ttl = calculator(x);
