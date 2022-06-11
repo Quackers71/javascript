@@ -1,6 +1,8 @@
-# javascript  
+# JavaScript
 
-## Learning JavaScript
+### Specific Playlists for JavaScript
+
+- Introductory to Intermediate level JavaScript lessons. Hopefully in a logical order - https://www.youtube.com/playlist?list=PLyuRouwmQCjkYdv4VjuIbvcMZVWSdOm58
 
 ### Head First JavaScript Programming: A Brain-Friendly Guide
 
@@ -8,11 +10,22 @@
 - Recommended by AndySterkowitz - https://www.youtube.com/channel/UCZ9qFEC82qM6Pk-54Q4TVWA
 - Started reading on Saturday 18th Dec 2021
 
-### Start doing Challenges #slacker
+### Start doing Challenges 
 
+- https://www.frontendmentor.io/
 - https://www.codewars.com/dashboard
 - https://coderbyte.com
 - https://leetcode.com/explore/
+
+### some other External Resources
+
+- Step up your front-end skills with these 5 resources via https://youtu.be/QqDH5sYzDS8
+  - https://www.frontendmentor.io/
+  - https://stylestage.dev/
+  - https://cssbattle.dev/
+  - https://www.codewars.com/dashboard
+  - https://www.frontendpractice.com/
+  - https://www.firsttimersonly.com/
 
 ### Start building Apps
 
