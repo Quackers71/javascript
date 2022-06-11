@@ -26,3 +26,13 @@ p {
     background-color: salmon;
     left: 50%
 }
+
+#calcBtn {
+    position: relative;
+    background-color: salmon;
+    left: 46%
+}
+
+#total {
+    text-align: center;
+}

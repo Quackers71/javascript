@@ -23,13 +23,14 @@ document.body.appendChild(div);
 // Create a button element
 const button = document.createElement('button');
 button.innerText = 'Very Basic Calculator'
+button.id = "calcBtn";
 button.addEventListener('click', () => {
     let x;
     let ttl = calculator(x);
 
     const p = document.createElement("p");
     // li.id = "result";
-    p.innerHTML = `<p>The total is ${ttl}</p>`;
+    p.innerHTML = `<p id="total">The total is ${ttl}</p>`;
     document.body.appendChild(p);
   });
 
