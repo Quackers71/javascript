@@ -1,0 +1,37 @@
+/* CSS Height vs Line-Height taken from https://youtu.be/GdIDrhwhjBo */
+
+body {
+    background-color: #222;
+    color: white;
+}
+
+header h1 {
+    background-color: black;
+    color: goldenrod;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 6rem;
+}
+
+main h2 {
+    color: yellowgreen;
+    text-align: center;
+    padding: 10px;
+    margin: 20px 20px;
+    border: 5px solid #333;
+}
+
+html {
+    font-size: 20px;
+}
+
+p {
+    background-color: black;
+    color: cornsilk;
+    padding: 10;
+    margin: 10px;
+    border: 1px solid #333;
+    font-size: 1rem;
+    line-height: 1.6;
+    height: 6.4rem;
+}
