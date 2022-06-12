@@ -19,7 +19,7 @@ function showImage(eventObj) {
 
     var name = image.id;
     name += ".jpg";
-    image.src = "../images/" + name;
+    image.src = "./images/" + name;
 
   }
 
@@ -28,13 +28,13 @@ function unShowImage(eventObj) {
 
     var name = image.id;
     name += "blur.jpg";
-    image.src = "../images/" + name;
+    image.src = "./images/" + name;
 }
 
 function addMainImages() {
 
     var img = document.createElement("img");
-    img.src = "./../images/zeroblur.jpg";
+    img.src = "./images/zeroblur.jpg";
     img.id = "zero"
     document.body.appendChild(img);
 
