@@ -1,0 +1,49 @@
+/* How CSS Padding and Margin Works taken from https://youtu.be/NZEz4yNITd8 */
+
+body {
+    background-color: #222;
+    color: white;
+}
+
+header h1 {
+    color: goldenrod;
+    text-align: center;
+}
+
+main h2 {
+    color: greenyellow;
+    text-align: center;
+}
+
+p {
+    background-color: #333;
+    color: yellowgreen;
+    font-size: large;
+    padding: 20px;
+    /* same bg color as content area */
+    border: 15px solid sandybrown;
+    /* you pick the colour */
+    margin: 30px;
+    /* always transparent */
+}
+
+#ricky {
+    width: 300px;
+    height: 200px;
+    background-color: black;
+    /* margin-bottom: 50px; */
+}
+
+#bubbles {
+    border-width: 0;
+    margin: 0;
+    background-color: cornflowerblue;
+    color: darkblue;
+    font-weight: 400;
+}
+
+#julian {
+    padding-top: 20;
+    color: aqua;
+    border: 15px solid blanchedalmond;
+}

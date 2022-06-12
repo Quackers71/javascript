@@ -1,0 +1,24 @@
+/* How CSS Padding and Margin Works taken from https://youtu.be/NZEz4yNITd8 */
+
+body {
+    background-color: #222;
+    color: white;
+}
+
+header h1 {
+    color: goldenrod;
+    text-align: center;
+}
+
+p {
+    background-color: #555;
+    color: cornsilk;
+    margin: 20px;
+    /* margin: 10px 20px 30px 40px; */
+    /* t r b l */
+
+    padding: 50px;
+    /* padding: 10px 80px 50px; */
+    /* padding-top, padding-right, padding-bottom padding-left */
+
+}
