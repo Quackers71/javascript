@@ -1,0 +1,40 @@
+body {
+    background-color: #222;
+    color: white;
+}
+
+header h1 {
+    color: goldenrod;
+    text-align: center;
+}
+
+body h1, h2, h3, h4, h5, h6 {
+    color: goldenrod;
+    text-align: center;
+}
+
+p {
+    background-color: #333;
+    color: yellowgreen;
+    font-size: large;
+    padding: 20px;
+    margin: 30px;
+    border: 15px solid sandybrown;
+}
+
+em {
+    background-color: black;
+    color: cornsilk;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid salmon;
+    
+}
+
+strong {
+    background-color: black;
+    color: cornsilk;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid salmon;
+}
