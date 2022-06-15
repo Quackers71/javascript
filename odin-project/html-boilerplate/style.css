@@ -22,19 +22,11 @@ p {
     border: 15px solid sandybrown;
 }
 
-em {
+em, strong {
     background-color: black;
     color: cornsilk;
     margin: 10px;
     padding: 10px;
     border: 2px solid salmon;
     
-}
-
-strong {
-    background-color: black;
-    color: cornsilk;
-    margin: 10px;
-    padding: 10px;
-    border: 2px solid salmon;
 }
