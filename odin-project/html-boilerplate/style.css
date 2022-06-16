@@ -18,6 +18,10 @@ ol li, ul li {
     margin: 10px;
 }
 
+ul li {
+    list-style-type: lower-greek;
+}
+
 div {
     border: 1px solid green;
     margin: 100px;
