@@ -18,15 +18,10 @@ p {
     color: yellowgreen;
     font-size: large;
     padding: 20px;
-    margin: 30px;
-    border: 15px solid sandybrown;
 }
 
 em, strong {
-    background-color: black;
+    background-color: #233;
     color: cornsilk;
-    margin: 10px;
-    padding: 10px;
-    border: 2px solid salmon;
-    
+    padding: 20px;
 }
