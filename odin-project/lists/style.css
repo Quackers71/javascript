@@ -1,0 +1,29 @@
+body {
+    background-color: #222;
+    color: white;
+}
+
+header h1 {
+    color: yellowgreen;
+    text-align: center;
+}
+
+h2 {
+    color: coral;
+    margin: 10px;
+}
+
+ol li, ul li {
+    color: palegreen;
+    margin: 10px;
+}
+
+ul li {
+    list-style-type: lower-greek;
+}
+
+div {
+    border: 1px solid green;
+    margin: 100px;
+    padding: 50px;
+}

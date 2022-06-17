@@ -1,29 +1,34 @@
+
+
 body {
     background-color: #222;
     color: white;
+    padding: 20px;
+    margin: 20px 20px;
 }
 
-header h1 {
-    color: yellowgreen;
+h1 {
+    color: whitesmoke;
     text-align: center;
 }
 
-h2 {
-    color: coral;
-    margin: 10px;
+body h2, h3, h4, h5, h6 {
+    color: goldenrod;
+    text-align: center;
+    padding: 5px;
 }
 
-ol li, ul li {
-    color: palegreen;
-    margin: 10px;
+p {
+    background-color: #333;
+    color: yellowgreen;
+    font-size: large;
+    padding: 20px;
+    border: 5px solid lightblue;
 }
 
-ul li {
-    list-style-type: lower-greek;
-}
-
-div {
-    border: 1px solid green;
-    margin: 100px;
-    padding: 50px;
+em, strong {
+    background-color: #233;
+    color: cornsilk;
+    padding: 20px;
+    border: 4px solid lightcoral;
 }
