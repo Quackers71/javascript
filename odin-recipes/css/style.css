@@ -1,7 +1,7 @@
 body {
     background-color: #222;
     color: palegreen;
-    padding: 20px;
+    padding: 10px;
     margin: 20px 20px;
 }
 
@@ -12,11 +12,12 @@ h1 {
 
 h2, h3 {
     color: yellowgreen;
-    text-align: center;
+    /* text-align: center; */
 }
 
 #homepage {
     color: beige;
+    font-size: small;
     position: fixed;
     top: 0;
     left: 1;
@@ -26,14 +27,54 @@ h2, h3 {
     border: 1px solid transparent;
 }
 
-#lasagna {
+#food-image {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 400px;
+    width: 700px;
+}
+
+.thumbnail-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
 }
 
 ol li, ul li, p {
-    color: beige;
+    color: white;
     margin: 10px;
+    font-size: large;
+}
+
+.directions {
+    list-style-type: none;
+    counter-reset: el;
+}
+
+.directions>li:before {
+    content: "Step " counter(el) ". ";
+    counter-increment: el;
+}
+
+.directions li {
+    padding: 10px;
+}
+
+a {
+    list-style-type: none;
+    color: white;
+    font-size: x-large;
+    border: 1px solid transparent;
+    margin: 10px 10px 10px 50px;
+    padding: 10px;
+}
+
+.recipes ul {
+    list-style-type: none;
+    color: white;
+    /* border: 1px solid transparent; */
+    /* margin: 10px 10px 10px 50px; */
+    /* padding: 10px; */
+    text-align: center;
 }
