@@ -1,6 +1,6 @@
 body {
     background-color: #222;
-    color: white;
+    color: palegreen;
     padding: 20px;
     margin: 20px 20px;
 }
@@ -10,14 +10,30 @@ h1 {
     text-align: center;
 }
 
-p, a {
-    color: yellow;
+h2, h3 {
+    color: yellowgreen;
     text-align: center;
+}
+
+#homepage {
+    color: beige;
+    position: fixed;
+    top: 0;
+    left: 1;
+    right: 0;
+    padding: 10px;
+    font-style: inherit;
+    border: 1px solid transparent;
 }
 
 #lasagna {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
+    width: 400px;
+}
+
+ol li, ul li, p {
+    color: beige;
+    margin: 10px;
 }
