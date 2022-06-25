@@ -1,0 +1,24 @@
+* {
+    background-color: #333;
+    color: black;
+}
+
+.para {
+    background-color: rgb(250, 128, 114);
+    font-family: Verdana, "DejaVu Sans", sans-serif;
+}
+
+.para.no3 {
+    font-size: 24px;
+}
+
+#no2 {
+    color: #87ceeb;
+    font-size: 36px;
+}
+
+#no4 {
+    background-color: hsl(120, 73%, 75%);
+    font-size: 24px;
+    font-weight: bold;
+}
