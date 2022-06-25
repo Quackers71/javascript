@@ -1,0 +1,12 @@
+* {
+    background-color: #333;
+    color: white;
+}
+
+.container .text { 
+    background-color: greenyellow;
+    color: royalblue;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
