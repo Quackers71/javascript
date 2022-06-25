@@ -1,0 +1,50 @@
+* {
+    background-color: #333;
+    color: greenyellow;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    color: palevioletred;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+div {
+    color: white;
+}
+
+.alert-text {
+    color: red;
+}
+
+#title {
+    text-align: center;
+    background-color: #222;
+    color: yellow;
+    padding: 10px;
+}
+
+.subsection.header {
+    color: aquamarine;
+    font-size: 50px;
+}
+
+.subsection#preview {
+    color: goldenrod;
+    font-size: xx-large;
+}
+
+.ancestor .contents {
+    font-size: larger;
+    padding: 5px;
+}
+
+#goober {
+    height: auto;
+    width: 300px;
+}
