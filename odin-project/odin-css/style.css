@@ -48,3 +48,11 @@ div {
     height: auto;
     width: 300px;
 }
+
+#parent {
+    color: yellowgreen;
+}
+
+.child {
+    color: green;
+}
