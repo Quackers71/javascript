@@ -15,4 +15,8 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ulhttps://learn.shayhowe.com/html-css/creating-lists/
 
 ### CSS Stuff
-https://www.w3schools.com/cssref/css_colors_legal.asp
+https://www.w3schools.com/cssref/css_colors_legal.asp<br/>
+https://wattenberger.com/blog/css-cascade<br/>
+https://www.bitdegree.org/learn/font-family-css#how-to-use-a-downloaded-font
+https://www.w3schools.com/css/css_specificity.asp
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Properties_Reference
