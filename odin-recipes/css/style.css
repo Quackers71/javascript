@@ -8,6 +8,7 @@ body {
 h1 {
     color: greenyellow;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 h2, h3 {
@@ -22,7 +23,9 @@ h2, h3 {
     top: 0;
     left: 1;
     right: 0;
-    padding: 10px;
+    padding-top: 10px;
+    padding-right: 20px;
+    text-align: end;
     font-style: inherit;
     border: 1px solid transparent;
 }
@@ -35,13 +38,9 @@ h2, h3 {
 }
 
 .thumbnail-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
     height: auto;
     width: 250px;
-    border: 1px solid transparent;
-    margin-bottom: 20px;
+    border: 10px solid transparent;
 }
 
 ol li, ul li, p {
@@ -65,9 +64,6 @@ ol li, ul li, p {
 }
 
 a {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
     height: auto;
     width: 250px;
 }
