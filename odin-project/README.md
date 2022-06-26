@@ -20,3 +20,11 @@ https://wattenberger.com/blog/css-cascade<br/>
 https://www.bitdegree.org/learn/font-family-css#how-to-use-a-downloaded-font
 https://www.w3schools.com/css/css_specificity.asp
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Properties_Reference
+
+https://www.freecodecamp.org/news/how-to-use-css-overview-in-chrome-developer-tools/
+
+### The Box Model
+Learn CSS Box Model In 8 Minutes - https://youtu.be/rIO5326FgPE<br/>
+https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model<br/>
+https://css-tricks.com/almanac/properties/m/margin/
+https://www.w3schools.com/css/css_boxmodel.asp
