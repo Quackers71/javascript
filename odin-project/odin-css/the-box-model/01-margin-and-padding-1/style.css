@@ -1,0 +1,27 @@
+body {
+    max-width: 600px;
+    margin: 0 auto;
+    /* background-color: #333; */
+  }
+  
+  .one {
+    background: pink;
+    border: 3px solid blue;
+    padding: 30px;
+    margin: 10px;
+  }
+  
+  .two {
+    background: lightblue;
+    border: 3px solid purple;
+    margin-bottom: 40px;
+  }
+  
+  .three {
+    background: peachpuff;
+    border: 3px solid brown;
+    width: 200px;
+    padding: 30px;
+    /* margin-left: 330px; */
+    margin-left: auto;
+  }

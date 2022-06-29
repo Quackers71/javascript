@@ -28,3 +28,8 @@ Learn CSS Box Model In 8 Minutes - https://youtu.be/rIO5326FgPE<br/>
 https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model<br/>
 https://css-tricks.com/almanac/properties/m/margin/
 https://www.w3schools.com/css/css_boxmodel.asp
+
+Block & Inline Stuff<br/>
+https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Normal_Flow
+https://www.w3schools.com/html/html_blocks.asp
+https://www.digitalocean.com/community/tutorials/css-display-inline-vs-inline-block
