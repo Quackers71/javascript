@@ -1,21 +1,75 @@
 /* Taken from https://www.youtube.com/watch?v=3YW65K6LcIA */
 
-* {
-    background-color: #333;
-    color: white;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
-    /* box-sizing: border-box;
+* {
+    /* background-color: #333;
+    color: white; */
+
+    box-sizing: border-box;
     margin: 0;
-    padding: 0; */
+    padding: 0;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    
+    background-color: #333;
+    color: white;
 }
 
-.heading {
+img {
+    max-width: 100%;
+}
+
+h1, h2 {
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.navbar {
+    background: #3474e6;
+    color: #fff;
+    height: 60px;
+}
+
+.navbar .logo {
+    font-size: x-large;
+    font-weight: bold;
+}
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 16px;
+}
+
+/* .heading {
     color: greenyellow;
     display: flex;
     justify-content: center;
     margin: 20px;
-}
+} */
