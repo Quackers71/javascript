@@ -52,9 +52,14 @@ a {
 
 .hero-container {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+}
+
+.hero-image {
+    width: 450px;
+    height: 220px;
+    border: 100px solid transparent;
 }
 
 .hero {
@@ -78,12 +83,6 @@ a {
     align-self: flex-end;
     flex-direction: column;
     margin: -280px 100px 0px 0px;
-}
-
-.hero-image {
-    /* display: block; */
-    width: 450px;
-    height: 220px
 }
 
 .hero h1 {
