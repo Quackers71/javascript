@@ -1,5 +1,10 @@
 # JavaScript
 
+### Frontend Web Development Bootcamp Course (JavaScript, HTML, CSS)
+- 24 Aug 2022  Learn JavaScript, HTML, and CSS in this Frontend Web Development course. In this massive course, you will go from no coding experience to having the essential skills of a frontend web developer. You will learn various web development technologies and create a few projects along the way. ✏️ Course from Zach Gollwitzer.</br>
+  https://www.youtube.com/watch?v=zJSY8tbf_ys
+</br></br>
+
 ### Specific Playlists for JavaScript
 
 - Introductory to Intermediate level JavaScript lessons. Hopefully in a logical order - https://www.youtube.com/playlist?list=PLyuRouwmQCjkYdv4VjuIbvcMZVWSdOm58
