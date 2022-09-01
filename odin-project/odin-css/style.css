@@ -1,0 +1,86 @@
+* {
+    background-color: #333;
+    color: greenyellow;
+    margin: 2px;
+    /* border: 1px solid white; */
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    color: palevioletred;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+div {
+    color: white;
+}
+
+.alert-text {
+    color: red;
+}
+
+#title {
+    text-align: center;
+    background-color: #222;
+    color: yellow;
+    padding: 10px;
+}
+
+.subsection.header {
+    color: aquamarine;
+    font-size: 50px;
+}
+
+.subsection#preview {
+    color: goldenrod;
+    font-size: xx-large;
+}
+
+.ancestor .contents {
+    font-size: larger;
+    padding: 5px;
+}
+
+#goober {
+    height: auto;
+    width: 300px;
+}
+
+#parent {
+    color: yellowgreen;
+}
+
+.child {
+    color: green;
+}
+
+.flex-container {
+    background: #123;
+    padding: 16px;
+    border: 4px solid blue;
+    gap: 8px;
+    display: flex;
+}
+
+/* this selector selects all divs inside of the .flex-container */
+.flex-container div {
+    background: #120;
+    border: 4px solid brown;
+    height: 100px;
+    flex: 1;
+    padding: 4px;
+}
+
+.flex-container .two-one, .flex-container .two-two {
+    border: 2px solid goldenrod;
+    display: flex;
+    height: 35px;
+    flex: 1;
+    margin: 2px;
+}

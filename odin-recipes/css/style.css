@@ -1,0 +1,70 @@
+body {
+    background-color: #222;
+    color: palegreen;
+    padding: 10px;
+    margin: 20px 20px;
+}
+
+h1 {
+    color: greenyellow;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+h2, h3 {
+    color: yellowgreen;
+    /* text-align: center; */
+}
+
+#homepage {
+    color: beige;
+    font-size: small;
+    position: fixed;
+    top: 0;
+    left: 1;
+    right: 0;
+    padding-top: 10px;
+    padding-right: 20px;
+    text-align: end;
+    font-style: inherit;
+    border: 1px solid transparent;
+}
+
+#food-image {
+    display: block;
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin: 0 auto;
+    width: 700px;
+}
+
+.thumbnail-img {
+    height: auto;
+    width: 250px;
+    border: 10px solid transparent;
+}
+
+ol li, ul li, p {
+    color: white;
+    margin: 10px;
+    font-size: large;
+}
+
+.directions {
+    list-style-type: none;
+    counter-reset: el;
+}
+
+.directions>li:before {
+    content: "Step " counter(el) ". ";
+    counter-increment: el;
+}
+
+.directions li {
+    padding: 10px;
+}
+
+a {
+    height: auto;
+    width: 250px;
+}

@@ -1,0 +1,34 @@
+
+
+body {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    margin: 20px 20px;
+}
+
+h1 {
+    color: whitesmoke;
+    text-align: center;
+}
+
+body h2, h3, h4, h5, h6 {
+    color: goldenrod;
+    text-align: center;
+    padding: 5px;
+}
+
+p {
+    background-color: #333;
+    color: yellowgreen;
+    font-size: large;
+    padding: 20px;
+    border: 5px solid lightblue;
+}
+
+em, strong {
+    background-color: #233;
+    color: cornsilk;
+    padding: 20px;
+    border: 4px solid lightcoral;
+}
