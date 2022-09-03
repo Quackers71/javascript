@@ -8,3 +8,17 @@ h2 {
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+button {
+    color: white;
+    background-color: navy;
+    border: 1px solid navy;
+    padding: 20px;
+    font-size: 1.4rem;
+}
+
+button:hover {
+    background-color: orangered;
+    border: none;
+    color: black;
+}
