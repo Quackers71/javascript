@@ -12,13 +12,13 @@ h2 {
 button {
     color: white;
     background-color: navy;
+    border: 1px solid navy;
     padding: 20px;
     font-size: 1.4rem;
 }
 
 button:hover {
     background-color: orangered;
+    border: none;
     color: black;
-    padding: 20px;
-    font-size: 1.4rem;
 }

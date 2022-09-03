@@ -1,34 +1,21 @@
-// Frontend Web Development Bootcamp Course (JavaScript, HTML, CSS) via https://www.youtube.com/watch?v=zJSY8tbf_ys
+// Frontend Web Development Bootcamp Course (JavaScript, HTML, CSS) via https://www.youtube.com/watch?v=zJSY8tbf_ys @ 41:00 / 21:14:41
 
-// const htmlBody = document.querySelector('html');
 const h1Body = document.querySelector('h1');
 const buttonBody = document.querySelector('button');
-// console.log(htmlBody);
 
 const randomClickFunction = function() {
-    const colors = ["#333", "#002942", "#0Ca7DB", "red", "blue", "green", "yellow", "orange", "purple"];
+    const colors = ["#002942", "#0Ca7DB", "red", "blue", "green", "yellow", "orange", "purple"];
     const randomIndex = Math.floor(Math.random() * colors.length);
     const randomColor = colors[randomIndex];
-
-    // htmlBody.style.backgroundColor = randomColor;
-    h1Body.style.backgroundColor = randomColor;
-
-    // console.log("Color set to : " + randomColor);
-}
-
-const randomClickFunction2 = function() {
-    const colors = ["#333", "#002942", "#0Ca7DB", "red", "blue", "green", "yellow", "orange", "purple"];
-    const randomIndex = Math.floor(Math.random() * colors.length);
-    const randomColor = colors[randomIndex];
-
-    if (colors[randomIndex] === "yellow" || colors[randomIndex] === "orange") {
-        buttonBody.style.color = "black";
-        buttonBody.style.backgroundColor = randomColor;
-    } else {
-        buttonBody.style.color = "white";
-        buttonBody.style.backgroundColor = randomColor;
-    }
+    h1Body.style.color = randomColor;
 }
 
 h1Body.onclick = randomClickFunction;
-buttonBody.onclick = randomClickFunction2;
+
+function onClickEvent() {
+    const el = document.createElement('p');
+    el.innerText = "New Element Created";
+    document.querySelector('.container').appendChild(el);
+}
+
+document.querySelector('button').onclick = onClickEvent;
