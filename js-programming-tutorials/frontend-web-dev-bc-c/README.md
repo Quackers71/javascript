@@ -12,6 +12,3 @@
 * https://lodash.com/ Lodash - A modern JavaScript utility library delivering modularity, performance & extras.
 * https://www.codewars.com/
 </br>
-### Challenges
-<img src="./images/Challenge-1.png" width=900>
-</br>
