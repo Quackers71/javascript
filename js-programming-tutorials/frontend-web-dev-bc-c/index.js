@@ -1,41 +1,50 @@
 // Frontend Web Development Bootcamp Course (JavaScript, HTML, CSS) via https://www.youtube.com/watch?v=zJSY8tbf_ys @ 56:00 / 21:14:41
 
-// JavaScript variables / objects / arrays & functions
+// JavaScript Challenges #1, #2, #3, #4, #5
 
-const myArray = [10, 20, 30, 40];
+// #Ch1
+let myBoolean = true;
+console.log("myBoolean : " + myBoolean);
 
-myArray.push(50);
+let myString = 'Hello World!';
+console.log("myString : " + myString);
+
+let firstNumber = 20;
+console.log("firstNumber : " + firstNumber);
+
+let secondNumber = 40;
+console.log("secondNumber : " + secondNumber);
+
+secondNumber = 80;
+console.log("re-assigned secondNumber : " + secondNumber);
+
+let myArray = [myBoolean, myString];
 console.log(myArray);
-console.log("Array Length : " + myArray.length);
-console.log(myArray.reverse());
 
-const yourVariable = { firstProperty: 'Hello World!'};
-console.log(yourVariable);
+let myObject = { firstProperty: myArray, sumProperty: firstNumber + secondNumber};
+console.log("myObject : " + myObject);
 
-const anotherArray = [10, 'a string', { property: 'quackers' }, [1, 2, 3]]; // nested array
-console.log(anotherArray);
-console.log("[3][0] : " + anotherArray[3][0]);
+console.log("typeof myArray : " + typeof(myArray));
 
-const objectVariable = { prop1: 20, prop2: 'Hello', prop3: 'World' };
-console.log("objVar.prop2 + objVar.prop3 : " + objectVariable.prop2 + " " + objectVariable.prop3 + "!");
-console.log("objVar['prop1'] : " + objectVariable['prop1']);
+// wasn't sure about this one
+const firstProp = myObject.firstProperty;
+const arrayValue = firstProp[1];
+console.log("arrayValue: " + arrayValue);
+console.log("myOb.firstProp : " + myObject.firstProperty[1]);
+console.log("typeof arrayValue: " + typeof(arrayValue));
 
-const nestedObject = {
-    layer1: {
-        layer2: {
-            layer3: {
-                targetValue: 20
-            }
-        }
-    }
+// #Ch4
+const objectVariable = {
+    property1: 'I am Property 1',
+    property2: 'I am Property 2',
+    property3: [20, 30, 40]
 }
-console.log("4 layers nested value : " + nestedObject.layer1.layer2.layer3.targetValue);
+console.log("property3 : " + objectVariable.property3);
 
-const functionContainerVariable = function() {
-    return 20;
-}
-console.log("fCV returns : " + functionContainerVariable());
 
+// #Ch5
+const anotherArray = [10, 20, 30];
+console.log("anotherArray : " + anotherArray[2]);
 
 
 

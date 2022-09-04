@@ -11,5 +11,5 @@
 * https://github.com/getify/You-Dont-Know-JS
 </br>
 ### Challenges
-<img src="./images/Challenge-1.png" width=700>
+<img src="./images/Challenge-1.png" width=900>
 </br>
