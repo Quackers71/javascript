@@ -9,6 +9,8 @@
 * https://en.wikipedia.org/wiki/ISO_8601
 * https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Browser_support_for_JavaScript_APIs
 * https://github.com/getify/You-Dont-Know-JS
+* https://lodash.com/ Lodash - A modern JavaScript utility library delivering modularity, performance & extras.
+* https://www.codewars.com/
 </br></br>
 
 ### Specific Playlists for JavaScript

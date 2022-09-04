@@ -1,8 +1,8 @@
-// Frontend Web Development Bootcamp Course (JavaScript, HTML, CSS) via https://www.youtube.com/watch?v=zJSY8tbf_ys @ 56:00 / 21:14:41
+// Frontend Web Development Bootcamp Course (JavaScript, HTML, CSS) via https://www.youtube.com/watch?v=zJSY8tbf_ys @ 01:45:28 / 21:14:41
 
 // JavaScript Challenges #1, #2, #3, #4, #5
 
-// #Ch1
+// Ch#1
 let myBoolean = true;
 console.log("myBoolean : " + myBoolean);
 
@@ -33,7 +33,7 @@ console.log("arrayValue: " + arrayValue);
 console.log("myOb.firstProp : " + myObject.firstProperty[1]);
 console.log("typeof arrayValue: " + typeof(arrayValue));
 
-// #Ch4
+// Ch#4
 const objectVariable = {
     property1: 'I am Property 1',
     property2: 'I am Property 2',
@@ -42,7 +42,7 @@ const objectVariable = {
 console.log("property3 : " + objectVariable.property3);
 
 
-// #Ch5
+// Ch#5
 const anotherArray = [10, 20, 30];
 console.log("anotherArray : " + anotherArray[2]);
 
