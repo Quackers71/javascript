@@ -11,4 +11,5 @@
 * https://github.com/getify/You-Dont-Know-JS
 * https://lodash.com/ Lodash - A modern JavaScript utility library delivering modularity, performance & extras.
 * https://www.codewars.com/
+* https://www.tutorialspoint.com/javascript/javascript_builtin_functions.htm
 </br>
