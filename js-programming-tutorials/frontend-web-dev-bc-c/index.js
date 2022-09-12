@@ -76,7 +76,7 @@ function greet(name){
 console.log(greet("Bob"));
 
 // Ch #7 - Is n divisible by x and y?
-// https://www.codewars.com/kata/5545f109004975ea66000086/javascript
+// https://www.codewars.com/kata/5545f109004975ea66000086/javascript @ 04:31:18
 
 
 
