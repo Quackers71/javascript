@@ -1,0 +1,24 @@
+body {
+    background-color: #333;
+}
+
+h1,
+h2 {
+    color: white;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+button {
+    color: white;
+    background-color: navy;
+    padding: 20px;
+    font-size: 1.4rem;
+}
+
+button:hover {
+    background-color: orangered;
+    color: black;
+    padding: 20px;
+    font-size: 1.4rem;
+}

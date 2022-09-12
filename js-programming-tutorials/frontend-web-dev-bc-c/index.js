@@ -1,165 +1,84 @@
 // Frontend Web Development Bootcamp Course (JavaScript, HTML, CSS) via https://www.youtube.com/watch?v=zJSY8tbf_ys @ 02:50:09 / 21:14:41
 
-// JavaScript functions, conditionals & loops
+// 25 Beginner JavaScript practive problems
 
-if ('some string' === 'another string') {
-    console.log('the strings are equal');
-} else {
-    console.log('the strings are not equal');
+// https://www.codewars.com/collections/lesson-5-practice-challenges-number-fullstackroadmap
+
+// codewars challenge #2 - https://www.codewars.com/kata/5168bb5dfe9a00b126000018/train/javascript
+// Reversed Strings
+let str = "world";
+console.log(str);
+let arr = str.split("");
+console.log(arr);
+let reversed = arr.reverse();
+console.log(reversed);
+result = reversed.join("");
+console.log(result);
+
+//the answer
+function solution(str){
+  return str.split("").reverse().join("");
 }
-
-const firstNumber = 20;
-const secondNumber = 10;
-const jsExpression = firstNumber > secondNumber; // true
-
-if (jsExpression) {
-    console.log('this expression is true');
-} else if (firstNumber > 0) {
-    console.log('the expression is false and the firstNumber is greater than 0');
-} else {
-    console.log('expression false, and firstNumber 0 or less');
-}
-
-const colors = ['orange', 'green', 'yellow', 'purple', 'blue'];
-const randomIndex = Math.floor(Math.random() * colors.length);
-const randomColor = colors[randomIndex];
-
-// Conditionals - Switch / Case statement
-switch (randomColor) {
-  case 'orange':
-    console.log('the color is orange');
-    break;
-  case 'green':
-    console.log('the color is green');
-    break;
-  case 'yellow':
-    console.log('the color is yellow');
-    break;
-  case 'purple':
-    console.log('the color is purple');
-    break;
-  case 'blue':
-    console.log('the color is blue');
-    break;
-  default:
-    console.log('no color found');
-}
-
-// Conditionals
-// if (randomColor === 'orange') {
-//     console.log('the color is orange');
-// } else if (randomColor === 'green') {
-//     console.log('the color is green');
-// } else if (randomColor === 'yellow') {
-//     console.log('the color is yellow');
-// } else if (randomColor === 'purple') {
-//     console.log('the color is purple');
-// } else if (randomColor === 'blue') {
-//     console.log('the color is blue');
-// } else {
-//     console.log('no color found');
-// }
-
-// for (let x = 1; x < 6; x++) {
-//     console.log(x);
-// }
-
-const arr = ['Polkadot', 'Cardano', 'Ethereum', 20, 20, 40, 50];
-
-for (let i = 0; i < arr.length; i++) {
-    if (typeof arr[i] === 'string') {
-        console.log(arr[i]);
-    }
-}
-
-// a function with parameters
-function myFunction(param1, param2) {
-  console.log(param1 + ' ' + param2 + ' this is my first function!');
-}
-// call or envoke the function (with arguments)
-myFunction('Hello', 'World!');
-
-// immediately invoked function (expression) IIFE
-(function anotherFunction() {
-  console.log('Hello World!');
-})();
-
-// an anonymous function
-const aNewFunction = function() {
-  console.log('another one');
-}
-
-aNewFunction();
-console.log(typeof(aNewFunction));
+console.log("reversed string : " + solution("world"));
 
 
-const arrowFunction = () => {
-  console.log('i am an arrow function');
-}
-arrowFunction();
-
-// return value from a function
-const returnFunction = () => {
-  const a = 20;
-  return a;
-}
-const result = returnFunction();
-console.log("returnFunction : " + result);
-
-const returnFunction2 = () => {
-  const a = 20;
-  return a < 30; // true
-}
-const result2 = returnFunction2();
-console.log("returnFunction2 : " + result2);
-
-const improperReturnFunction = () => {
-  let myNum = 20;
-  return myNum;
-  myNum = 50; // unreachable code after return statement
-}
-const result3 = improperReturnFunction();
-console.log("improperReturnFunction : " + result3);
-
-const globalNumber = 20;
-let myFunc = () => {
-  if (globalNumber  < 50) {
-    return 'returned the function early';
+// Ch #3 - Even or Odd
+// https://www.codewars.com/kata/53da3dbb4a5168369a0000fe/javascript
+function even_or_odd(number) {
+  if (number % 2 === 0) {
+    return "Even";
+  } else {
+    return "Odd";
   }
-  return 40;
 }
-const result4 = myFunc();
-console.log('myFunc : ' + result4);
+console.log("Result : " + even_or_odd(40));
 
-function myOtherFunction() {
-  return 20;
+// Ch #5 - Vowel Count
+//  https://www.codewars.com/kata/54ff3102c1bad923760001f3/javascript
+function getCount(str) {
+  let vowelsCount = 0;
+
+  const arr = str.split("");
+
+  for (let i = 0; i < arr.length; i++) {
+    switch (arr[i]) {
+      case 'a':
+        vowelsCount++;
+        break;
+      case 'a':
+        vowelsCount++;
+        break;
+      case 'e':
+        vowelsCount++;
+        break;
+      case 'i':
+        vowelsCount++;
+        break;
+      case 'o':
+        vowelsCount++;
+        break;
+      case 'u':
+        vowelsCount++;
+    }
+  }  
+  return vowelsCount;
 }
-console.log("myOtherFunction : " + myOtherFunction());
+console.log("vowels count : " + getCount("asdopuioiuweoueo"));
 
-const aliasVariable = myOtherFunction;
-console.log("maliasVariable = myOtherFunction : " + aliasVariable());
-
-const myObj = {
-  prop1: 50,
-  prop2: myOtherFunction
+// Ch #6 - Jenny's secret message
+// https://www.codewars.com/kata/55225023e1be1ec8bc000390/javascript
+function greet(name){
+  if (name === "Johnny")
+    return "Hello, my love!";
+  else
+    return "Hello, " + name + "!";
 }
-console.log("myObj.prop2() : " + myObj.prop2());
+console.log(greet("Bob"));
 
-const myString = "hack";
-myString.replace('h', 'z');
-console.log("myString : " + myString);
-const newString = myString.replace('h', 'z');
-console.log("newString : " + newString);
+// Ch #7 - Is n divisible by x and y?
+// https://www.codewars.com/kata/5545f109004975ea66000086/javascript
 
-let str = 'Hello World!';
-result5 = str.toLocaleUpperCase().split(" ");
-console.log(result5);
-console.log("index " + result5.indexOf("WORLD!"));
 
-const step1 = str.toUpperCase();
-const step2 = step1.split(" ");
-const step3 = step2.indexOf("WORLD!");
-console.log("step3 : index " + step3);
 
 
 
