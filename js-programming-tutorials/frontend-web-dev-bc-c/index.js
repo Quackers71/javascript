@@ -77,6 +77,46 @@ console.log(greet("Bob"));
 
 // Ch #7 - Is n divisible by x and y?
 // https://www.codewars.com/kata/5545f109004975ea66000086/javascript @ 04:31:18
+function isDivisible(n, x, y) {
+  const result1 = n / x;
+  const result2 = n / y;
+
+  if (result1 % 1 === 0 && result2 % 1 === 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(isDivisible(3, 3, 3));
+
+// another solution
+function isDivisible2(n, x, y) {
+  return (n % x === 0 && n % y === 0) ? true : false;
+}
+console.log(isDivisible2(2, 3, 3));
+
+// Ch #8 - Return Negative
+// https://www.codewars.com/kata/55685cd7ad70877c23000102/javascript
+function makeNegative(num) {
+  if (num < 0) {
+    return num;
+  } else {
+    return num * -1;
+  }
+}
+console.log(makeNegative(5));
+
+// possibly the best solution
+function makeNegative2(num) {
+  return -Math.abs(num);
+}
+console.log(makeNegative2(180));
+
+// Ch #9 - Find the smallest integer in the array
+// https://www.codewars.com/kata/55a2d7ebe362935a210000b2/javascript @ 04:43:53
+
+
+
 
 
 
