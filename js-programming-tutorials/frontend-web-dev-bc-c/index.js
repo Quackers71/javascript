@@ -175,7 +175,7 @@ function getAverage(scoreArray) {
 }
 console.log(getAverage([1, 2, 3, 4, 5, 6]));
 
-// simplyfied version
+// simplified version
 function getAverage(marks){
   return Math.floor(marks.reduce((sum, x) => sum + x) / marks.length);
 }
@@ -220,7 +220,7 @@ const rockPaperScissors = (player1, player2) => {
     }
   }
 };
-console.log(rockPaperScissors('rock', 'scissors'));
+console.log("My version : " + rockPaperScissors('rock', 'scissors'));
 
 // Sudo code - Possibilities
 /*
@@ -239,6 +239,22 @@ console.log(rockPaperScissors('rock', 'scissors'));
        s             p             p1
        s             s            Draw
 */
+
+// A compressed version
+const rps = (p1, p2) => {
+  if (p1 == p2)
+    return 'Draw!';
+
+   if (p1 == 'rock' && p2 == 'scissors')
+     return 'Player 1 won!'
+   else if (p1 == 'scissors' && p2 == 'paper')
+     return 'Player 1 won!'
+   else if (p1 == 'paper' && p2 == 'rock')
+     return 'Player 1 won!'
+   else
+     return 'Player 2 won!';
+};
+console.log("Alt version : " + rps('paper', 'scissors'));
 
 // Ch #13 - Remove First and Last Character
 // https://www.codewars.com/kata/56bc28ad5bdaeb48760009b0/javascript
