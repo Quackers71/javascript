@@ -181,11 +181,91 @@ function getAverage(marks){
 }
 
 // Ch #12 - Rock Paper Scissors!
-// https://www.codewars.com/kata/5672a98bdbdd995fad00000f/javascript
+// https://www.codewars.com/kata/5672a98bdbdd995fad00000f/javascript @ 05:05:46
 
+const rockPaperScissors = (player1, player2) => {
+  if (player1 === 'rock') {
+    if (player2 === 'rock') {
+      return 'Draw!';
+    }
+    if (player2 === 'paper') {
+      return 'Player 2 won!';
+    }
+    if (player2 === 'scissors') {
+      return 'Player 1 won!';
+    }
+  }
 
+  if (player1 === 'paper') {
+    if (player2 === 'rock') {
+      return 'Player 1 won!';
+    }
+    if (player2 === 'paper') {
+      return 'Draw!';
+    }
+    if (player2 === 'scissors') {
+      return 'Player 2 won!';
+    }
+  }
 
+  if (player1 === 'scissors') {
+    if (player2 === 'rock') {
+      return 'Player 2 won!';
+    }
+    if (player2 === 'paper') {
+      return 'Player 1 won!';
+    }
+    if (player2 === 'scissors') {
+      return 'Draw!';
+    }
+  }
+};
+console.log(rockPaperScissors('rock', 'scissors'));
 
+// Sudo code - Possibilities
+/*
+    Rock = r
+    Paper = p
+    Scissors = s
+
+    Player 1      Player 2       Result
+       r             r            Draw
+       r             p             p2
+       r             s             p1
+       p             r             p1
+       p             p            Draw
+       p             s             p2
+       s             r             p2
+       s             p             p1
+       s             s            Draw
+*/
+
+// Ch #13 - Remove First and Last Character
+// https://www.codewars.com/kata/56bc28ad5bdaeb48760009b0/javascript
+
+// my attempt
+function removeChar(str){
+  const result = str.slice(1, -1);
+  return result;
+  // Should have used this
+  // return str.slice(1, -1);
+
+};
+console.log(removeChar("*wonkey*"));
+
+// Zach's attempt
+function removeChar(str){
+  const lengthOfString = str.length;
+  return str.substr(1, lengthOfString - 2);
+};
+console.log(removeChar("*donkey*"));
+
+// Ch #14 - Sum of positive
+// https://www.codewars.com/kata/5715eaedb436cf5606000381/javascript @ 05:20:34
+
+function positiveSum(arr) {
+  
+}
 
 
 
