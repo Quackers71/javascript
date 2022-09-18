@@ -280,8 +280,150 @@ console.log(removeChar("*donkey*"));
 // https://www.codewars.com/kata/5715eaedb436cf5606000381/javascript @ 05:20:34
 
 function positiveSum(arr) {
+  let sum = 0;
   
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > 0) {
+      sum += arr[i];
+    }
+  }
+  
+  return sum;
 }
+console.log(positiveSum([-9, 2, 0, 5, -22, 3]));
+
+// Ch #15 - Basic Mathematical Operations
+// https://www.codewars.com/kata/57356c55867b9b7a60000bd7/javascript @ 05:22:25
+
+function basicOp(operation, value1, value2) {
+  let result;
+  
+  switch (operation) {
+    case '+':
+      result = value1 + value2;
+      break;
+    case '-':
+      result = value1 - value2;
+      break;
+    case '*':
+      result = value1 * value2;
+      break;
+    case '/':
+      result = value1 / value2;
+      break;
+  }
+  
+  return result;
+}
+console.log(basicOp('+', 12, 18));
+
+// using the eval() method
+// https://www.w3schools.com/jsref/jsref_eval.asp
+function basicOp(o, a, b) {
+  return eval(a+o+b);
+}
+console.log(basicOp('-', 18, 8));
+
+// Ch #16 - String repeat
+// https://www.codewars.com/kata/57a0e5c372292dd76d000d7e/javascript @ 05:27:55
+
+function repeatStr(num, str) {
+  let startStr = '';
+
+  for (let i = 0; i < num; i++) {
+    startStr += str;
+  }
+
+  return startStr;
+}
+console.log(repeatStr(5,'Quack '));
+
+// Alt using repeat() method
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat
+function repeatStr (n, s) {
+  return s.repeat(n);
+}
+console.log(repeatStr(3,'Happy Monday! '));
+
+// Ch #17 - Convert a string to an array
+// https://www.codewars.com/kata/57e76bc428d6fbc2d500036d/javascript @ 05:31:31
+
+function stringToArray(string){
+
+	return string.split(' ');
+}
+console.log(stringToArray("I love every day's"));
+
+// Ch #18 - Remove String Spaces
+// https://www.codewars.com/kata/57eae20f5500ad98e50002c5/javascript @ 05:33:01
+
+function noSpace(x){
+  return x.split(' ').join('');
+}
+console.log(noSpace("    C a    b b  a ges          ! "));
+
+// Ch #19 - Beginner - Lost Without a Map
+// https://www.codewars.com/kata/57f781872e3d8ca2a000007e/javascript @ 5:37:41
+
+function maps(x){
+  const result = x.map((arrayItem) => {
+    return arrayItem * 2;
+  });
+  
+  return result;
+}
+console.log(maps([1, 2, 3, 4, 5]));
+
+// Alt version
+function maps(x){
+  return x.map(n => n * 2);
+}
+console.log(maps([12, -2, 33, 4.712, 1.5]));
+
+// Ch #20 - Is he gonna survive?
+// https://www.codewars.com/kata/59ca8246d751df55cc00014c/javascript @ 05:41:26
+
+function hero(bullets, dragons){
+  return result = bullets / dragons >= 2 ? true : false;
+}
+console.log(hero(4, 2)); // true
+
+// Ch #21  - Array plus array
+// https://www.codewars.com/kata/5a2be17aee1aaefe2a000151/javascript @ 05:44:03
+
+function arrayPlusArray(arr1, arr2) {
+  
+  let sum = 0;
+  
+  for (let i = 0; i < arr1.length; i++) {
+    const arr1Value = arr1[i];
+    const arr2Value = arr2[i];
+
+    const addedValue = arr1Value + arr2Value;
+    sum += addedValue;
+  }
+
+  return sum;
+}
+console.log(arrayPlusArray([1, 3, 5],[5, 5, 5]));
+
+// Ch #22 - Century From Year
+https://www.codewars.com/kata/5a3fe3dde1ce0e8ed6000097/train/javascript @ 05:48:05
+
+function century(year) {
+  return Math.ceil(year / 100);
+}
+
+console.log(century(7901) + " Century");
+
+// Ch #23 - Cat years, Dog years
+// https://www.codewars.com/kata/5a6663e9fd56cb5ab800008b/train/javascript @ 05:57:50
+
+var humanYearsCatYearsDogYears = function(humanYears) {
+  // Your code here!
+  return [0,0,0];
+}
+
 
 
 
@@ -301,6 +443,7 @@ h1Body.onclick = randomClickFunction;
 function onClickEvent() {
     const el = document.createElement('p');
     el.innerText = "New Element Created";
+    el.style.color = "goldenrod";
     document.querySelector('.container').appendChild(el);
 }
 
